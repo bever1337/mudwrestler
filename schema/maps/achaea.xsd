@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="map">
+
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="areas" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="area">
+                <xs:complexType>
+                  <xs:attribute name="id" type="xs:integer" use="required" />
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                  <xs:attribute name="x" type="xs:integer" use="required" />
+                  <xs:attribute name="y" type="xs:integer" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="environments" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="environment">
+                <xs:complexType>
+                  <xs:attribute name="id" type="xs:integer" use="required" />
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                  <xs:attribute name="color" type="xs:integer" use="required" />
+                  <xs:attribute name="htmlcolor" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="rooms" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="room">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="coord" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:attribute name="x" type="xs:integer" />
+                        <xs:attribute name="y" type="xs:integer" />
+                        <xs:attribute name="z" type="xs:integer" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element maxOccurs="unbounded" name="exit">
+                      <xs:complexType>
+                        <xs:attribute name="direction" type="xs:string" />
+                        <xs:attribute name="door" type="xs:integer" />
+                        <xs:attribute name="hidden" type="xs:integer" />
+                        <xs:attribute name="target" type="xs:integer" />
+                        <xs:attribute name="tgarea" type="xs:integer" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:integer" />
+                  <xs:attribute name="area" type="xs:integer" />
+                  <xs:attribute name="title" type="xs:string" />
+                  <xs:attribute name="environment" type="xs:integer" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+      <xs:attribute name="name" type="xs:string" />
+      <xs:attribute name="x" type="xs:integer" />
+      <xs:attribute name="y" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:key name="AreaKey">
+      <xs:selector xpath="./areas/area" />
+      <xs:field xpath="@id" />
+    </xs:key>
+    <xs:key name="EnvironmentKey">
+      <xs:selector xpath="./environments/environment" />
+      <xs:field xpath="@id" />
+    </xs:key>
+    <xs:key name="RoomKey">
+      <xs:selector xpath="./rooms/room" />
+      <xs:field xpath="@id" />
+    </xs:key>
+
+    <xs:keyref name="RoomEnvironmentRef" refer="EnvironmentKey">
+      <xs:selector xpath="./rooms/room" />
+      <xs:field xpath="@environment" />
+    </xs:keyref>
+    <xs:keyref name="RoomAreaRef" refer="AreaKey">
+      <xs:selector xpath="./rooms/room" />
+      <xs:field xpath="@area" />
+    </xs:keyref>
+    <xs:keyref name="RoomTargetAreaRef" refer="AreaKey">
+      <xs:selector xpath="./rooms/room/exit" />
+      <xs:field xpath="@tgarea" />
+    </xs:keyref>
+    <xs:keyref name="RoomTargetRoomRef" refer="RoomKey">
+      <xs:selector xpath="./rooms/room/exit" />
+      <xs:field xpath="@target" />
+    </xs:keyref>
+
+  </xs:element>
+
+</xs:schema>
