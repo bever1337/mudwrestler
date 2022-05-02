@@ -12,35 +12,31 @@ import { CACHE_NAME } from "./constants";
  * Always sends the fetch request and the response is always cached. The cache is never read.
  * This is useful if a non-cached response is required, but the cache should still be updated
  * Usage is identical to fetch.
- * @param {string} url
- * @param {RequestInit} init
+ * @param {Request} request
  * @returns {Promise<Response>}
  */
-export function fetchAround(url, init) {
-  const sentRequest = new Request(url, init);
-  return Promise.all([caches.open(CACHE_NAME), fetch(sentRequest)]).then(
+export function fetchAround(request) {
+  return Promise.all([caches.open(CACHE_NAME), fetch(request)]).then(
     ([cache, response]) =>
-      cache.put(sentRequest, response).then(() => response.clone())
+      cache.put(request, response).then(() => response.clone())
   );
 }
 
 /**
  * Attempts to retrieve request from cache. If cache miss, fetch and update cache.
  * Behavior is identical to fetch.
- * @param {string} url
- * @param {RequestInit} init
+ * @param {Request} request
  * @returns {Promise<Response>}
  */
-export function fetchThrough(url, init) {
-  const sentRequest = new Request(url, init);
+export function fetchThrough(request) {
   return caches.open(CACHE_NAME).then((cache) => {
-    return cache.match(sentRequest).then((cacheMatch) => {
+    return cache.match(request).then((cacheMatch) => {
       if (cacheMatch) {
         return Promise.resolve(cacheMatch);
       }
-      return fetch(sentRequest).then((response) => {
-        cache.put(sentRequest, response);
-        return response;
+      return fetch(request).then((response) => {
+        cache.put(request, response);
+        return response.clone();
       });
     });
   });
