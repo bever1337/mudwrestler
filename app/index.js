@@ -2,7 +2,7 @@
 /* eslint-env browser */
 import * as d from "d3";
 import { xsltProcess } from "xslt-processor";
-import { open, send, sendAround, sendThrough } from "./xhr";
+import { open, send, sendAround, sendThrough } from "./cache/xhr";
 
 d.select("#d3-mount").html("hello, world");
 
@@ -13,14 +13,21 @@ function main() {
   Promise.all([
     send(xsltReq, open(xsltReq, "GET", "/maps/achaea/area.xsl")),
     send(xmlReq, open(xmlReq, "GET", "/maps/achaea/map.xml")),
-  ]).then(() => {
-    perfs.push(performance.now());
-    const p = new DOMParser();
-    const output = xsltProcess(xmlReq.responseXML, xsltReq.responseXML);
-    perfs.push(performance.now());
-    console.log("fetched in", (perfs[1] ?? 0) - (perfs[0] ?? 0));
-    console.log("xsl in", (perfs[2] ?? 0) - (perfs[1] ?? 0));
-  });
+  ])
+    .then(([xslF, xmlF]) => Promise.all([xslF.text(), xmlF.text()]))
+    .then(([xslT, xmlT]) => {
+      perfs.push(performance.now());
+      const p = new DOMParser();
+      // parsing dom from string is not a considerable lift, go figure
+      // const output = xsltProcess(xmlReq.responseXML, xsltReq.responseXML);
+      const output = xsltProcess(
+        p.parseFromString(xmlT, "application/xml"),
+        p.parseFromString(xslT, "application/xml")
+      );
+      perfs.push(performance.now());
+      console.log("fetched in", (perfs[1] ?? 0) - (perfs[0] ?? 0));
+      console.log("xsl in", (perfs[2] ?? 0) - (perfs[1] ?? 0));
+    });
 
   // .then((resolved) => {
   //   console.log("DONE", resolved);

@@ -35,6 +35,8 @@ node ./esbuild.js
 
 ## Test
 
+Babel is required to support types and jest. See `babel.config.js` and `jest.config.js`
+
 ```bash
 # not much in the way of tests yet
 npm run test

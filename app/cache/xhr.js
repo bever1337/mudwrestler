@@ -1,16 +1,26 @@
 /// @ts-check
 /* eslint-env browser */
+
 /**
  * @module
- * Provides wrappers around common XHR behavior to create and clone Request objects
+ * Provides wrappers around common XHR behavior to create Requests and cache Responses.
+ * Requests and Responses are (mostly) immutable. Fetch is never used, but cache hits
+ * will only resolve Responses, no xhr.
  */
+
+import { CACHE_NAME } from "./constants";
 
 /**
  * Opens the input XMLHttpRequest and returns a new Request
  * @param {XMLHttpRequest} xhr
  * @param {string} method
  * @param {string} url
- * @returns {Request}
+ * @returns {Request} Request
+ * @example
+ * ```js
+ * const xhrRequest = new XMLHttpRequest();
+ * const fetchRequest = open(xhrRequest, 'get', 'https://example.com');
+ * ```
  */
 export function open(xhr, method, url) {
   xhr.open(method, url, true);
@@ -18,11 +28,23 @@ export function open(xhr, method, url) {
 }
 
 /**
- * Promisifies xhr send and resolves a response.
+ * Always sends the xhr. The cache is never read nor updated.
+ * Useful to promisify xhr and create corresponding Request and Response.
  * @param {XMLHttpRequest} xhr
  * @param {Request} request
  * @param {Blob|BufferSource|FormData|URLSearchParams} [body = null]
  * @returns {Promise<Response>}
+ * @example
+ * ```js
+ * const xhrRequest = new XMLHttpRequest();
+ * let fetchRequest = open(xhrRequest, 'get', 'https://example.com');
+ * // xhr wrappers always clone fetch Request and Response objects
+ * fetchRequest = send(xhrRequest, fetchRequest);
+ * fetchRequest.then((response) => {
+ *   console.log("Response: ", response);
+ *   console.log("XHR Response: ", xhrRequest.response);
+ * });
+ * ```
  */
 export function send(xhr, request, body) {
   xhr.send(body);
@@ -30,17 +52,27 @@ export function send(xhr, request, body) {
 }
 
 /**
- * Always sends xhr. Response is always cached. Cache is never read.
+ * Always sends the xhr and the response is always cached. The cache is never read.
+ * This is useful if a non-cached response is required, but the cache should still be updated
  * @param {XMLHttpRequest} xhr
  * @param {Request} request
  * @param {Blob|BufferSource|FormData|URLSearchParams} [body = null]
  * @returns {Promise<Response>}
+ * @example
+ * ```js
+ * const xhrRequest = new XMLHttpRequest();
+ * sendAround(xhrRequest, open(xhrRequest, 'get', 'https://example.com'))
+ *   .then((response) => {
+ *     console.log("Response: ", response);
+ *     console.log("XHR Response: ", xhrRequest.response);
+ *   });
+ * ```
  */
 export function sendAround(xhr, request, body) {
   const sentRequest = mergeInit(request, { body: body ?? null });
   xhr.send(body);
   return Promise.all([
-    caches.open("xhr"),
+    caches.open(CACHE_NAME),
     promisifySend(xhr, sentRequest),
   ]).then(([cache, response]) =>
     cache.put(sentRequest, response).then(() => response)
@@ -49,19 +81,33 @@ export function sendAround(xhr, request, body) {
 
 /**
  * Attempts to retrieve request from cache.
- * Cache hits resolve Response and the xhr `send` is never called.
- * Cache misses will `send` the xhr and resolve a Response on 'load'. Response is cached.
- * In case of cache miss, response can be accessed on xhr AND resolved Response.
+ *
+ * Cache hit:
+ *  - resolve cached Response
+ *  - xhr `send` is NEVER called so xhr response properties are inaccessible
+ *
+ * Cache miss:
+ *  - xhr is sent
+ *  - resolve and cache response
+ *  - Response and xhr response properties are available
  * @param {XMLHttpRequest} xhr
  * @param {Request} request
  * @param {Blob|BufferSource|FormData|URLSearchParams} [body = null]
  * @returns {Promise<Response>}
+ * @example
+ * ```js
+ * const xhrRequest = new XMLHttpRequest();
+ * sendThrough(xhrRequest, open(xhrRequest, 'get', 'https://example.com'))
+ *   .then((response) => {
+ *     console.log("Response: ", response);
+ *     console.log("XHR Response: ", xhrRequest.response);
+ *   });
+ * ```
  */
 export function sendThrough(xhr, request, body) {
   const sentRequest = mergeInit(request, { body: body ?? null });
-  return caches.open("xhr").then((cache) => {
+  return caches.open(CACHE_NAME).then((cache) => {
     return cache.match(sentRequest).then((cacheMatch) => {
-      console.log("cacheMatch", cacheMatch);
       if (cacheMatch) {
         return Promise.resolve(cacheMatch);
       }
@@ -97,32 +143,6 @@ export function setRequestHeader(xhr, request, header, value) {
  */
 
 /**
- * @type {Record<XMLHttpRequestResponseType, (xhr: XMLHttpRequest) => BodyInit>}
- */
-const xhrToFetchBodyInits = {
-  arraybuffer: (xhr) => new ArrayBuffer(xhr.response),
-  blob: (xhr) => new Blob(xhr.response),
-  json: (xhr) => ({ ...xhr.response }),
-  [""]: (xhr) => xhr.responseText,
-  text: (xhr) => xhr.responseText,
-  document: (xhr) => xhr.responseXML?.documentElement.outerHTML ?? "",
-};
-
-/**
- * Creates a new response from an xhr in `readyState` `4` and a corresponding request
- * @param {XMLHttpRequest} xhr
- * @param {Request} request
- * @returns {Response}
- */
-function intoResponse(xhr, request) {
-  return new Response(xhrToFetchBodyInits[xhr.responseType]?.(xhr) ?? null, {
-    headers: new Headers(request.headers),
-    status: xhr.status,
-    statusText: xhr.statusText,
-  });
-}
-
-/**
  * Immutably clones input RequestInit over Request.
  * `body` property immutability not guaranteed.
  * @param {Request} request
@@ -149,6 +169,18 @@ function mergeInit(request, init) {
 }
 
 /**
+ * @type {Record<XMLHttpRequestResponseType, (xhr: XMLHttpRequest) => BodyInit>}
+ */
+const xhrToFetchBodyInits = {
+  arraybuffer: (xhr) => new ArrayBuffer(xhr.response),
+  blob: (xhr) => new Blob(xhr.response),
+  json: (xhr) => ({ ...xhr.response }),
+  [""]: (xhr) => xhr.responseText,
+  text: (xhr) => xhr.responseText,
+  document: (xhr) => xhr.responseXML?.documentElement.outerHTML ?? "",
+};
+
+/**
  * Promisifies XHR. All events will reject.
  * Handler for onload MUST be provided and it MUST resolve a Response.
  * @param {XMLHttpRequest} xhr
@@ -164,7 +196,13 @@ function promisifySend(xhr, request) {
     };
     const onXhrLoad = function onXhrLoad() {
       cleanup();
-      resolve(intoResponse(xhr, request));
+      resolve(
+        new Response(xhrToFetchBodyInits[xhr.responseType]?.(xhr) ?? null, {
+          headers: new Headers(request.headers),
+          status: xhr.status,
+          statusText: xhr.statusText,
+        })
+      );
     };
     /** @param {Event} event */
     const cleanupAndReject = function cleanupAndReject(event) {
