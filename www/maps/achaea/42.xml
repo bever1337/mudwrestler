@@ -1,0 +1,391 @@
+<?xml version="1.0"?>
+<map name="Savannah, the (Central)" x="0" y="0" >
+<rooms>
+   <room id="1072" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="8" y="4" z="0" />
+      <exit direction="southwest" target="193" />
+      <exit direction="northwest" target="1073" />
+   </room>
+   <room id="190" area="42" title="Lush grasslands nearing a forest" environment="7">
+      <coord x="0" y="3" z="0" />
+      <exit direction="north" target="4875" tgarea="32" />
+      <exit direction="east" target="191" />
+      <exit direction="south" target="189" />
+   </room>
+   <room id="1065" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="1" y="-2" z="0" />
+      <exit direction="east" target="1064" />
+      <exit direction="northwest" target="189" />
+   </room>
+   <room id="189" area="42" title="Grasslands on the edge of a forest" environment="7">
+      <coord x="0" y="-1" z="0" />
+      <exit direction="north" target="190" />
+      <exit direction="southeast" target="1065" />
+      <exit direction="south" target="188" />
+   </room>
+   <room id="188" area="42" title="Northern grasslands nearing the Aureliana Forest" environment="7">
+      <coord x="0" y="-2" z="0" />
+      <exit direction="north" target="189" />
+      <exit direction="south" target="185" />
+   </room>
+   <room id="185" area="42" title="Western Grasslands beyond the Pachacacha" environment="7">
+      <coord x="0" y="-3" z="0" />
+      <exit direction="north" target="188" />
+      <exit direction="southwest" target="269" />
+   </room>
+   <room id="269" area="42" title="On the edge of the swamps" environment="7">
+      <coord x="-1" y="-4" z="0" />
+      <exit direction="northeast" target="185" />
+      <exit direction="southeast" target="267" />
+      <exit direction="south" target="1005" tgarea="71" />
+   </room>
+   <room id="198" area="42" title="Deep grasslands" environment="7">
+      <coord x="10" y="-6" z="0" />
+      <exit direction="northeast" target="199" />
+      <exit direction="south" target="180" />
+      <exit direction="west" target="1062" />
+      <exit direction="northwest" target="257" />
+   </room>
+   <room id="271" area="42" title="Grassland bordering swamp" environment="7">
+      <coord x="2" y="-5" z="0" />
+      <exit direction="southwest" target="270" />
+   </room>
+   <room id="267" area="42" title="Savannah approaching swamps" environment="7">
+      <coord x="0" y="-5" z="0" />
+      <exit direction="southeast" target="270" />
+      <exit direction="south" target="1009" tgarea="71" />
+      <exit direction="northwest" target="269" />
+   </room>
+   <room id="270" area="42" title="Grassland amid swamps" environment="7">
+      <coord x="1" y="-6" z="0" />
+      <exit direction="northeast" target="271" />
+      <exit direction="south" target="1010" tgarea="71" />
+      <exit direction="northwest" target="267" />
+   </room>
+   <room id="1064" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="2" y="-2" z="0" />
+      <exit direction="southeast" target="1055" />
+      <exit direction="west" target="1065" />
+   </room>
+   <room id="256" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="10" y="0" z="0" />
+      <exit direction="east" target="259" />
+      <exit direction="southeast" target="1068" />
+      <exit direction="southwest" target="258" />
+   </room>
+   <room id="1055" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="3" y="-3" z="0" />
+      <exit direction="northeast" target="1054" />
+      <exit direction="east" target="1520" tgarea="41" />
+      <exit direction="southeast" target="1062" />
+      <exit direction="northwest" target="1064" />
+   </room>
+   <room id="1054" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="5" y="-1" z="0" />
+      <exit direction="north" target="1074" />
+      <exit direction="southeast" target="257" />
+      <exit direction="southwest" target="1055" />
+   </room>
+   <room id="1062" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="6" y="-6" z="0" />
+      <exit direction="north" target="1523" tgarea="41" />
+      <exit direction="east" target="198" />
+      <exit direction="southeast" target="1066" />
+      <exit direction="southwest" target="1063" />
+      <exit direction="northwest" target="1055" />
+   </room>
+   <room id="1074" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="5" y="0" z="0" />
+      <exit direction="south" target="1054" />
+   </room>
+   <room id="257" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="6" y="-2" z="0" />
+      <exit direction="northeast" target="255" />
+      <exit direction="southeast" target="198" />
+      <exit direction="south" target="1502" tgarea="41" />
+      <exit direction="northwest" target="1054" />
+   </room>
+   <room id="1066" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="7" y="-7" z="0" />
+      <exit direction="northwest" target="1062" />
+   </room>
+   <room id="1063" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="5" y="-7" z="0" />
+      <exit direction="northeast" target="1062" />
+   </room>
+   <room id="191" area="42" title="Meadows" environment="7">
+      <coord x="5" y="3" z="0" />
+      <exit direction="northeast" target="192" />
+      <exit direction="west" target="190" />
+   </room>
+   <room id="192" area="42" title="Meadow before the forest" environment="7">
+      <coord x="6" y="4" z="0" />
+      <exit direction="north" target="194" />
+      <exit direction="southeast" target="193" />
+      <exit direction="southwest" target="191" />
+   </room>
+   <room id="194" area="42" title="By the forest's edge" environment="7">
+      <coord x="6" y="5" z="0" />
+      <exit direction="north" target="203" />
+      <exit direction="south" target="192" />
+   </room>
+   <room id="193" area="42" title="Deep meadows" environment="7">
+      <coord x="7" y="3" z="0" />
+      <exit direction="northeast" target="1072" />
+      <exit direction="east" target="1056" />
+      <exit direction="south" target="255" />
+      <exit direction="southwest" target="1060" />
+      <exit direction="northwest" target="192" />
+   </room>
+   <room id="1056" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="9" y="3" z="0" />
+      <exit direction="south" target="1057" />
+      <exit direction="southwest" target="1058" />
+      <exit direction="west" target="193" />
+   </room>
+   <room id="255" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="7" y="-1" z="0" />
+      <exit direction="north" target="193" />
+      <exit direction="east" target="258" />
+      <exit direction="southwest" target="257" />
+   </room>
+   <room id="1060" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="6" y="2" z="0" />
+      <exit direction="northeast" target="193" />
+      <exit direction="south" target="1061" />
+   </room>
+   <room id="1061" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="6" y="1" z="0" />
+      <exit direction="north" target="1060" />
+   </room>
+   <room id="258" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="9" y="-1" z="0" />
+      <exit direction="northeast" target="256" />
+      <exit direction="southeast" target="199" />
+      <exit direction="southwest" target="1067" />
+      <exit direction="west" target="255" />
+   </room>
+   <room id="1057" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="9" y="2" z="0" />
+      <exit direction="north" target="1056" />
+      <exit direction="east" target="1059" />
+      <exit direction="west" target="1058" />
+   </room>
+   <room id="1058" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="8" y="2" z="0" />
+      <exit direction="northeast" target="1056" />
+      <exit direction="east" target="1057" />
+   </room>
+   <room id="1059" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="10" y="2" z="0" />
+      <exit direction="west" target="1057" />
+   </room>
+   <room id="199" area="42" title="Amid the tall grasses" environment="7">
+      <coord x="12" y="-4" z="0" />
+      <exit direction="north" target="1068" />
+      <exit direction="east" target="184" />
+      <exit direction="southwest" target="198" />
+      <exit direction="northwest" target="258" />
+   </room>
+   <room id="1067" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="8" y="-2" z="0" />
+      <exit direction="northeast" target="258" />
+   </room>
+   <room id="1068" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="12" y="-2" z="0" />
+      <exit direction="south" target="199" />
+      <exit direction="northwest" target="256" />
+   </room>
+   <room id="184" area="42" title="Amid the tall grasses" environment="7">
+      <coord x="13" y="-4" z="0" />
+      <exit direction="southeast" target="183" />
+      <exit direction="southwest" target="182" />
+      <exit direction="west" target="199" />
+   </room>
+   <room id="183" area="42" title="Eastern grasslands beyond the Pachacacha" environment="7">
+      <coord x="14" y="-5" z="0" />
+      <exit direction="south" target="195" />
+      <exit direction="northwest" target="184" />
+   </room>
+   <room id="182" area="42" title="Beyond the Pachacacha" environment="7">
+      <coord x="12" y="-5" z="0" />
+      <exit direction="northeast" target="184" />
+      <exit direction="south" target="181" />
+   </room>
+   <room id="197" area="42" title="Grasslands north of Pachacacha" environment="7">
+      <coord x="16" y="-9" z="0" />
+      <exit direction="southwest" target="196" />
+      <exit direction="west" target="195" />
+   </room>
+   <room id="195" area="42" title="On the northern banks of Pachacacha" environment="7">
+      <coord x="14" y="-9" z="0" />
+      <exit direction="north" target="183" />
+      <exit direction="east" target="197" />
+      <exit direction="south" target="37067" />
+      <exit direction="southwest" target="1578" tgarea="71" />
+      <exit direction="west" target="181" />
+   </room>
+   <room id="196" area="42" title="By the banks of Pachacacha" environment="7">
+      <coord x="15" y="-10" z="0" />
+      <exit direction="northeast" target="197" />
+      <exit direction="southwest" target="1580" tgarea="71" />
+      <exit direction="west" target="37067" />
+   </room>
+   <room id="181" area="42" title="Grasslands north of Pachacacha" environment="7">
+      <coord x="12" y="-9" z="0" />
+      <exit direction="north" target="182" />
+      <exit direction="east" target="195" />
+      <exit direction="south" target="1581" tgarea="71" />
+      <exit direction="west" target="180" />
+   </room>
+   <room id="180" area="42" title="Grasslands north of Pachacacha" environment="7">
+      <coord x="10" y="-9" z="0" />
+      <exit direction="north" target="198" />
+      <exit direction="east" target="181" />
+      <exit direction="southwest" target="1576" tgarea="71" />
+   </room>
+   <room id="259" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="14" y="0" z="0" />
+      <exit direction="southeast" target="1070" />
+      <exit direction="west" target="256" />
+      <exit direction="northwest" target="260" />
+   </room>
+   <room id="1070" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="15" y="-1" z="0" />
+      <exit direction="southwest" target="1071" />
+      <exit direction="northwest" target="259" />
+   </room>
+   <room id="260" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="10" y="4" z="0" />
+      <exit direction="northeast" target="218" />
+      <exit direction="southeast" target="259" />
+      <exit direction="west" target="1069" />
+   </room>
+   <room id="1073" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="7" y="5" z="0" />
+      <exit direction="southeast" target="1072" />
+   </room>
+   <room id="1071" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="14" y="-2" z="0" />
+      <exit direction="northeast" target="1070" />
+   </room>
+   <room id="203" area="42" title="At the edge of the lake" environment="7">
+      <coord x="6" y="8" z="0" />
+      <exit direction="southeast" target="202" />
+      <exit direction="south" target="194" />
+      <exit direction="northwest" target="210" />
+   </room>
+   <room id="202" area="42" title="Meadow before the lake" environment="7">
+      <coord x="8" y="6" z="0" />
+      <exit direction="northeast" target="204" />
+      <exit direction="east" target="200" />
+      <exit direction="northwest" target="203" />
+   </room>
+   <room id="210" area="42" title="Western lake's edge by forest" environment="7">
+      <coord x="5" y="9" z="0" />
+      <exit direction="north" target="209" />
+      <exit direction="east" target="10772" tgarea="43" />
+      <exit direction="southeast" target="203" />
+      <exit direction="west" target="4834" tgarea="32" />
+   </room>
+   <room id="204" area="42" title="By the lake's edge" environment="7">
+      <coord x="9" y="7" z="0" />
+      <exit direction="north" target="10796" tgarea="43" />
+      <exit direction="southwest" target="202" />
+   </room>
+   <room id="200" area="42" title="Meadow approaching a lake" environment="7">
+      <coord x="11" y="6" z="0" />
+      <exit direction="northeast" target="201" />
+      <exit direction="west" target="202" />
+   </room>
+   <room id="201" area="42" title="Grasslands by the edge of a lake" environment="7">
+      <coord x="13" y="8" z="0" />
+      <exit direction="north" target="205" />
+      <exit direction="east" target="218" />
+      <exit direction="southwest" target="200" />
+      <exit direction="west" target="10752" tgarea="43" />
+   </room>
+   <room id="205" area="42" title="Eastern bank of lake" environment="7">
+      <coord x="13" y="9" z="0" />
+      <exit direction="northeast" target="206" />
+      <exit direction="south" target="201" />
+   </room>
+   <room id="218" area="42" title="Meadow before the forest" environment="7">
+      <coord x="14" y="8" z="0" />
+      <exit direction="northeast" target="217" />
+      <exit direction="southwest" target="260" />
+      <exit direction="west" target="201" />
+   </room>
+   <room id="217" area="42" title="On the edge of the Western Ithmia" environment="7">
+      <coord x="15" y="9" z="0" />
+      <exit direction="north" target="216" />
+      <exit direction="east" target="1371" tgarea="22" />
+      <exit direction="southwest" target="218" />
+   </room>
+   <room id="1069" area="42" title="Lost in the Savannah" environment="7">
+      <coord x="9" y="4" z="0" />
+      <exit direction="east" target="260" />
+   </room>
+   <room id="216" area="42" title="Grasslands by the Western Ithmia" environment="7">
+      <coord x="15" y="10" z="0" />
+      <exit direction="northeast" target="1370" tgarea="22" />
+      <exit direction="south" target="217" />
+      <exit direction="west" target="206" />
+   </room>
+   <room id="206" area="42" title="Eastern bank of lake under eaves of forest" environment="7">
+      <coord x="14" y="10" z="0" />
+      <exit direction="east" target="216" />
+      <exit direction="southwest" target="205" />
+      <exit direction="northwest" target="207" />
+   </room>
+   <room id="209" area="42" title="Western edge of lake by pines" environment="7">
+      <coord x="5" y="10" z="0" />
+      <exit direction="north" target="208" />
+      <exit direction="south" target="210" />
+      <exit direction="west" target="4833" tgarea="32" />
+   </room>
+   <room id="208" area="42" title="Western edge of lake" environment="7">
+      <coord x="5" y="11" z="0" />
+      <exit direction="northeast" target="211" />
+      <exit direction="south" target="209" />
+      <exit direction="west" target="4835" tgarea="32" />
+   </room>
+   <room id="211" area="42" title="By the northern tip of the lake" environment="7">
+      <coord x="7" y="13" z="0" />
+      <exit direction="north" target="1366" tgarea="22" />
+      <exit direction="east" target="212" />
+      <exit direction="southwest" target="208" />
+      <exit direction="in" target="10158" door="1" />
+   </room>
+   <room id="212" area="42" title="Northern edge of the lake" environment="7">
+      <coord x="11" y="13" z="0" />
+      <exit direction="north" target="1367" tgarea="22" />
+      <exit direction="southeast" target="207" />
+      <exit direction="south" target="10783" tgarea="43" />
+      <exit direction="west" target="211" />
+   </room>
+   <room id="207" area="42" title="Eastern bank of the lake's edge" environment="7">
+      <coord x="13" y="11" z="0" />
+      <exit direction="northeast" target="1369" tgarea="22" />
+      <exit direction="southeast" target="206" />
+      <exit direction="northwest" target="212" />
+      <exit direction="down" target="5632" hidden="1" />
+   </room>
+   <room id="10158" area="42" title="The Vundamere fishing shed" environment="8">
+      <coord x="6" y="13" z="0" />
+      <exit direction="out" target="211" door="1" />
+   </room>
+   <room id="37067" area="42" title="Fishing pier along the Pachacacha" environment="7">
+      <coord x="14" y="-10" z="0" />
+      <exit direction="north" target="195" />
+      <exit direction="east" target="196" />
+      <exit direction="south" target="1580" tgarea="71" />
+      <exit direction="southwest" target="1579" tgarea="71" />
+      <exit direction="in" target="40852" />
+   </room>
+</rooms>
+<environments>
+   <environment id="7" name="Grasslands" color="10" htmlcolor="#1dc713" />
+   <environment id="8" name="Urban" color="13" htmlcolor="#bda0cb" />
+</environments>
+</map>
