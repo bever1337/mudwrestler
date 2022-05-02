@@ -1,0 +1,33 @@
+{
+  "name": "mucky-mapper",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "jest": "jest",
+    "test": "jest"
+  },
+  "author": "Bever1337 <bever1337@posteo.net>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "d3": "^7.4.4",
+    "xslt-processor": "^0.11.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/d3": "^7.1.0",
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "babel-jest": "^28.0.3",
+    "esbuild": "^0.14.38",
+    "esbuild-copy-static-files": "^0.1.0",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "jest": "^28.0.3",
+    "prettier": "2.6.2",
+    "typescript": "^4.6.4"
+  }
+}

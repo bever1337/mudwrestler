@@ -1,0 +1,1936 @@
+<?xml version="1.0"?>
+<map name="Ashtan, the City of" x="0" y="0" >
+<rooms>
+   <room id="7690" area="49" title="The Queen of Cubs" environment="8">
+      <coord x="0" y="-8" z="0" />
+      <exit direction="west" target="450" door="1" />
+      <exit direction="down" target="14410" door="1" />
+   </room>
+   <room id="646" area="49" title="Upon the wreckage of Sanctuary bridge" environment="32">
+      <coord x="27" y="12" z="0" />
+      <exit direction="north" target="645" />
+      <exit direction="southeast" target="647" />
+      <exit direction="west" target="630" />
+   </room>
+   <room id="1526" area="49" title="A candlelit narthex" environment="8">
+      <coord x="-5" y="16" z="0" />
+      <exit direction="north" target="1527" />
+      <exit direction="southwest" target="542" />
+      <exit direction="up" target="1530" />
+   </room>
+   <room id="1527" area="49" title="A modest chapel of Babel" environment="8">
+      <coord x="-5" y="17" z="0" />
+      <exit direction="east" target="1528" />
+      <exit direction="south" target="1526" />
+   </room>
+   <room id="1530" area="49" title="An airy rookery" environment="8">
+      <coord x="-5" y="16" z="1" />
+      <exit direction="down" target="1526" />
+   </room>
+   <room id="469" area="49" title="Polygnotus Way north of Market Street" environment="8">
+      <coord x="-2" y="2" z="0" />
+      <exit direction="north" target="470" />
+      <exit direction="south" target="465" />
+   </room>
+   <room id="464" area="49" title="Market Street circling the Merchant's Quarter" environment="8">
+      <coord x="-1" y="0" z="0" />
+      <exit direction="southeast" target="463" />
+      <exit direction="northwest" target="465" />
+   </room>
+   <room id="463" area="49" title="Market Street circling the Merchant's Quarter" environment="8">
+      <coord x="0" y="-1" z="0" />
+      <exit direction="south" target="462" />
+      <exit direction="northwest" target="464" />
+   </room>
+   <room id="462" area="49" title="South end of Market Street" environment="8">
+      <coord x="0" y="-3" z="0" />
+      <exit direction="north" target="463" />
+      <exit direction="southeast" target="440" />
+      <exit direction="southwest" target="453" />
+   </room>
+   <room id="4975" area="49" title="The Mall of Carnage" environment="8">
+      <coord x="-2" y="-2" z="0" />
+      <exit direction="south" target="4731" door="1" />
+      <exit direction="down" target="4976" door="1" />
+   </room>
+   <room id="4732" area="49" title="A tidy stockroom" environment="8">
+      <coord x="-2" y="-3" z="-1" />
+      <exit direction="up" target="4731" door="1" />
+   </room>
+   <room id="440" area="49" title="Parade of Zarathustra north of a statue" environment="8">
+      <coord x="4" y="-7" z="0" />
+      <exit direction="north" target="441" />
+      <exit direction="northeast" target="480" />
+      <exit direction="southeast" target="448" />
+      <exit direction="southwest" target="449" />
+      <exit direction="northwest" target="462" />
+   </room>
+   <room id="446" area="49" title="Entry to the Merchant's Quarter" environment="8">
+      <coord x="3" y="-12" z="0" />
+      <exit direction="northeast" target="438" />
+      <exit direction="east" target="437" />
+      <exit direction="southeast" target="436" />
+      <exit direction="northwest" target="450" />
+      <exit direction="up" target="37631" />
+   </room>
+   <room id="450" area="49" title="Southern corner of the Merchant's Quarter" environment="8">
+      <coord x="-1" y="-8" z="0" />
+      <exit direction="north" target="451" />
+      <exit direction="east" target="7690" door="1" />
+      <exit direction="southeast" target="446" />
+      <exit direction="south" target="5529" door="1" />
+      <exit direction="west" target="8003" door="1" />
+   </room>
+   <room id="451" area="49" title="Southeast of Central Market" environment="8">
+      <coord x="-1" y="-6" z="0" />
+      <exit direction="north" target="452" />
+      <exit direction="east" target="5438" door="1" />
+      <exit direction="south" target="450" />
+      <exit direction="west" target="456" />
+      <exit direction="northwest" target="455" />
+   </room>
+   <room id="5529" area="49" title="Delacroix Emporium" environment="8">
+      <coord x="-1" y="-9" z="0" />
+      <exit direction="north" target="450" door="1" />
+      <exit direction="down" target="5530" door="1" />
+   </room>
+   <room id="8003" area="49" title="Deli of Disaster" environment="8">
+      <coord x="-2" y="-8" z="0" />
+      <exit direction="east" target="450" door="1" />
+      <exit direction="down" target="14485" door="1" />
+   </room>
+   <room id="452" area="49" title="East of Central Market" environment="8">
+      <coord x="-1" y="-5" z="0" />
+      <exit direction="north" target="453" />
+      <exit direction="east" target="3694" door="1" />
+      <exit direction="south" target="451" />
+      <exit direction="southwest" target="456" />
+      <exit direction="west" target="455" />
+      <exit direction="northwest" target="454" />
+   </room>
+   <room id="5438" area="49" title="The Black Sun" environment="8">
+      <coord x="0" y="-6" z="0" />
+      <exit direction="west" target="451" door="1" />
+      <exit direction="down" target="5439" door="1" />
+   </room>
+   <room id="456" area="49" title="South of Central Market" environment="8">
+      <coord x="-2" y="-6" z="0" />
+      <exit direction="north" target="455" />
+      <exit direction="northeast" target="452" />
+      <exit direction="east" target="451" />
+      <exit direction="south" target="3736" door="1" />
+      <exit direction="southwest" target="5319" door="1" />
+      <exit direction="northwest" target="457" />
+   </room>
+   <room id="455" area="49" title="Central Market of Ashtan" environment="8">
+      <coord x="-2" y="-5" z="0" />
+      <exit direction="north" target="454" />
+      <exit direction="northeast" target="453" />
+      <exit direction="east" target="452" />
+      <exit direction="southeast" target="451" />
+      <exit direction="south" target="456" />
+      <exit direction="southwest" target="2523" door="1" />
+      <exit direction="west" target="457" />
+      <exit direction="northwest" target="458" />
+   </room>
+   <room id="453" area="49" title="Northeast of Central Market" environment="8">
+      <coord x="-1" y="-4" z="0" />
+      <exit direction="north" target="6880" door="1" />
+      <exit direction="northeast" target="462" />
+      <exit direction="east" target="3658" door="1" />
+      <exit direction="south" target="452" />
+      <exit direction="southwest" target="455" />
+      <exit direction="west" target="454" />
+   </room>
+   <room id="3694" area="49" title="More East of Central Market" environment="8">
+      <coord x="0" y="-5" z="0" />
+      <exit direction="west" target="452" door="1" />
+      <exit direction="down" target="3695" door="1" />
+   </room>
+   <room id="454" area="49" title="North of Central Market" environment="8">
+      <coord x="-2" y="-4" z="0" />
+      <exit direction="north" target="4731" door="1" />
+      <exit direction="east" target="453" />
+      <exit direction="southeast" target="452" />
+      <exit direction="south" target="455" />
+      <exit direction="southwest" target="457" />
+      <exit direction="west" target="458" />
+   </room>
+   <room id="6880" area="49" title="Little Shop of Eldritch Horrors" environment="8">
+      <coord x="-1" y="-3" z="0" />
+      <exit direction="south" target="453" door="1" />
+      <exit direction="down" target="14317" door="1" />
+   </room>
+   <room id="3658" area="49" title="Golden Dragon's Lair" environment="8">
+      <coord x="0" y="-4" z="0" />
+      <exit direction="west" target="453" door="1" />
+      <exit direction="down" target="3659" door="1" />
+   </room>
+   <room id="4731" area="49" title="Haute Chaotique" environment="8">
+      <coord x="-2" y="-3" z="0" />
+      <exit direction="north" target="4975" door="1" />
+      <exit direction="south" target="454" door="1" />
+      <exit direction="down" target="4732" door="1" />
+   </room>
+   <room id="457" area="49" title="West of Central Market" environment="8">
+      <coord x="-3" y="-5" z="0" />
+      <exit direction="north" target="458" />
+      <exit direction="northeast" target="454" />
+      <exit direction="east" target="455" />
+      <exit direction="southeast" target="456" />
+      <exit direction="west" target="5241" door="1" />
+   </room>
+   <room id="458" area="49" title="Northwest of Central Market" environment="8">
+      <coord x="-3" y="-4" z="0" />
+      <exit direction="north" target="3656" door="1" />
+      <exit direction="east" target="454" />
+      <exit direction="southeast" target="455" />
+      <exit direction="south" target="457" />
+      <exit direction="west" target="5555" door="1" />
+      <exit direction="northwest" target="468" />
+   </room>
+   <room id="3656" area="49" title="Needful Things" environment="8">
+      <coord x="-3" y="-3" z="0" />
+      <exit direction="south" target="458" door="1" />
+      <exit direction="down" target="3657" door="1" />
+   </room>
+   <room id="5555" area="49" title="Merchant Emporium Ashtan" environment="8">
+      <coord x="-4" y="-4" z="0" />
+      <exit direction="east" target="458" door="1" />
+      <exit direction="down" target="5556" door="1" />
+   </room>
+   <room id="468" area="49" title="Junction of Market Street and Merchant Street" environment="8">
+      <coord x="-6" y="-1" z="0" />
+      <exit direction="north" target="5419" door="1" />
+      <exit direction="northeast" target="467" />
+      <exit direction="southeast" target="458" />
+      <exit direction="northwest" target="508" />
+   </room>
+   <room id="5241" area="49" title="The Tools of Fate" environment="8">
+      <coord x="-4" y="-5" z="0" />
+      <exit direction="east" target="457" door="1" />
+      <exit direction="down" target="5242" door="1" />
+   </room>
+   <room id="3736" area="49" title="The Ruby Stag" environment="8">
+      <coord x="-2" y="-7" z="0" />
+      <exit direction="north" target="456" door="1" />
+      <exit direction="down" target="3737" door="1" />
+   </room>
+   <room id="5319" area="49" title="Chaos Corner" environment="8">
+      <coord x="-3" y="-7" z="0" />
+      <exit direction="northeast" target="456" door="1" />
+      <exit direction="down" target="5320" door="1" />
+   </room>
+   <room id="459" area="49" title="Guardian's Avenue along the wall" environment="8">
+      <coord x="6" y="-11" z="0" />
+      <exit direction="northeast" target="460" />
+      <exit direction="southwest" target="447" />
+   </room>
+   <room id="5419" area="49" title="Rum Hoarder's Trove" environment="8">
+      <coord x="-6" y="0" z="0" />
+      <exit direction="south" target="468" door="1" />
+      <exit direction="down" target="5420" door="1" />
+   </room>
+   <room id="467" area="49" title="Market Street circling the Merchant's Quarter" environment="8">
+      <coord x="-4" y="1" z="0" />
+      <exit direction="north" target="16689" door="1" />
+      <exit direction="east" target="466" />
+      <exit direction="south" target="107" door="1" />
+      <exit direction="southwest" target="468" />
+   </room>
+   <room id="508" area="49" title="Merchant Street approaching the Merchant's Quarter" environment="8">
+      <coord x="-7" y="0" z="0" />
+      <exit direction="southeast" target="468" />
+      <exit direction="northwest" target="509" />
+   </room>
+   <room id="16689" area="49" title="DeGage Architecture and Construction Services" environment="8">
+      <coord x="-4" y="2" z="0" />
+      <exit direction="north" target="16810" door="1" />
+      <exit direction="south" target="467" door="1" />
+   </room>
+   <room id="466" area="49" title="Market Street north of the Merchant's Quarter" environment="8">
+      <coord x="-3" y="1" z="0" />
+      <exit direction="east" target="465" />
+      <exit direction="west" target="467" />
+   </room>
+   <room id="107" area="49" title="Cluttered workshop" environment="8">
+      <coord x="-4" y="0" z="0" />
+      <exit direction="north" target="467" door="1" />
+   </room>
+   <room id="16810" area="49" title="A cluttered office" environment="8">
+      <coord x="-4" y="3" z="0" />
+      <exit direction="south" target="16689" door="1" />
+   </room>
+   <room id="465" area="49" title="Junction of Market Street and Polygnotus Way" environment="8">
+      <coord x="-2" y="1" z="0" />
+      <exit direction="north" target="469" />
+      <exit direction="southeast" target="464" />
+      <exit direction="west" target="466" />
+   </room>
+   <room id="438" area="49" title="Parade of Zarathustra before a statue" environment="8">
+      <coord x="4" y="-11" z="0" />
+      <exit direction="north" target="439" />
+      <exit direction="northeast" target="448" />
+      <exit direction="southeast" target="447" />
+      <exit direction="south" target="437" />
+      <exit direction="southwest" target="446" />
+      <exit direction="northwest" target="449" />
+   </room>
+   <room id="449" area="49" title="Parade of Zarathustra west of a statue" environment="8">
+      <coord x="2" y="-9" z="0" />
+      <exit direction="northeast" target="440" />
+      <exit direction="southeast" target="438" />
+   </room>
+   <room id="448" area="49" title="Parade of Zarathustra east of a statue" environment="8">
+      <coord x="6" y="-9" z="0" />
+      <exit direction="southwest" target="438" />
+      <exit direction="northwest" target="440" />
+   </room>
+   <room id="439" area="49" title="The Standards of Ambition" environment="8">
+      <coord x="4" y="-10" z="0" />
+      <exit direction="south" target="438" />
+   </room>
+   <room id="447" area="49" title="Beginning of Guardian's Avenue" environment="8">
+      <coord x="5" y="-12" z="0" />
+      <exit direction="northeast" target="459" />
+      <exit direction="southwest" target="436" />
+      <exit direction="west" target="437" />
+      <exit direction="northwest" target="438" />
+      <exit direction="up" target="37626" />
+   </room>
+   <room id="437" area="49" title="Parade of Zarathustra before the main gate" environment="8">
+      <coord x="4" y="-12" z="0" />
+      <exit direction="north" target="438" />
+      <exit direction="east" target="447" />
+      <exit direction="south" target="436" />
+      <exit direction="west" target="446" />
+   </room>
+   <room id="436" area="49" title="Entering the main gate of Ashtan" environment="8">
+      <coord x="4" y="-13" z="0" />
+      <exit direction="north" target="437" />
+      <exit direction="northeast" target="447" />
+      <exit direction="south" target="1284" tgarea="22" />
+      <exit direction="northwest" target="446" />
+   </room>
+   <room id="460" area="49" title="Guardian's Avenue next to the wall" environment="8">
+      <coord x="7" y="-10" z="0" />
+      <exit direction="north" target="29920" />
+      <exit direction="northeast" target="461" />
+      <exit direction="southwest" target="459" />
+   </room>
+   <room id="29920" area="49" title="An arch before the city stables" environment="8">
+      <coord x="7" y="-9" z="0" />
+      <exit direction="east" target="461" />
+      <exit direction="south" target="460" />
+   </room>
+   <room id="461" area="49" title="Guardian's Avenue before main barracks" environment="8">
+      <coord x="8" y="-9" z="0" />
+      <exit direction="northeast" target="4389" door="1" />
+      <exit direction="southwest" target="460" />
+      <exit direction="west" target="29920" />
+   </room>
+   <room id="4389" area="49" title="The Barracks of Ashtan" environment="8">
+      <coord x="9" y="-8" z="0" />
+      <exit direction="north" target="40027" door="1" />
+      <exit direction="east" target="39836" door="1" />
+      <exit direction="southwest" target="461" door="1" />
+   </room>
+   <room id="509" area="49" title="Next to the Great Wall" environment="8">
+      <coord x="-9" y="2" z="0" />
+      <exit direction="north" target="510" />
+      <exit direction="southeast" target="508" />
+      <exit direction="west" target="4385" door="1" />
+   </room>
+   <room id="510" area="49" title="Merchant Street veering away from the Great Wall" environment="8">
+      <coord x="-9" y="3" z="0" />
+      <exit direction="north" target="511" />
+      <exit direction="south" target="509" />
+   </room>
+   <room id="4385" area="49" title="Grandma Theo's Place" environment="8">
+      <coord x="-10" y="2" z="0" />
+      <exit direction="east" target="509" door="1" />
+      <exit direction="down" target="4386" door="1" />
+   </room>
+   <room id="511" area="49" title="Northern end of Merchant Street" environment="8">
+      <coord x="-9" y="4" z="0" />
+      <exit direction="north" target="512" />
+      <exit direction="south" target="510" />
+   </room>
+   <room id="512" area="49" title="Junction of Oak Street and Merchant Street" environment="8">
+      <coord x="-9" y="5" z="0" />
+      <exit direction="east" target="518" />
+      <exit direction="south" target="511" />
+      <exit direction="northwest" target="513" />
+   </room>
+   <room id="518" area="49" title="Southern Elm Street" environment="8">
+      <coord x="-8" y="5" z="0" />
+      <exit direction="north" target="519" />
+      <exit direction="west" target="512" />
+   </room>
+   <room id="513" area="49" title="Oak Street paralleling the Great Wall" environment="8">
+      <coord x="-10" y="6" z="0" />
+      <exit direction="southeast" target="512" />
+      <exit direction="west" target="514" />
+   </room>
+   <room id="514" area="49" title="Oak Square" environment="8">
+      <coord x="-13" y="6" z="0" />
+      <exit direction="north" target="515" />
+      <exit direction="east" target="513" />
+   </room>
+   <room id="519" area="49" title="Elm Street" environment="8">
+      <coord x="-8" y="6" z="0" />
+      <exit direction="north" target="520" />
+      <exit direction="south" target="518" />
+   </room>
+   <room id="520" area="49" title="Northern Elm Street" environment="8">
+      <coord x="-8" y="7" z="0" />
+      <exit direction="north" target="521" />
+      <exit direction="south" target="519" />
+   </room>
+   <room id="521" area="49" title="Eastern Pine Street" environment="8">
+      <coord x="-8" y="8" z="0" />
+      <exit direction="northeast" target="544" />
+      <exit direction="south" target="520" />
+      <exit direction="west" target="522" />
+   </room>
+   <room id="544" area="49" title="Outlaw's Alley" environment="8">
+      <coord x="-4" y="12" z="0" />
+      <exit direction="north" target="543" />
+      <exit direction="east" target="545" />
+      <exit direction="southwest" target="521" />
+   </room>
+   <room id="522" area="49" title="Pine Street" environment="8">
+      <coord x="-9" y="8" z="0" />
+      <exit direction="east" target="521" />
+      <exit direction="northwest" target="523" />
+   </room>
+   <room id="523" area="49" title="Junction of Pine Street and Oak Street" environment="8">
+      <coord x="-11" y="10" z="0" />
+      <exit direction="southeast" target="522" />
+      <exit direction="southwest" target="517" />
+      <exit direction="northwest" target="524" />
+   </room>
+   <room id="517" area="49" title="Oak Street nearing Pine Street" environment="8">
+      <coord x="-12" y="9" z="0" />
+      <exit direction="northeast" target="523" />
+      <exit direction="south" target="516" />
+   </room>
+   <room id="524" area="49" title="Pine Street circling the warehouse district" environment="8">
+      <coord x="-12" y="11" z="0" />
+      <exit direction="north" target="525" />
+      <exit direction="southeast" target="523" />
+   </room>
+   <room id="516" area="49" title="Oak Street" environment="8">
+      <coord x="-12" y="8" z="0" />
+      <exit direction="north" target="517" />
+      <exit direction="southwest" target="515" />
+   </room>
+   <room id="515" area="49" title="North of Oak Square" environment="8">
+      <coord x="-13" y="7" z="0" />
+      <exit direction="northeast" target="516" />
+      <exit direction="south" target="514" />
+   </room>
+   <room id="543" area="49" title="Southern end of Anza Street" environment="8">
+      <coord x="-4" y="13" z="0" />
+      <exit direction="south" target="544" />
+      <exit direction="northwest" target="542" />
+   </room>
+   <room id="545" area="49" title="Heart of Outlaw's Alley" environment="8">
+      <coord x="-3" y="12" z="0" />
+      <exit direction="east" target="546" />
+      <exit direction="west" target="544" />
+   </room>
+   <room id="546" area="49" title="Junction of the Aurelian Crescent and Outlaw's Alley" environment="8">
+      <coord x="-2" y="12" z="0" />
+      <exit direction="northeast" target="550" />
+      <exit direction="southeast" target="549" />
+      <exit direction="west" target="545" />
+   </room>
+   <room id="550" area="49" title="Aurelian Crescent winding northeast" environment="8">
+      <coord x="-1" y="13" z="0" />
+      <exit direction="northeast" target="551" />
+      <exit direction="southwest" target="546" />
+   </room>
+   <room id="549" area="49" title="West of the palace ruins" environment="8">
+      <coord x="-1" y="11" z="0" />
+      <exit direction="south" target="548" />
+      <exit direction="northwest" target="546" />
+   </room>
+   <room id="548" area="49" title="Southern Aurelian Crescent" environment="8">
+      <coord x="-1" y="10" z="0" />
+      <exit direction="north" target="549" />
+      <exit direction="southeast" target="477" />
+      <exit direction="south" target="547" />
+   </room>
+   <room id="477" area="49" title="Junction of Protean Way and the Aurelian Crescent" environment="8">
+      <coord x="0" y="9" z="0" />
+      <exit direction="northeast" target="478" />
+      <exit direction="south" target="476" />
+      <exit direction="northwest" target="548" />
+   </room>
+   <room id="547" area="49" title="Circle of the Tree King" environment="8">
+      <coord x="-1" y="9" z="0" />
+      <exit direction="north" target="548" />
+      <exit direction="southwest" target="55044" />
+      <exit direction="west" target="49505" />
+   </room>
+   <room id="478" area="49" title="Northeast end of Protean Way" environment="8">
+      <coord x="1" y="10" z="0" />
+      <exit direction="northeast" target="506" />
+      <exit direction="southwest" target="477" />
+   </room>
+   <room id="476" area="49" title="Protean Way approaching the Palace Hill" environment="8">
+      <coord x="0" y="8" z="0" />
+      <exit direction="north" target="477" />
+      <exit direction="south" target="475" />
+   </room>
+   <room id="475" area="49" title="Protean Way by a duck pond" environment="8">
+      <coord x="0" y="7" z="0" />
+      <exit direction="north" target="476" />
+      <exit direction="south" target="474" />
+      <exit direction="west" target="479" />
+   </room>
+   <room id="474" area="49" title="Protean Way northeast of Polygnotus Way" environment="8">
+      <coord x="0" y="6" z="0" />
+      <exit direction="north" target="475" />
+      <exit direction="southeast" target="473" />
+      <exit direction="southwest" target="471" />
+   </room>
+   <room id="479" area="49" title="Duck pond" environment="8">
+      <coord x="-1" y="7" z="0" />
+      <exit direction="east" target="475" />
+   </room>
+   <room id="473" area="49" title="Protean Way" environment="8">
+      <coord x="1" y="5" z="0" />
+      <exit direction="southeast" target="472" />
+      <exit direction="northwest" target="474" />
+   </room>
+   <room id="471" area="49" title="Northeast end of Polygnotus Way" environment="8">
+      <coord x="-1" y="5" z="0" />
+      <exit direction="northeast" target="474" />
+      <exit direction="southwest" target="470" />
+   </room>
+   <room id="470" area="49" title="Central Polygnotus Way" environment="8">
+      <coord x="-2" y="4" z="0" />
+      <exit direction="northeast" target="471" />
+      <exit direction="south" target="469" />
+   </room>
+   <room id="472" area="49" title="Triple Junction" environment="8">
+      <coord x="2" y="4" z="0" />
+      <exit direction="east" target="486" />
+      <exit direction="southeast" target="445" />
+      <exit direction="northwest" target="473" />
+   </room>
+   <room id="486" area="49" title="Croce Lane approaching the Triple Junction" environment="8">
+      <coord x="3" y="4" z="0" />
+      <exit direction="northeast" target="487" />
+      <exit direction="west" target="472" />
+   </room>
+   <room id="445" area="49" title="Northern Parade of Zarathustra" environment="8">
+      <coord x="4" y="2" z="0" />
+      <exit direction="north" target="3761" />
+      <exit direction="northeast" target="14682" door="1" />
+      <exit direction="east" target="2159" door="1" />
+      <exit direction="south" target="444" />
+      <exit direction="west" target="4408" door="1" />
+      <exit direction="northwest" target="472" />
+   </room>
+   <room id="3761" area="49" title="The Royal Bank of Ashtan" environment="8">
+      <coord x="4" y="3" z="0" />
+      <exit direction="south" target="445" />
+   </room>
+   <room id="14682" area="49" title="The Silver Rose" environment="8">
+      <coord x="5" y="3" z="0" />
+      <exit direction="southwest" target="445" door="1" />
+      <exit direction="down" target="14234" door="1" />
+   </room>
+   <room id="2159" area="49" title="Postal Office of Ashtan" environment="8">
+      <coord x="5" y="2" z="0" />
+      <exit direction="west" target="445" door="1" />
+   </room>
+   <room id="444" area="49" title="Northern Parade of Zarathustra" environment="8">
+      <coord x="4" y="1" z="0" />
+      <exit direction="north" target="445" />
+      <exit direction="south" target="443" />
+   </room>
+   <room id="4408" area="49" title="The charred ruins of a constabulary" environment="8">
+      <coord x="3" y="2" z="0" />
+      <exit direction="east" target="445" door="1" />
+   </room>
+   <room id="443" area="49" title="Parade of Zarathustra" environment="8">
+      <coord x="4" y="-1" z="0" />
+      <exit direction="north" target="444" />
+      <exit direction="south" target="442" />
+   </room>
+   <room id="442" area="49" title="Parade of Zarathustra" environment="8">
+      <coord x="4" y="-3" z="0" />
+      <exit direction="north" target="443" />
+      <exit direction="east" target="35668" />
+      <exit direction="south" target="441" />
+   </room>
+   <room id="441" area="49" title="Continuing on the Parade of Zarathustra" environment="8">
+      <coord x="4" y="-5" z="0" />
+      <exit direction="north" target="442" />
+      <exit direction="south" target="440" />
+   </room>
+   <room id="487" area="49" title="Outside the Royal Blacksmith" environment="8">
+      <coord x="5" y="6" z="0" />
+      <exit direction="north" target="4406" door="1" />
+      <exit direction="northeast" target="5417" door="1" />
+      <exit direction="east" target="2878" door="1" />
+      <exit direction="southeast" target="488" />
+      <exit direction="south" target="2046" door="1" />
+      <exit direction="southwest" target="486" />
+      <exit direction="west" target="4980" door="1" />
+      <exit direction="northwest" target="5445" door="1" />
+   </room>
+   <room id="4406" area="49" title="Steel Lotus" environment="8">
+      <coord x="5" y="7" z="0" />
+      <exit direction="south" target="487" door="1" />
+      <exit direction="down" target="4407" door="1" />
+   </room>
+   <room id="5417" area="49" title="The Serpent's Eye" environment="8">
+      <coord x="6" y="7" z="0" />
+      <exit direction="southwest" target="487" door="1" />
+      <exit direction="down" target="5418" door="1" />
+   </room>
+   <room id="2878" area="49" title="Unlimited Reserves" environment="8">
+      <coord x="6" y="6" z="0" />
+      <exit direction="west" target="487" door="1" />
+      <exit direction="down" target="2879" door="1" />
+   </room>
+   <room id="488" area="49" title="Next to the Aqueduct" environment="8">
+      <coord x="7" y="4" z="0" />
+      <exit direction="east" target="489" />
+      <exit direction="northwest" target="487" />
+   </room>
+   <room id="2046" area="49" title="The Royal Blacksmith's" environment="8">
+      <coord x="5" y="4" z="0" />
+      <exit direction="north" target="487" door="1" />
+      <exit direction="west" target="20925" />
+      <exit direction="down" target="38274" door="1" />
+   </room>
+   <room id="4980" area="49" title="The Bellatorium" environment="8">
+      <coord x="4" y="6" z="0" />
+      <exit direction="east" target="487" door="1" />
+      <exit direction="down" target="4981" door="1" />
+   </room>
+   <room id="5445" area="49" title="The Commune" environment="8">
+      <coord x="4" y="7" z="0" />
+      <exit direction="southeast" target="487" door="1" />
+      <exit direction="down" target="5447" door="1" />
+   </room>
+   <room id="20925" area="49" title="The forge of the Steel Bastion" environment="8">
+      <coord x="4" y="4" z="0" />
+      <exit direction="east" target="2046" />
+   </room>
+   <room id="489" area="49" title="Croce Lane nearing Stagira Boulevard" environment="8">
+      <coord x="9" y="4" z="0" />
+      <exit direction="east" target="490" />
+      <exit direction="west" target="488" />
+   </room>
+   <room id="490" area="49" title="Junction of Croce Lane and Stagira Boulevard" environment="8">
+      <coord x="11" y="4" z="0" />
+      <exit direction="northeast" target="491" />
+      <exit direction="south" target="485" />
+      <exit direction="west" target="489" />
+   </room>
+   <room id="491" area="49" title="Outside the House of Epicurus" environment="8">
+      <coord x="12" y="5" z="0" />
+      <exit direction="north" target="499" />
+      <exit direction="east" target="492" door="1" />
+      <exit direction="southwest" target="490" />
+   </room>
+   <room id="485" area="49" title="Stagira Boulevard north of the parkmaster's house" environment="8">
+      <coord x="11" y="3" z="0" />
+      <exit direction="north" target="490" />
+      <exit direction="south" target="484" door="1" />
+      <exit direction="southwest" target="483" />
+   </room>
+   <room id="484" area="49" title="Parkmaster's house" environment="8">
+      <coord x="11" y="2" z="0" />
+      <exit direction="north" target="485" door="1" />
+      <exit direction="west" target="483" />
+   </room>
+   <room id="483" area="49" title="Stagira Boulevard outside the parkmaster's house" environment="8">
+      <coord x="10" y="2" z="0" />
+      <exit direction="northeast" target="485" />
+      <exit direction="east" target="484" />
+      <exit direction="southwest" target="482" />
+   </room>
+   <room id="481" area="49" title="Stagira Boulevard northwest of the main barracks" environment="8">
+      <coord x="9" y="-2" z="0" />
+      <exit direction="north" target="482" />
+      <exit direction="southeast" target="5421" door="1" />
+      <exit direction="southwest" target="480" />
+   </room>
+   <room id="482" area="49" title="Stagira Boulevard" environment="8">
+      <coord x="9" y="1" z="0" />
+      <exit direction="northeast" target="483" />
+      <exit direction="south" target="481" />
+   </room>
+   <room id="5421" area="49" title="Shadows of Mischief" environment="8">
+      <coord x="10" y="-3" z="0" />
+      <exit direction="northwest" target="481" door="1" />
+      <exit direction="down" target="5422" door="1" />
+   </room>
+   <room id="480" area="49" title="Southern Stagira Boulevard" environment="8">
+      <coord x="7" y="-4" z="0" />
+      <exit direction="north" target="4217" door="1" />
+      <exit direction="northeast" target="481" />
+      <exit direction="southeast" target="4964" door="1" />
+      <exit direction="southwest" target="440" />
+   </room>
+   <room id="4217" area="49" title="Endless Time" environment="8">
+      <coord x="7" y="-3" z="0" />
+      <exit direction="south" target="480" door="1" />
+      <exit direction="down" target="4218" door="1" />
+   </room>
+   <room id="4964" area="49" title="Rousseau's Bounty" environment="8">
+      <coord x="8" y="-5" z="0" />
+      <exit direction="northwest" target="480" door="1" />
+      <exit direction="down" target="4965" door="1" />
+   </room>
+   <room id="499" area="49" title="Stagira Boulevard next to the Linnaen Park" environment="8">
+      <coord x="12" y="6" z="0" />
+      <exit direction="north" target="500" />
+      <exit direction="south" target="491" />
+   </room>
+   <room id="492" area="49" title="Foyer in Epicurus's house" environment="8">
+      <coord x="13" y="5" z="0" />
+      <exit direction="east" target="495" />
+      <exit direction="south" target="494" />
+      <exit direction="west" target="491" door="1" />
+   </room>
+   <room id="500" area="49" title="Before tree-lined pathway into Linnaen Park" environment="8">
+      <coord x="12" y="7" z="0" />
+      <exit direction="east" target="666" />
+      <exit direction="south" target="499" />
+      <exit direction="west" target="11390" door="1" />
+      <exit direction="northwest" target="501" />
+   </room>
+   <room id="666" area="49" title="Oak tree-lined path into the Linnaen Park" environment="11">
+      <coord x="13" y="7" z="0" />
+      <exit direction="east" target="667" />
+      <exit direction="west" target="500" />
+   </room>
+   <room id="11390" area="49" title="The Grand Room" environment="8">
+      <coord x="10" y="7" z="0" />
+      <exit direction="north" target="11391" />
+      <exit direction="east" target="500" door="1" />
+   </room>
+   <room id="501" area="49" title="Stagira Boulevard bending northwest" environment="8">
+      <coord x="11" y="8" z="0" />
+      <exit direction="southeast" target="500" />
+      <exit direction="northwest" target="505" />
+   </room>
+   <room id="11391" area="49" title="The Room of Enchanted Night" environment="8">
+      <coord x="10" y="8" z="0" />
+      <exit direction="south" target="11390" />
+   </room>
+   <room id="505" area="49" title="Junction of Stagira Boulevard and Aurelian Crescent" environment="8">
+      <coord x="10" y="9" z="0" />
+      <exit direction="northeast" target="560" />
+      <exit direction="southeast" target="501" />
+      <exit direction="southwest" target="504" />
+   </room>
+   <room id="560" area="49" title="Southeastern end of the Aurelian Crescent" environment="8">
+      <coord x="11" y="10" z="0" />
+      <exit direction="north" target="559" />
+      <exit direction="southwest" target="505" />
+   </room>
+   <room id="504" area="49" title="Northern Stagira Boulevard" environment="8">
+      <coord x="9" y="8" z="0" />
+      <exit direction="northeast" target="505" />
+      <exit direction="west" target="503" />
+   </room>
+   <room id="503" area="49" title="Northern Stagira Boulevard climbing Palace Hill" environment="8">
+      <coord x="7" y="8" z="0" />
+      <exit direction="east" target="504" />
+      <exit direction="northwest" target="502" />
+   </room>
+   <room id="502" area="49" title="Northwestern end of Stagira Boulevard" environment="8">
+      <coord x="5" y="10" z="0" />
+      <exit direction="southeast" target="503" />
+      <exit direction="northwest" target="506" />
+   </room>
+   <room id="506" area="49" title="The Radiant Path" environment="8">
+      <coord x="3" y="12" z="0" />
+      <exit direction="north" target="507" />
+      <exit direction="southeast" target="502" />
+      <exit direction="southwest" target="478" />
+   </room>
+   <room id="559" area="49" title="Aurelian Crescent" environment="8">
+      <coord x="11" y="11" z="0" />
+      <exit direction="north" target="558" />
+      <exit direction="south" target="560" />
+   </room>
+   <room id="558" area="49" title="Junction of the Aurelian Crescent and the Golden Walk" environment="8">
+      <coord x="11" y="12" z="0" />
+      <exit direction="north" target="557" />
+      <exit direction="east" target="626" />
+      <exit direction="south" target="559" />
+   </room>
+   <room id="557" area="49" title="Aurelian Crescent behind the Royal Library of Ashtan" environment="8">
+      <coord x="11" y="13" z="0" />
+      <exit direction="south" target="558" />
+      <exit direction="northwest" target="556" />
+   </room>
+   <room id="626" area="49" title="Western end of the Golden Walk" environment="8">
+      <coord x="12" y="12" z="0" />
+      <exit direction="east" target="627" />
+      <exit direction="west" target="558" />
+   </room>
+   <room id="556" area="49" title="Eastern Aurelian Crescent" environment="8">
+      <coord x="10" y="14" z="0" />
+      <exit direction="southeast" target="557" />
+      <exit direction="northwest" target="555" />
+   </room>
+   <room id="555" area="49" title="Junction of Manike Way and Aurelian Crescent" environment="8">
+      <coord x="9" y="15" z="0" />
+      <exit direction="northeast" target="590" />
+      <exit direction="southeast" target="556" />
+      <exit direction="west" target="554" />
+   </room>
+   <room id="590" area="49" title="Southwest Manike Way" environment="8">
+      <coord x="10" y="16" z="0" />
+      <exit direction="northeast" target="591" />
+      <exit direction="southwest" target="555" />
+   </room>
+   <room id="554" area="49" title="Aurelian Crescent" environment="8">
+      <coord x="7" y="15" z="0" />
+      <exit direction="east" target="555" />
+      <exit direction="west" target="553" />
+   </room>
+   <room id="553" area="49" title="Apex of the Aurelian Crescent" environment="8">
+      <coord x="5" y="15" z="0" />
+      <exit direction="east" target="554" />
+      <exit direction="west" target="552" />
+   </room>
+   <room id="552" area="49" title="Outside the wall surrounding the palace ruins" environment="8">
+      <coord x="3" y="15" z="0" />
+      <exit direction="east" target="553" />
+      <exit direction="west" target="551" />
+   </room>
+   <room id="551" area="49" title="Junction of the Aurelian Crescent and The Descent" environment="8">
+      <coord x="1" y="15" z="0" />
+      <exit direction="east" target="552" />
+      <exit direction="southwest" target="550" />
+      <exit direction="northwest" target="561" />
+   </room>
+   <room id="507" area="49" title="The Radiant Path approaching the palace gates" environment="8" important="1" marker="Ashtan Palace" markerdir="north">
+      <coord x="3" y="13" z="0" />
+      <exit direction="east" target="38229" door="1" />
+      <exit direction="south" target="506" />
+      <exit direction="west" target="8822" />
+      <exit direction="in" target="35330" tgarea="54" />
+   </room>
+   <room id="8822" area="49" title="The arena gates" environment="8">
+      <coord x="2" y="13" z="0" />
+      <exit direction="east" target="507" />
+      <exit direction="southwest" target="8823" />
+   </room>
+   <room id="8823" area="49" title="The spectator enclosure" environment="8">
+      <coord x="1" y="12" z="0" />
+      <exit direction="northeast" target="8822" />
+   </room>
+   <room id="561" area="49" title="Beginning of The Descent" environment="8">
+      <coord x="0" y="16" z="0" />
+      <exit direction="southeast" target="551" />
+      <exit direction="northwest" target="562" />
+   </room>
+   <room id="562" area="49" title="The Descent" environment="8">
+      <coord x="-1" y="17" z="0" />
+      <exit direction="northeast" target="563" />
+      <exit direction="southeast" target="561" />
+   </room>
+   <room id="563" area="49" title="The Descent" environment="8">
+      <coord x="0" y="18" z="0" />
+      <exit direction="north" target="564" />
+      <exit direction="southwest" target="562" />
+   </room>
+   <room id="564" area="49" title="The Descent" environment="8">
+      <coord x="0" y="19" z="0" />
+      <exit direction="north" target="565" />
+      <exit direction="south" target="563" />
+      <exit direction="northwest" target="538" />
+   </room>
+   <room id="565" area="49" title="The Descent" environment="8">
+      <coord x="0" y="20" z="0" />
+      <exit direction="north" target="566" />
+      <exit direction="northeast" target="567" />
+      <exit direction="south" target="564" />
+   </room>
+   <room id="538" area="49" title="Alleyway nearing The Descent" environment="8">
+      <coord x="-1" y="20" z="0" />
+      <exit direction="southeast" target="564" />
+      <exit direction="northwest" target="537" />
+   </room>
+   <room id="537" area="49" title="In the Alleyway" environment="8">
+      <coord x="-2" y="21" z="0" />
+      <exit direction="southeast" target="538" />
+      <exit direction="west" target="536" />
+   </room>
+   <room id="536" area="49" title="Alleyway off Caspian's Walk" environment="8">
+      <coord x="-4" y="21" z="0" />
+      <exit direction="east" target="537" />
+      <exit direction="southwest" target="535" />
+   </room>
+   <room id="535" area="49" title="Caspian's Walk along the Great Wall" environment="8">
+      <coord x="-5" y="20" z="0" />
+      <exit direction="northeast" target="536" />
+      <exit direction="west" target="534" />
+   </room>
+   <room id="534" area="49" title="Junction of Caspian's Walk and Anza Street" environment="8">
+      <coord x="-7" y="20" z="0" />
+      <exit direction="east" target="535" />
+      <exit direction="south" target="539" />
+      <exit direction="west" target="533" />
+   </room>
+   <room id="539" area="49" title="Northern Anza Street" environment="8">
+      <coord x="-7" y="19" z="0" />
+      <exit direction="north" target="534" />
+      <exit direction="south" target="540" />
+      <exit direction="west" target="5681" hidden="1" />
+   </room>
+   <room id="533" area="49" title="Caspian's Walk approaching seaside markets" environment="8">
+      <coord x="-9" y="20" z="0" />
+      <exit direction="east" target="534" />
+      <exit direction="west" target="531" />
+   </room>
+   <room id="540" area="49" title="Anza Street near the warehouses" environment="8">
+      <coord x="-7" y="18" z="0" />
+      <exit direction="north" target="539" />
+      <exit direction="south" target="541" />
+   </room>
+   <room id="5681" area="49" title="The Hidden Archer's Alcove" environment="8">
+      <coord x="-8" y="19" z="0" />
+      <exit direction="east" target="539" />
+   </room>
+   <room id="541" area="49" title="Anza Street circling the warehouse district" environment="8">
+      <coord x="-7" y="16" z="0" />
+      <exit direction="north" target="540" />
+      <exit direction="southeast" target="542" />
+   </room>
+   <room id="542" area="49" title="Anza Street" environment="8">
+      <coord x="-6" y="15" z="0" />
+      <exit direction="northeast" target="1526" />
+      <exit direction="southeast" target="543" />
+      <exit direction="south" target="6710" />
+      <exit direction="northwest" target="541" />
+   </room>
+   <room id="6710" area="49" title="Cinnabeth's Creperie" environment="8">
+      <coord x="-6" y="14" z="0" />
+      <exit direction="north" target="542" />
+      <exit direction="west" target="6711" />
+   </room>
+   <room id="6711" area="49" title="A quaint bedchamber" environment="8">
+      <coord x="-7" y="14" z="0" />
+      <exit direction="east" target="6710" />
+   </room>
+   <room id="531" area="49" title="Dockhand Square" environment="8">
+      <coord x="-12" y="20" z="0" />
+      <exit direction="north" target="530" />
+      <exit direction="northeast" target="4885" door="1" />
+      <exit direction="east" target="533" />
+      <exit direction="southeast" target="5392" door="1" />
+      <exit direction="south" target="4307" door="1" />
+      <exit direction="southwest" target="527" />
+      <exit direction="west" target="528" />
+      <exit direction="northwest" target="529" />
+      <exit direction="in" target="3654" door="1" />
+   </room>
+   <room id="530" area="49" title="Shellfish market" environment="8">
+      <coord x="-12" y="22" z="0" />
+      <exit direction="south" target="531" />
+      <exit direction="southwest" target="528" />
+      <exit direction="west" target="529" />
+   </room>
+   <room id="4885" area="49" title="Savants of the Wheel" environment="8">
+      <coord x="-10" y="22" z="0" />
+      <exit direction="southwest" target="531" door="1" />
+      <exit direction="down" target="4886" door="1" />
+   </room>
+   <room id="5392" area="49" title="The Esoteric Reliquary" environment="8">
+      <coord x="-10" y="18" z="0" />
+      <exit direction="northwest" target="531" door="1" />
+      <exit direction="down" target="5393" door="1" />
+   </room>
+   <room id="4307" area="49" title="Vanguard Provisions" environment="8">
+      <coord x="-12" y="18" z="0" />
+      <exit direction="north" target="531" door="1" />
+      <exit direction="down" target="4308" door="1" />
+   </room>
+   <room id="527" area="49" title="Nearing the seaside markets" environment="8">
+      <coord x="-14" y="18" z="0" />
+      <exit direction="north" target="528" />
+      <exit direction="northeast" target="531" />
+      <exit direction="south" target="526" />
+   </room>
+   <room id="528" area="49" title="Fresh fish market" environment="8">
+      <coord x="-14" y="20" z="0" />
+      <exit direction="north" target="529" />
+      <exit direction="northeast" target="530" />
+      <exit direction="east" target="531" />
+      <exit direction="south" target="527" />
+   </room>
+   <room id="529" area="49" title="Outside the Seadog Tavern" environment="8">
+      <coord x="-14" y="22" z="0" />
+      <exit direction="north" target="3854" door="1" />
+      <exit direction="east" target="530" />
+      <exit direction="southeast" target="531" />
+      <exit direction="south" target="528" />
+      <exit direction="northwest" target="532" />
+   </room>
+   <room id="3854" area="49" title="Seadog Tavern" environment="8">
+      <coord x="-14" y="24" z="0" />
+      <exit direction="east" target="17383" door="1" />
+      <exit direction="south" target="529" door="1" />
+      <exit direction="west" target="11930" />
+   </room>
+   <room id="532" area="49" title="Shipyards of Ashtan" environment="8">
+      <coord x="-16" y="24" z="0" />
+      <exit direction="north" target="25972" />
+      <exit direction="southeast" target="529" />
+   </room>
+   <room id="17383" area="49" title="The Tackle Box" environment="8">
+      <coord x="-13" y="24" z="0" />
+      <exit direction="west" target="3854" door="1" />
+   </room>
+   <room id="11930" area="49" title="Fire and Spice" environment="8">
+      <coord x="-15" y="24" z="0" />
+      <exit direction="north" target="12210" />
+      <exit direction="east" target="3854" />
+   </room>
+   <room id="12210" area="49" title="A busy kitchen" environment="8">
+      <coord x="-15" y="25" z="0" />
+      <exit direction="south" target="11930" />
+   </room>
+   <room id="526" area="49" title="Southern docklands" environment="8">
+      <coord x="-14" y="17" z="0" />
+      <exit direction="north" target="527" />
+      <exit direction="east" target="6087" door="1" />
+      <exit direction="southeast" target="525" />
+   </room>
+   <room id="6087" area="49" title="Pirate shack" environment="8">
+      <coord x="-12" y="17" z="0" />
+      <exit direction="east" target="6088" door="1" />
+      <exit direction="southeast" target="6089" door="1" />
+      <exit direction="west" target="526" door="1" />
+   </room>
+   <room id="525" area="49" title="Pine Street approaching the docklands" environment="8">
+      <coord x="-12" y="15" z="0" />
+      <exit direction="south" target="524" />
+      <exit direction="northwest" target="526" />
+   </room>
+   <room id="6088" area="49" title="Pirate hall" environment="8">
+      <coord x="-11" y="17" z="0" />
+      <exit direction="south" target="6089" door="1" />
+      <exit direction="west" target="6087" door="1" />
+   </room>
+   <room id="6089" area="49" title="Captain's Study" environment="8">
+      <coord x="-11" y="16" z="0" />
+      <exit direction="north" target="6088" door="1" />
+      <exit direction="northwest" target="6087" door="1" />
+   </room>
+   <room id="566" area="49" title="Slaughterhouse off The Descent" environment="8">
+      <coord x="0" y="21" z="0" />
+      <exit direction="south" target="565" />
+   </room>
+   <room id="567" area="49" title="The Descent" environment="8">
+      <coord x="1" y="21" z="0" />
+      <exit direction="north" target="568" />
+      <exit direction="southwest" target="565" />
+   </room>
+   <room id="568" area="49" title="The Descent" environment="8">
+      <coord x="1" y="22" z="0" />
+      <exit direction="north" target="569" />
+      <exit direction="south" target="567" />
+   </room>
+   <room id="569" area="49" title="The Descent approaching Martin's Sorrow" environment="8">
+      <coord x="1" y="23" z="0" />
+      <exit direction="northeast" target="570" />
+      <exit direction="south" target="568" />
+   </room>
+   <room id="570" area="49" title="The Descent nearing Martin's Sorrow" environment="8">
+      <coord x="2" y="24" z="0" />
+      <exit direction="east" target="572" />
+      <exit direction="southwest" target="569" />
+      <exit direction="northwest" target="571" />
+   </room>
+   <room id="572" area="49" title="Alley into Martin's Sorrow" environment="8">
+      <coord x="3" y="24" z="0" />
+      <exit direction="northeast" target="573" />
+      <exit direction="southeast" target="574" />
+      <exit direction="west" target="570" />
+   </room>
+   <room id="571" area="49" title="Outside a decrepit tavern" environment="8">
+      <coord x="1" y="25" z="0" />
+      <exit direction="north" target="18268" door="1" />
+      <exit direction="southeast" target="570" />
+   </room>
+   <room id="18268" area="49" title="The Ugly Humgii Bar and Grill" environment="8">
+      <coord x="1" y="26" z="0" />
+      <exit direction="south" target="571" door="1" />
+      <exit direction="west" target="18269" />
+   </room>
+   <room id="18269" area="49" title="An outdoor grill" environment="8">
+      <coord x="0" y="26" z="0" />
+      <exit direction="east" target="18268" />
+   </room>
+   <room id="573" area="49" title="Before an artisan's workshop" environment="8">
+      <coord x="4" y="25" z="0" />
+      <exit direction="southwest" target="572" />
+   </room>
+   <room id="574" area="49" title="Slums up against the Accron" environment="8">
+      <coord x="4" y="23" z="0" />
+      <exit direction="south" target="575" />
+      <exit direction="northwest" target="572" />
+   </room>
+   <room id="575" area="49" title="The Ghetto" environment="8">
+      <coord x="4" y="22" z="0" />
+      <exit direction="north" target="574" />
+      <exit direction="south" target="577" />
+   </room>
+   <room id="577" area="49" title="Littered pathway through the slums" environment="8">
+      <coord x="4" y="21" z="0" />
+      <exit direction="north" target="575" />
+      <exit direction="southwest" target="578" />
+   </room>
+   <room id="578" area="49" title="Near a refuse pit" environment="8">
+      <coord x="3" y="20" z="0" />
+      <exit direction="northeast" target="577" />
+      <exit direction="east" target="579" />
+   </room>
+   <room id="579" area="49" title="Martin's Sorrow" environment="8">
+      <coord x="4" y="20" z="0" />
+      <exit direction="south" target="580" />
+      <exit direction="west" target="578" />
+   </room>
+   <room id="580" area="49" title="Junction in Martin's Sorrow" environment="8">
+      <coord x="4" y="19" z="0" />
+      <exit direction="north" target="579" />
+      <exit direction="east" target="581" />
+      <exit direction="southwest" target="585" />
+   </room>
+   <room id="581" area="49" title="On a street corner in the slums" environment="8">
+      <coord x="5" y="19" z="0" />
+      <exit direction="southeast" target="582" />
+      <exit direction="west" target="580" />
+   </room>
+   <room id="585" area="49" title="Before a decaying monument" environment="8">
+      <coord x="3" y="18" z="0" />
+      <exit direction="northeast" target="580" />
+      <exit direction="west" target="587" />
+   </room>
+   <room id="587" area="49" title="Martin's Sorrow" environment="8">
+      <coord x="2" y="18" z="0" />
+      <exit direction="east" target="585" />
+      <exit direction="southwest" target="588" />
+      <exit direction="northwest" target="589" />
+   </room>
+   <room id="588" area="49" title="Near some tenement housing" environment="8">
+      <coord x="1" y="17" z="0" />
+      <exit direction="northeast" target="587" />
+   </room>
+   <room id="589" area="49" title="Approaching a dilapidated dwelling" environment="8">
+      <coord x="1" y="19" z="0" />
+      <exit direction="southeast" target="587" />
+   </room>
+   <room id="582" area="49" title="Winding pathway into the dregs of Ashtan" environment="8">
+      <coord x="6" y="18" z="0" />
+      <exit direction="southwest" target="583" />
+      <exit direction="northwest" target="581" />
+   </room>
+   <room id="583" area="49" title="Dark alley" environment="8">
+      <coord x="5" y="17" z="0" />
+      <exit direction="northeast" target="582" />
+   </room>
+   <room id="591" area="49" title="Manike Way approaching the lower Accron" environment="8">
+      <coord x="11" y="17" z="0" />
+      <exit direction="north" target="592" />
+      <exit direction="southwest" target="590" />
+   </room>
+   <room id="592" area="49" title="Lower Accron crossing" environment="8">
+      <coord x="11" y="18" z="0" />
+      <exit direction="north" target="593" />
+      <exit direction="east" target="616" />
+      <exit direction="south" target="591" />
+   </room>
+   <room id="593" area="49" title="Junction of Manike Way and Deer Grove Road" environment="8">
+      <coord x="11" y="19" z="0" />
+      <exit direction="northeast" target="601" />
+      <exit direction="south" target="592" />
+      <exit direction="northwest" target="594" />
+   </room>
+   <room id="616" area="49" title="Lycaeneum Avenue" environment="8">
+      <coord x="12" y="18" z="0" />
+      <exit direction="southeast" target="617" />
+      <exit direction="west" target="592" />
+   </room>
+   <room id="601" area="49" title="Southwest end of Deer Grove Road" environment="8">
+      <coord x="13" y="21" z="0" />
+      <exit direction="north" target="602" />
+      <exit direction="southwest" target="593" />
+   </room>
+   <room id="594" area="49" title="Manike Way" environment="8">
+      <coord x="9" y="21" z="0" />
+      <exit direction="southeast" target="593" />
+      <exit direction="northwest" target="595" />
+   </room>
+   <room id="595" area="49" title="Manike Way overlooking Martin's Sorrow" environment="8">
+      <coord x="7" y="23" z="0" />
+      <exit direction="northeast" target="596" />
+      <exit direction="southeast" target="594" />
+   </room>
+   <room id="596" area="49" title="Manike Way behind an opulent casino" environment="8">
+      <coord x="8" y="24" z="0" />
+      <exit direction="north" target="597" />
+      <exit direction="southwest" target="595" />
+   </room>
+   <room id="597" area="49" title="Manike Way" environment="8">
+      <coord x="8" y="25" z="0" />
+      <exit direction="north" target="598" />
+      <exit direction="south" target="596" />
+   </room>
+   <room id="598" area="49" title="Bend in Manike Way" environment="8">
+      <coord x="8" y="26" z="0" />
+      <exit direction="northeast" target="599" />
+      <exit direction="south" target="597" />
+   </room>
+   <room id="599" area="49" title="Approaching the Great Wall" environment="8">
+      <coord x="9" y="27" z="0" />
+      <exit direction="north" target="600" />
+      <exit direction="southwest" target="598" />
+   </room>
+   <room id="600" area="49" title="Manike Way before the Great Wall" environment="8">
+      <coord x="9" y="28" z="0" />
+      <exit direction="south" target="599" />
+      <exit direction="in" target="36794" />
+   </room>
+   <room id="602" area="49" title="Deer Grove winding towards the Accron Overlook" environment="8">
+      <coord x="13" y="23" z="0" />
+      <exit direction="south" target="601" />
+      <exit direction="northwest" target="603" />
+   </room>
+   <room id="603" area="49" title="Before the Pheidas Gambling Parlour" environment="8">
+      <coord x="12" y="24" z="0" />
+      <exit direction="northeast" target="604" />
+      <exit direction="southeast" target="602" />
+      <exit direction="west" target="605" />
+   </room>
+   <room id="604" area="49" title="Nearing the Accron Overlook" environment="8">
+      <coord x="15" y="27" z="0" />
+      <exit direction="east" target="606" />
+      <exit direction="southwest" target="603" />
+   </room>
+   <room id="605" area="49" title="Vestibule of the Pheidas Gambling Parlour" environment="8">
+      <coord x="11" y="24" z="0" />
+      <exit direction="east" target="603" />
+      <exit direction="northwest" target="4296" />
+   </room>
+   <room id="4296" area="49" title="The roulette room in the Pheidas Parlour" environment="8">
+      <coord x="10" y="25" z="0" />
+      <exit direction="east" target="8120" />
+      <exit direction="southeast" target="605" />
+   </room>
+   <room id="8120" area="49" title="Blackjack room in the Pheidas Parlour" environment="8">
+      <coord x="11" y="25" z="0" />
+      <exit direction="north" target="8357" door="1" />
+      <exit direction="west" target="4296" />
+   </room>
+   <room id="606" area="49" title="Deer Grove Road" environment="8">
+      <coord x="17" y="27" z="0" />
+      <exit direction="east" target="607" />
+      <exit direction="west" target="604" />
+   </room>
+   <room id="607" area="49" title="Pinnacle of the Accron Overlook" environment="8">
+      <coord x="19" y="27" z="0" />
+      <exit direction="north" target="613" />
+      <exit direction="east" target="611" />
+      <exit direction="south" target="608" />
+      <exit direction="west" target="606" />
+   </room>
+   <room id="613" area="49" title="Before a shimmering domed chateau" environment="8">
+      <coord x="19" y="28" z="0" />
+      <exit direction="northeast" target="614" />
+      <exit direction="south" target="607" />
+      <exit direction="west" target="10076" door="1" />
+   </room>
+   <room id="611" area="49" title="Fountain of the Mermaid" environment="8">
+      <coord x="20" y="27" z="0" />
+      <exit direction="east" target="612" />
+      <exit direction="west" target="607" />
+   </room>
+   <room id="608" area="49" title="Approach to an elaborate mansion" environment="8">
+      <coord x="19" y="23" z="0" />
+      <exit direction="north" target="607" />
+      <exit direction="southeast" target="609" />
+      <exit direction="west" target="3855" door="1" />
+   </room>
+   <room id="609" area="49" title="Deer Grove Road passing an affluent garden" environment="8">
+      <coord x="20" y="22" z="0" />
+      <exit direction="east" target="610" />
+      <exit direction="northwest" target="608" />
+   </room>
+   <room id="3855" area="49" title="Pillared foyer of the Montagenet Mansion" environment="8">
+      <coord x="17" y="23" z="0" />
+      <exit direction="north" target="3856" />
+      <exit direction="east" target="608" door="1" />
+   </room>
+   <room id="3856" area="49" title="Arched hallway" environment="8">
+      <coord x="17" y="24" z="0" />
+      <exit direction="north" target="3857" />
+      <exit direction="east" target="3860" />
+      <exit direction="south" target="3855" />
+   </room>
+   <room id="3857" area="49" title="Arched hallway" environment="8">
+      <coord x="17" y="25" z="0" />
+      <exit direction="north" target="3862" door="1" />
+      <exit direction="south" target="3856" />
+      <exit direction="west" target="3858" />
+   </room>
+   <room id="3860" area="49" title="Drawing room" environment="8">
+      <coord x="18" y="24" z="0" />
+      <exit direction="north" target="3861" door="1" />
+      <exit direction="west" target="3856" />
+   </room>
+   <room id="3862" area="49" title="A refined bath with a view of the sea" environment="8">
+      <coord x="17" y="26" z="0" />
+      <exit direction="south" target="3857" door="1" />
+   </room>
+   <room id="3858" area="49" title="An enormous dining room" environment="8">
+      <coord x="16" y="25" z="0" />
+      <exit direction="north" target="3859" door="1" />
+      <exit direction="east" target="3857" />
+   </room>
+   <room id="3859" area="49" title="Spotless kitchen" environment="8">
+      <coord x="16" y="26" z="0" />
+      <exit direction="south" target="3858" door="1" />
+   </room>
+   <room id="3861" area="49" title="Luxurious bedroom" environment="8">
+      <coord x="18" y="25" z="0" />
+      <exit direction="south" target="3860" door="1" />
+   </room>
+   <room id="614" area="49" title="Passing the estates of the Merchant Princes" environment="8">
+      <coord x="21" y="30" z="0" />
+      <exit direction="east" target="615" />
+      <exit direction="southwest" target="613" />
+   </room>
+   <room id="10076" area="49" title="The Entrance Chamber" environment="8">
+      <coord x="18" y="28" z="0" />
+      <exit direction="east" target="613" door="1" />
+   </room>
+   <room id="615" area="49" title="Before the estates of the Merchant Princes" environment="8">
+      <coord x="22" y="30" z="0" />
+      <exit direction="south" target="11798" />
+      <exit direction="west" target="614" />
+   </room>
+   <room id="11798" area="49" title="Amadia's Jewellery Shoppe of Ashtan" environment="8">
+      <coord x="22" y="29" z="0" />
+      <exit direction="north" target="615" />
+   </room>
+   <room id="610" area="49" title="On the bluff before the river Accra" environment="8">
+      <coord x="21" y="22" z="0" />
+      <exit direction="west" target="609" />
+      <exit direction="in" target="13582" door="1" />
+   </room>
+   <room id="612" area="49" title="Deer Grove overlooking the Accra" environment="8">
+      <coord x="21" y="27" z="0" />
+      <exit direction="north" target="8819" door="1" />
+      <exit direction="west" target="611" />
+   </room>
+   <room id="8819" area="49" title="Stone Tower" environment="8">
+      <coord x="21" y="28" z="0" />
+      <exit direction="south" target="612" door="1" />
+   </room>
+   <room id="617" area="49" title="Central Lycaeneum Avenue" environment="8">
+      <coord x="13" y="17" z="0" />
+      <exit direction="north" target="17817" door="1" />
+      <exit direction="southeast" target="618" />
+      <exit direction="northwest" target="616" />
+   </room>
+   <room id="17817" area="49" title="Within a solarium" environment="8">
+      <coord x="13" y="18" z="0" />
+      <exit direction="north" target="17827" door="1" />
+      <exit direction="south" target="617" door="1" />
+   </room>
+   <room id="618" area="49" title="Lycaeneum Avenue before Philosopher's Plaza" environment="8">
+      <coord x="15" y="15" z="0" />
+      <exit direction="south" target="619" />
+      <exit direction="northwest" target="617" />
+   </room>
+   <room id="17827" area="49" title="A steaming bathhouse" environment="30">
+      <coord x="13" y="19" z="0" />
+      <exit direction="east" target="17834" door="1" />
+      <exit direction="south" target="17817" door="1" />
+   </room>
+   <room id="17834" area="49" title="A relaxing massage parlour" environment="8">
+      <coord x="14" y="19" z="0" />
+      <exit direction="west" target="17827" door="1" />
+   </room>
+   <room id="619" area="49" title="Plaza before the Library of Nicator" environment="8">
+      <coord x="15" y="14" z="0" />
+      <exit direction="north" target="618" />
+      <exit direction="east" target="622" />
+      <exit direction="southeast" target="621" />
+      <exit direction="south" target="620" />
+      <exit direction="west" target="10008" tgarea="53" />
+   </room>
+   <room id="622" area="49" title="Philosopher's Plaza nearing Scholar's Row" environment="8">
+      <coord x="16" y="14" z="0" />
+      <exit direction="north" target="623" />
+      <exit direction="south" target="621" />
+      <exit direction="southwest" target="620" />
+      <exit direction="west" target="619" />
+   </room>
+   <room id="621" area="49" title="Monuments to the Philosophers" environment="8">
+      <coord x="16" y="13" z="0" />
+      <exit direction="north" target="622" />
+      <exit direction="southeast" target="629" />
+      <exit direction="west" target="620" />
+      <exit direction="northwest" target="619" />
+   </room>
+   <room id="620" area="49" title="Philosopher's Plaza near the Golden Walk" environment="8">
+      <coord x="15" y="13" z="0" />
+      <exit direction="north" target="619" />
+      <exit direction="northeast" target="622" />
+      <exit direction="east" target="621" />
+      <exit direction="southwest" target="628" />
+      <exit direction="west" target="5870" tgarea="53" />
+   </room>
+   <room id="628" area="49" title="Golden Walk approaching the Philosopher's Plaza" environment="8">
+      <coord x="14" y="12" z="0" />
+      <exit direction="northeast" target="620" />
+      <exit direction="west" target="627" />
+   </room>
+   <room id="627" area="49" title="Golden Walk" environment="8">
+      <coord x="13" y="12" z="0" />
+      <exit direction="east" target="628" />
+      <exit direction="west" target="626" />
+   </room>
+   <room id="623" area="49" title="Southern Scholar's Row" environment="8">
+      <coord x="16" y="15" z="0" />
+      <exit direction="north" target="624" />
+      <exit direction="south" target="622" />
+   </room>
+   <room id="624" area="49" title="Scholar's Row" environment="8">
+      <coord x="16" y="16" z="0" />
+      <exit direction="north" target="625" />
+      <exit direction="south" target="623" />
+   </room>
+   <room id="625" area="49" title="Northern Scholar's Row" environment="8">
+      <coord x="16" y="17" z="0" />
+      <exit direction="north" target="1748" />
+      <exit direction="south" target="624" />
+   </room>
+   <room id="1748" area="49" title="Reception room of the de Vermiis Art Gallery" environment="8">
+      <coord x="16" y="18" z="0" />
+      <exit direction="north" target="39689" />
+      <exit direction="northeast" target="1751" />
+      <exit direction="south" target="625" />
+      <exit direction="northwest" target="1750" />
+      <exit direction="up" target="57418" />
+      <exit direction="down" target="58522" />
+   </room>
+   <room id="1751" area="49" title="Gallery wing in memory of victims of the Church" environment="8">
+      <coord x="17" y="19" z="0" />
+      <exit direction="southwest" target="1748" />
+      <exit direction="west" target="39689" />
+      <exit direction="northwest" target="1752" />
+   </room>
+   <room id="1750" area="49" title="Homage to Occultism" environment="8">
+      <coord x="15" y="19" z="0" />
+      <exit direction="northeast" target="1752" />
+      <exit direction="east" target="39689" />
+      <exit direction="southeast" target="1748" />
+   </room>
+   <room id="1752" area="49" title="Hall of Statues" environment="8">
+      <coord x="16" y="20" z="0" />
+      <exit direction="southeast" target="1751" />
+      <exit direction="south" target="39689" />
+      <exit direction="southwest" target="1750" />
+      <exit direction="up" target="1753" door="1" />
+   </room>
+   <room id="1753" area="49" title="Studio of the Unknown Artist" environment="8">
+      <coord x="16" y="21" z="0" />
+      <exit direction="north" target="1756" />
+      <exit direction="down" target="1752" door="1" />
+   </room>
+   <room id="1756" area="49" title="Grimy bathroom" environment="8">
+      <coord x="16" y="22" z="0" />
+      <exit direction="south" target="1753" />
+      <exit direction="in" target="1757" />
+   </room>
+   <room id="629" area="49" title="Golden Walk next to Philosopher's Plaza" environment="8">
+      <coord x="17" y="12" z="0" />
+      <exit direction="east" target="630" />
+      <exit direction="northwest" target="621" />
+   </room>
+   <room id="630" area="49" title="Golden Walk overlooking a lava-filled wasteland" environment="8">
+      <coord x="26" y="12" z="0" />
+      <exit direction="east" target="646" />
+      <exit direction="west" target="629" />
+   </room>
+   <room id="645" area="49" title="Within billowing clouds of sulphuric steam" environment="29">
+      <coord x="27" y="13" z="0" />
+      <exit direction="south" target="646" />
+      <exit direction="northwest" target="644" />
+   </room>
+   <room id="495" area="49" title="Under the fig tree in Epicurus's garden" environment="21">
+      <coord x="14" y="5" z="0" />
+      <exit direction="east" target="496" />
+      <exit direction="southeast" target="498" />
+      <exit direction="south" target="497" />
+      <exit direction="west" target="492" />
+   </room>
+   <room id="494" area="49" title="Epicurus's bedroom" environment="8">
+      <coord x="13" y="4" z="0" />
+      <exit direction="north" target="492" />
+   </room>
+   <room id="496" area="49" title="Shaded corner in the Garden of Epicurus" environment="21">
+      <coord x="15" y="5" z="0" />
+      <exit direction="south" target="498" />
+      <exit direction="southwest" target="497" />
+      <exit direction="west" target="495" />
+   </room>
+   <room id="498" area="49" title="Beneath the flowering ivy" environment="21">
+      <coord x="15" y="4" z="0" />
+      <exit direction="north" target="496" />
+      <exit direction="west" target="497" />
+      <exit direction="northwest" target="495" />
+   </room>
+   <room id="497" area="49" title="Near the fountain in Epicurus's garden" environment="21">
+      <coord x="14" y="4" z="0" />
+      <exit direction="north" target="495" />
+      <exit direction="northeast" target="496" />
+      <exit direction="east" target="498" />
+   </room>
+   <room id="667" area="49" title="Passing a fountain in the park" environment="11">
+      <coord x="15" y="7" z="0" />
+      <exit direction="east" target="668" />
+      <exit direction="west" target="666" />
+   </room>
+   <room id="668" area="49" title="Main junction in the park" environment="11">
+      <coord x="17" y="7" z="0" />
+      <exit direction="northeast" target="669" />
+      <exit direction="east" target="670" />
+      <exit direction="south" target="671" />
+      <exit direction="west" target="667" />
+   </room>
+   <room id="669" area="49" title="Path circling Selenia pond" environment="11">
+      <coord x="18" y="8" z="0" />
+      <exit direction="northeast" target="682" />
+      <exit direction="southwest" target="668" />
+      <exit direction="northwest" target="681" />
+   </room>
+   <room id="670" area="49" title="Stone bridge over Selenia pond" environment="11">
+      <coord x="18" y="7" z="0" />
+      <exit direction="east" target="1768" />
+      <exit direction="west" target="668" />
+   </room>
+   <room id="671" area="49" title="Path in the Linnaen Park" environment="11">
+      <coord x="17" y="4" z="0" />
+      <exit direction="north" target="668" />
+      <exit direction="east" target="680" />
+      <exit direction="south" target="672" />
+   </room>
+   <room id="680" area="49" title="Before an ivy-laden mausoleum" environment="11">
+      <coord x="18" y="4" z="0" />
+      <exit direction="east" target="679" />
+      <exit direction="west" target="671" />
+      <exit direction="in" target="3927" />
+   </room>
+   <room id="672" area="49" title="Top of a rise in Linnaen Park" environment="21">
+      <coord x="17" y="3" z="0" />
+      <exit direction="north" target="671" />
+      <exit direction="southwest" target="673" />
+   </room>
+   <room id="673" area="49" title="Amongst the redwoods" environment="21">
+      <coord x="16" y="2" z="0" />
+      <exit direction="northeast" target="672" />
+      <exit direction="east" target="674" />
+   </room>
+   <room id="674" area="49" title="Passing through a bamboo cluster" environment="21">
+      <coord x="17" y="2" z="0" />
+      <exit direction="east" target="675" />
+      <exit direction="west" target="673" />
+   </room>
+   <room id="675" area="49" title="Southern edge of Linnaen Park by the Iron Citadel" environment="21">
+      <coord x="19" y="2" z="0" />
+      <exit direction="northeast" target="676" />
+      <exit direction="southeast" target="4671" />
+      <exit direction="west" target="674" />
+   </room>
+   <room id="676" area="49" title="West end of the jousting grounds" environment="11">
+      <coord x="20" y="3" z="0" />
+      <exit direction="north" target="677" />
+      <exit direction="southwest" target="675" />
+   </room>
+   <room id="4671" area="49" title="Before the ruins of the Iron Citadel" environment="32">
+      <coord x="20" y="1" z="0" />
+      <exit direction="northwest" target="675" />
+   </room>
+   <room id="679" area="49" title="Circling Selenia pond" environment="11">
+      <coord x="19" y="4" z="0" />
+      <exit direction="northeast" target="678" />
+      <exit direction="west" target="680" />
+   </room>
+   <room id="678" area="49" title="South of Selenia pond" environment="11">
+      <coord x="20" y="5" z="0" />
+      <exit direction="east" target="690" />
+      <exit direction="south" target="677" />
+      <exit direction="southwest" target="679" />
+   </room>
+   <room id="682" area="49" title="Rose garden" environment="11">
+      <coord x="20" y="10" z="0" />
+      <exit direction="east" target="683" />
+      <exit direction="southwest" target="669" />
+   </room>
+   <room id="681" area="49" title="Orator's Grove" environment="21">
+      <coord x="17" y="9" z="0" />
+      <exit direction="southeast" target="669" />
+   </room>
+   <room id="683" area="49" title="North of Selenia pond" environment="11">
+      <coord x="22" y="10" z="0" />
+      <exit direction="east" target="684" />
+      <exit direction="west" target="682" />
+   </room>
+   <room id="684" area="49" title="Grassy clearing" environment="11">
+      <coord x="24" y="10" z="0" />
+      <exit direction="east" target="685" />
+      <exit direction="west" target="683" />
+   </room>
+   <room id="685" area="49" title="Entrance to a buffalo paddock" environment="11">
+      <coord x="26" y="10" z="0" />
+      <exit direction="southeast" target="686" />
+      <exit direction="south" target="687" />
+      <exit direction="west" target="684" />
+   </room>
+   <room id="686" area="49" title="Next to a buffalo paddock" environment="11">
+      <coord x="28" y="8" z="0" />
+      <exit direction="southwest" target="689" />
+      <exit direction="northwest" target="685" />
+   </room>
+   <room id="687" area="49" title="In a grassy paddock" environment="7">
+      <coord x="26" y="9" z="0" />
+      <exit direction="north" target="685" />
+   </room>
+   <room id="689" area="49" title="Small meadow beneath the city walls" environment="21">
+      <coord x="25" y="5" z="0" />
+      <exit direction="northeast" target="686" />
+      <exit direction="west" target="690" />
+   </room>
+   <room id="690" area="49" title="Path by Pellucaria's memorial garden" environment="11">
+      <coord x="23" y="5" z="0" />
+      <exit direction="north" target="688" />
+      <exit direction="east" target="689" />
+      <exit direction="west" target="678" />
+   </room>
+   <room id="688" area="49" title="Before Pellucaria's myrtle" environment="21">
+      <coord x="23" y="6" z="0" />
+      <exit direction="south" target="690" />
+   </room>
+   <room id="677" area="49" title="North of the jousting complex" environment="11">
+      <coord x="20" y="4" z="0" />
+      <exit direction="north" target="678" />
+      <exit direction="south" target="676" />
+   </room>
+   <room id="1768" area="49" title="Gateway to Arboretum of Enlightenment" environment="11">
+      <coord x="19" y="7" z="0" />
+      <exit direction="east" target="9750" />
+      <exit direction="west" target="670" />
+   </room>
+   <room id="1767" area="49" title="Rose garden" environment="21">
+      <coord x="20" y="8" z="0" />
+      <exit direction="east" target="1766" />
+      <exit direction="in" target="1769" />
+   </room>
+   <room id="9750" area="49" title="A small clearing in the park" environment="21">
+      <coord x="20" y="7" z="0" />
+      <exit direction="east" target="1762" />
+      <exit direction="west" target="1768" />
+   </room>
+   <room id="1765" area="49" title="Rock garden" environment="21">
+      <coord x="20" y="6" z="0" />
+      <exit direction="east" target="1764" />
+   </room>
+   <room id="1764" area="49" title="Herb garden" environment="21">
+      <coord x="21" y="6" z="0" />
+      <exit direction="northeast" target="1761" />
+      <exit direction="west" target="1765" />
+   </room>
+   <room id="1761" area="49" title="Garden of Exotica" environment="21">
+      <coord x="22" y="7" z="0" />
+      <exit direction="southwest" target="1764" />
+      <exit direction="northwest" target="1766" />
+   </room>
+   <room id="1762" area="49" title="A cragged expanse of earth" environment="8">
+      <coord x="21" y="7" z="0" />
+      <exit direction="west" target="9750" />
+      <exit direction="in" target="57891" />
+   </room>
+   <room id="1766" area="49" title="Orchid hothouse" environment="21">
+      <coord x="21" y="8" z="0" />
+      <exit direction="southeast" target="1761" />
+      <exit direction="west" target="1767" />
+   </room>
+   <room id="647" area="49" title="Upon the blackened shore" environment="5">
+      <coord x="28" y="11" z="0" />
+      <exit direction="southeast" target="3732" />
+      <exit direction="northwest" target="646" />
+   </room>
+   <room id="644" area="49" title="The pooling Accra River" environment="10">
+      <coord x="26" y="14" z="0" />
+      <exit direction="southeast" target="645" />
+      <exit direction="northwest" target="639" />
+   </room>
+   <room id="639" area="49" title="Accra River below the Accron Overlook" environment="10">
+      <coord x="25" y="15" z="0" />
+      <exit direction="north" target="638" />
+      <exit direction="southeast" target="644" />
+   </room>
+   <room id="638" area="49" title="Accra River passing beneath the Merchant Prince estates" environment="10">
+      <coord x="25" y="16" z="0" />
+      <exit direction="north" target="637" />
+      <exit direction="south" target="639" />
+   </room>
+   <room id="637" area="49" title="Accra River flowing out of the Great Wall" environment="10">
+      <coord x="25" y="17" z="0" />
+      <exit direction="south" target="638" />
+   </room>
+   <room id="3732" area="49" title="The acrid Balaton beach" environment="5">
+      <coord x="29" y="10" z="0" />
+      <exit direction="northeast" target="631" />
+      <exit direction="south" target="3730" />
+      <exit direction="northwest" target="647" />
+      <exit direction="in" target="48885" door="1" />
+   </room>
+   <room id="631" area="49" title="On the field of lava" environment="42">
+      <coord x="30" y="11" z="0" />
+      <exit direction="southeast" target="632" />
+      <exit direction="southwest" target="3732" />
+   </room>
+   <room id="3730" area="49" title="The edge of a basalt shore" environment="5">
+      <coord x="29" y="8" z="0" />
+      <exit direction="north" target="3732" />
+      <exit direction="northeast" target="633" />
+   </room>
+   <room id="633" area="49" title="Amidst the roiling hellscape" environment="42">
+      <coord x="30" y="9" z="0" />
+      <exit direction="northeast" target="632" />
+      <exit direction="southeast" target="634" />
+      <exit direction="southwest" target="3730" />
+   </room>
+   <room id="632" area="49" title="Surrounded by bubbling lava" environment="42">
+      <coord x="31" y="10" z="0" />
+      <exit direction="southwest" target="633" />
+      <exit direction="northwest" target="631" />
+   </room>
+   <room id="634" area="49" title="On the field of lava" environment="42">
+      <coord x="32" y="7" z="0" />
+      <exit direction="northeast" target="635" />
+      <exit direction="northwest" target="633" />
+   </room>
+   <room id="635" area="49" title="Surrounded by bubbling lava" environment="42">
+      <coord x="34" y="9" z="0" />
+      <exit direction="north" target="3729" />
+      <exit direction="northeast" target="3731" />
+      <exit direction="southwest" target="634" />
+      <exit direction="northwest" target="648" />
+   </room>
+   <room id="3729" area="49" title="On the field of lava" environment="42">
+      <coord x="34" y="11" z="0" />
+      <exit direction="north" target="3727" />
+      <exit direction="south" target="635" />
+      <exit direction="northwest" target="3728" />
+   </room>
+   <room id="3731" area="49" title="A strip of volcanic sand" environment="5">
+      <coord x="36" y="11" z="0" />
+      <exit direction="southwest" target="635" />
+      <exit direction="northwest" target="3727" />
+   </room>
+   <room id="3727" area="49" title="North of the lava-ruled wasteland" environment="5">
+      <coord x="34" y="13" z="0" />
+      <exit direction="southeast" target="3731" />
+      <exit direction="south" target="3729" />
+      <exit direction="west" target="3728" />
+   </room>
+   <room id="3728" area="49" title="Amidst the roiling hellscape" environment="42">
+      <coord x="32" y="13" z="0" />
+      <exit direction="east" target="3727" />
+      <exit direction="southeast" target="3729" />
+   </room>
+   <room id="648" area="49" title="Upon crevassed rock" environment="42">
+      <coord x="33" y="10" z="0" />
+      <exit direction="southeast" target="635" />
+      <exit direction="southwest" target="649" />
+      <exit direction="northwest" target="650" />
+   </room>
+   <room id="649" area="49" title="Looking out over the lake" environment="42">
+      <coord x="32" y="9" z="0" />
+      <exit direction="north" target="650" />
+      <exit direction="northeast" target="648" />
+   </room>
+   <room id="650" area="49" title="Scorched isle" environment="42">
+      <coord x="32" y="11" z="0" />
+      <exit direction="southeast" target="648" />
+      <exit direction="south" target="649" />
+      <exit direction="northwest" target="40763" />
+   </room>
+   <room id="3654" area="49" title="The Usual Place" environment="8">
+      <coord x="-10" y="21" z="0" />
+      <exit direction="down" target="3655" door="1" />
+      <exit direction="out" target="531" door="1" />
+   </room>
+   <room id="1769" area="49" title="Within the tool shed" environment="8">
+      <coord x="20" y="9" z="0" />
+      <exit direction="out" target="1767" />
+   </room>
+   <room id="3927" area="49" title="Inside a mausoleum" environment="2">
+      <coord x="18" y="3" z="0" />
+      <exit direction="out" target="680" />
+   </room>
+   <room id="40023" area="49" title="The office of the Minister of Security" environment="8">
+      <coord x="11" y="-7" z="0" />
+      <exit direction="north" target="40566" door="1" />
+   </room>
+   <room id="25972" area="49" title="The harbour of Ashtan" environment="8">
+      <coord x="-16" y="25" z="0" />
+      <exit direction="south" target="532" />
+   </room>
+   <room id="38229" area="49" title="A sweltering metallurgical laboratory" environment="8">
+      <coord x="4" y="13" z="0" />
+      <exit direction="west" target="507" door="1" />
+      <exit direction="up" target="38351" />
+      <exit direction="down" target="38967" />
+   </room>
+   <room id="2523" area="49" title="Pebbles and Plants" environment="8">
+      <coord x="-3" y="-6" z="0" />
+      <exit direction="northeast" target="455" door="1" />
+      <exit direction="down" target="2524" door="1" />
+   </room>
+   <room id="37626" area="49" title="Parapets above the gate of Ashtan" environment="8">
+      <coord x="5" y="-12" z="1" />
+      <exit direction="west" target="37631" />
+      <exit direction="down" target="447" />
+   </room>
+   <room id="38351" area="49" title="A lofty observatory" environment="8">
+      <coord x="4" y="13" z="1" />
+      <exit direction="down" target="38229" />
+   </room>
+   <room id="38967" area="49" title="A dimly lit physiological laboratory" environment="8">
+      <coord x="4" y="13" z="-1" />
+      <exit direction="up" target="38229" />
+   </room>
+   <room id="35668" area="49" title="A marble and obsidian shop of esoteric wares" environment="8">
+      <coord x="5" y="-3" z="0" />
+      <exit direction="west" target="442" />
+   </room>
+   <room id="37631" area="49" title="Atop the battlements of the city wall" environment="8">
+      <coord x="4" y="-12" z="1" />
+      <exit direction="east" target="37626" />
+      <exit direction="down" target="446" />
+   </room>
+   <room id="39689" area="49" title="Gallery of Ashtan History" environment="8">
+      <coord x="16" y="19" z="0" />
+      <exit direction="north" target="1752" />
+      <exit direction="east" target="1751" />
+      <exit direction="south" target="1748" />
+      <exit direction="west" target="1750" />
+   </room>
+   <room id="5939" area="49" title="Courtyard before the fortress of the Warlocks" environment="8">
+      <coord x="9" y="29" z="0" />
+   </room>
+   <room id="40027" area="49" title="A stark dormitory" environment="8">
+      <coord x="9" y="-7" z="0" />
+      <exit direction="east" target="40484" />
+      <exit direction="south" target="4389" door="1" />
+   </room>
+   <room id="39836" area="49" title="The armoury of the guard" environment="8">
+      <coord x="10" y="-8" z="0" />
+      <exit direction="north" target="40484" />
+      <exit direction="west" target="4389" door="1" />
+   </room>
+   <room id="40484" area="49" title="An echoing refectory" environment="8">
+      <coord x="10" y="-7" z="0" />
+      <exit direction="south" target="39836" />
+      <exit direction="west" target="40027" />
+      <exit direction="up" target="40566" />
+   </room>
+   <room id="40566" area="49" title="The officers' mess" environment="8">
+      <coord x="11" y="-6" z="0" />
+      <exit direction="south" target="40023" door="1" />
+      <exit direction="west" target="40029" door="1" />
+      <exit direction="down" target="40484" />
+   </room>
+   <room id="40029" area="49" title="The sergeant's office" environment="8">
+      <coord x="10" y="-6" z="0" />
+      <exit direction="east" target="40566" door="1" />
+   </room>
+   <room id="1528" area="49" title="A small reading room" environment="8">
+      <coord x="-4" y="17" z="0" />
+      <exit direction="west" target="1527" />
+      <exit direction="down" target="1529" />
+   </room>
+   <room id="1529" area="49" title="An underground cleric's study" environment="8">
+      <coord x="-4" y="17" z="-1" />
+      <exit direction="up" target="1528" />
+   </room>
+   <room id="40763" area="49" title="Upon risen stones" environment="42">
+      <coord x="31" y="12" z="0" />
+      <exit direction="southeast" target="650" />
+   </room>
+   <room id="49505" area="49" title="Before a pit" environment="8">
+      <coord x="-2" y="9" z="0" />
+      <exit direction="east" target="547" />
+   </room>
+   <room id="55044" area="49" title="Arched entryway to the Academy" environment="8">
+      <coord x="-2" y="8" z="0" />
+      <exit direction="northeast" target="547" />
+      <exit direction="southwest" target="55049" />
+      <exit direction="west" target="55048" />
+      <exit direction="northwest" target="55046" />
+      <exit direction="up" target="39233" />
+      <exit direction="down" target="54318" />
+      <exit direction="out" target="40813" />
+   </room>
+   <room id="55049" area="49" title="A clandestine meeting space" environment="8">
+      <coord x="-3" y="7" z="0" />
+      <exit direction="northeast" target="55044" />
+   </room>
+   <room id="55048" area="49" title="A sparring pit" environment="8">
+      <coord x="-3" y="8" z="0" />
+      <exit direction="east" target="55044" />
+   </room>
+   <room id="55046" area="49" title="Divination chamber" environment="8">
+      <coord x="-3" y="9" z="0" />
+      <exit direction="southeast" target="55044" />
+   </room>
+   <room id="39233" area="49" title="An immense marble dome" environment="8">
+      <coord x="-2" y="8" z="1" />
+      <exit direction="down" target="55044" />
+   </room>
+   <room id="54318" area="49" title="A dimly-lit underground cavern" environment="2">
+      <coord x="-2" y="8" z="-1" />
+      <exit direction="up" target="55044" />
+   </room>
+   <room id="40813" area="49" title="A marshalling yard" environment="8">
+      <coord x="-2" y="7" z="0" />
+      <exit direction="in" target="55044" />
+   </room>
+</rooms>
+<environments>
+   <environment id="2" name="Constructed underground" color="8" htmlcolor="#80735f" />
+   <environment id="5" name="Beach" color="11" htmlcolor="#ffffcc" />
+   <environment id="7" name="Grasslands" color="10" htmlcolor="#1dc713" />
+   <environment id="8" name="Urban" color="13" htmlcolor="#bda0cb" />
+   <environment id="10" name="River" color="4" htmlcolor="#00ddff" />
+   <environment id="11" name="Path" color="6" htmlcolor="#837766" />
+   <environment id="21" name="Garden" color="11" htmlcolor="#94e45d" />
+   <environment id="29" name="Blighted" color="7" htmlcolor="#990000" />
+   <environment id="30" name="Water" color="4" htmlcolor="#4d42d4" />
+   <environment id="32" name="Ruins" color="7" htmlcolor="#ddba82" />
+   <environment id="42" name="Lava Fields" color="1" htmlcolor="#cf1020" />
+</environments>
+</map>
