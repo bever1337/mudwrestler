@@ -75,7 +75,7 @@ export function sendAround(xhr, request, body) {
     caches.open(CACHE_NAME),
     promisifySend(xhr, sentRequest),
   ]).then(([cache, response]) =>
-    cache.put(sentRequest, response).then(() => response)
+    cache.put(sentRequest, response.clone()).then(() => response)
   );
 }
 
@@ -113,9 +113,7 @@ export function sendThrough(xhr, request, body) {
       }
       xhr.send(body);
       return promisifySend(xhr, request).then((response) =>
-        cache
-          .put(sentRequest, response.clone())
-          .then(() => Promise.resolve(response))
+        cache.put(sentRequest, response.clone()).then(() => response)
       );
     });
   });

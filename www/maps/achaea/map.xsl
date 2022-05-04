@@ -2,19 +2,36 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="text" encoding="utf-8" />
   <xsl:template match="/">
-    <xsl:text>{"areas":{"</xsl:text>
-    <xsl:value-of select="/map/rooms/room[1]/@area" />
-    <xsl:text>":{"id":"</xsl:text>
-    <xsl:value-of select="/map/rooms/room[1]/@area" />
-    <xsl:text>","name":"</xsl:text>
-    <xsl:value-of select="/map/@name" />
-    <xsl:text>","x":"</xsl:text>
-    <xsl:value-of select="/map/@x" />
-    <xsl:text>","y":"</xsl:text>
-    <xsl:value-of select="/map/@y" />
-    <xsl:text>"}},"area_keys":["</xsl:text>
-    <xsl:value-of select="/map/rooms/room[1]/@area" />
-    <xsl:text>"],"environments":{</xsl:text>
+    <xsl:text>{"areas":{</xsl:text>
+    <xsl:for-each select="/map/areas/area">
+      <xsl:text>"</xsl:text>
+      <xsl:value-of select="@id" />
+      <xsl:text>":{"id":"</xsl:text>
+      <xsl:value-of select="@id" />
+      <xsl:text>","name":"</xsl:text>
+      <xsl:value-of select="@name" />
+      <xsl:text>","x":"</xsl:text>
+      <xsl:value-of select="@x" />
+      <xsl:text>","y":"</xsl:text>
+      <xsl:value-of select="@y" />
+      <xsl:text>"}</xsl:text>
+      <xsl:choose>
+        <xsl:when test="position() != last()">
+          <xsl:text>,</xsl:text>
+        </xsl:when>
+      </xsl:choose>
+    </xsl:for-each>
+    <xsl:text>},"area_keys":[</xsl:text>
+    <xsl:for-each select="/map/areas/area">
+      <xsl:text>"</xsl:text>
+      <xsl:value-of select="@id" />
+      <xsl:text>"</xsl:text>
+      <xsl:choose>
+        <xsl:when test="position() != last()">,</xsl:when>
+      </xsl:choose>
+    </xsl:for-each>
+    <xsl:for-each select="/map/areas/area"></xsl:for-each>
+    <xsl:text>],"environments":{</xsl:text>
     <xsl:for-each select="/map/environments/environment">
       <xsl:text>"</xsl:text>
       <xsl:value-of select="@id" />
@@ -90,26 +107,15 @@
       <xsl:value-of select="@environment" />
       <xsl:text>","id":"</xsl:text>
       <xsl:value-of select="@id" />
-      <xsl:text>","targets":[</xsl:text>
-      <xsl:for-each select="./exit">
-        <xsl:text>"</xsl:text>
-        <xsl:value-of select="../@id" />
-        <xsl:text>_</xsl:text>
-        <xsl:value-of select="@target" />
-        <xsl:text>"</xsl:text>
-        <xsl:choose>
-          <xsl:when test="position() != last()">,</xsl:when>
-        </xsl:choose>
-      </xsl:for-each>
-      <xsl:text>],"title":"</xsl:text>
+      <xsl:text>","title":"</xsl:text>
       <xsl:value-of select="@title" />
-      <xsl:text>","x":</xsl:text>
+      <xsl:text>","x":"</xsl:text>
       <xsl:value-of select="./coord/@x" />
-      <xsl:text>,"y":</xsl:text>
+      <xsl:text>","y":"</xsl:text>
       <xsl:value-of select="./coord/@y" />
-      <xsl:text>,"z":</xsl:text>
+      <xsl:text>","z":"</xsl:text>
       <xsl:value-of select="./coord/@z" />
-      <xsl:text>}</xsl:text>
+      <xsl:text>"}</xsl:text>
       <xsl:choose>
         <xsl:when test="position() != last()">
           <xsl:text>,</xsl:text>

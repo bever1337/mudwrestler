@@ -18,7 +18,7 @@ import { CACHE_NAME } from "./constants";
 export function fetchAround(request) {
   return Promise.all([caches.open(CACHE_NAME), fetch(request)]).then(
     ([cache, response]) =>
-      cache.put(request, response).then(() => response.clone())
+      cache.put(request, response.clone()).then(() => response)
   );
 }
 
@@ -35,8 +35,8 @@ export function fetchThrough(request) {
         return Promise.resolve(cacheMatch);
       }
       return fetch(request).then((response) => {
-        cache.put(request, response);
-        return response.clone();
+        cache.put(request, response.clone());
+        return response;
       });
     });
   });

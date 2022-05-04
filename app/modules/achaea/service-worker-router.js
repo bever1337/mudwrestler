@@ -2,7 +2,7 @@
 /* eslint-env worker */
 import { Router } from "itty-router";
 
-import { fetchThrough } from "../cache/fetch";
+import { fetchThrough } from "../../cache/fetch";
 
 /** @type {Router<Request, { get: import("itty-router").Route }>} */
 const achaeaRouter = Router();

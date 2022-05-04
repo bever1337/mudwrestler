@@ -6,8 +6,11 @@ const pluginCopyStaticFiles = require("esbuild-copy-static-files");
 /* eslint-enable @typescript-eslint/no-var-requires */
 
 build({
-  entryPoints: ["app/index.js"],
   bundle: true,
+  define: {
+    "process.env.NODE_ENV": "development",
+  },
+  entryPoints: ["app/index.js"],
   outdir: "public",
   plugins: [
     pluginCopyStaticFiles({

@@ -4,7 +4,7 @@
 /**
  *
  * @param {string} name
- * @param {number} version
+ * @param {number} [version]
  * @returns {IDBOpenDBRequest}
  */
 export function open(name, version) {
@@ -14,7 +14,7 @@ export function open(name, version) {
   });
   // onversionchange
   openRequest.addEventListener("error", () => {
-    console.warn("idb error");
+    console.warn("idb request error");
   });
   return openRequest;
 }
@@ -72,9 +72,8 @@ export function openPromise(openRequest) {
 /**
  * @typedef {Object} Migration
  * @property {MigrationUp} up
- * @property {MigrationTest} upTest
+ * @property {MigrationTest} test
  * @property {MigrationDown} down
- * @property {MigrationTest} downTest
  */
 
 /**
@@ -98,7 +97,7 @@ export function migrate(openRequest, migrations) {
         `upgradeNeededListener from v${event.oldVersion} to v${event.newVersion}`
       );
       try {
-        if (!(migrations[event.oldVersion]?.upTest(openRequest) ?? true)) {
+        if (!(migrations[event.oldVersion]?.test(openRequest) ?? true)) {
           throw new Error("current version failed D:");
         }
         for (
@@ -111,12 +110,8 @@ export function migrate(openRequest, migrations) {
             `migration from v${event.oldVersion} to v${iterator}, final ${event.newVersion}`
           );
           migrations[iterator]?.up(openRequest);
-          if (!(migrations[iterator]?.upTest(openRequest) ?? true)) {
+          if (!(migrations[iterator]?.test(openRequest) ?? true)) {
             migrations[iterator]?.down(openRequest);
-            console.log(
-              "migration down test result: ",
-              migrations[iterator]?.downTest(openRequest)
-            );
             break;
           }
         }

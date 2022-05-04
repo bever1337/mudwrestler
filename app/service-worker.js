@@ -2,7 +2,9 @@
 /* eslint-env serviceworker */
 
 import { CACHE_ID, CACHE_NAME, CACHE_VERSION } from "./cache/constants";
-import { achaeaRouter } from "./routers/achaea";
+import { achaeaRouter } from "./modules/achaea/service-worker-router";
+
+export const INTERNAL_VERSION = 1;
 
 /**
  * @type {Record<string, (arg0: any) => void>}

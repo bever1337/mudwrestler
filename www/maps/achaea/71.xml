@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<map name="Pachacacha River, the" x="0" y="0" >
+<rooms>
+   <room id="1600" area="71" title="Meandering Pachacacha" environment="10">
+      <coord x="-1" y="-3" z="0" />
+      <exit direction="north" target="1599" />
+      <exit direction="southeast" target="1602" />
+   </room>
+   <room id="1599" area="71" title="Pachacacha west of Putoran" environment="10">
+      <coord x="-1" y="-1" z="0" />
+      <exit direction="east" target="1678" tgarea="148" />
+      <exit direction="south" target="1600" />
+      <exit direction="northwest" target="1597" />
+   </room>
+   <room id="1598" area="71" title="Pachacacha approaching Jaru" environment="10">
+      <coord x="-5" y="5" z="0" />
+      <exit direction="east" target="1668" tgarea="148" />
+      <exit direction="southeast" target="1596" />
+      <exit direction="northwest" target="1595" />
+   </room>
+   <room id="1597" area="71" title="Pachacacha passing Jaru" environment="10">
+      <coord x="-3" y="1" z="0" />
+      <exit direction="north" target="1596" />
+      <exit direction="northeast" target="1673" tgarea="148" />
+      <exit direction="southeast" target="1599" />
+   </room>
+   <room id="1596" area="71" title="Pachacacha by the jetties" environment="10">
+      <coord x="-3" y="3" z="0" />
+      <exit direction="south" target="1597" />
+      <exit direction="northwest" target="1598" />
+   </room>
+   <room id="1005" area="71" title="On the rapids of the Pachacacha" environment="10">
+      <coord x="-49" y="35" z="0" />
+      <exit direction="north" target="269" tgarea="42" />
+      <exit direction="northeast" target="1006" />
+      <exit direction="west" target="1044" />
+   </room>
+   <room id="1008" area="71" title="Amid the tumbling Pachacacha" environment="10">
+      <coord x="-43" y="37" z="0" />
+      <exit direction="southeast" target="1009" />
+      <exit direction="southwest" target="268" tgarea="183" />
+      <exit direction="west" target="1007" />
+   </room>
+   <room id="1585" area="71" title="Pachacacha nearing the Pash Valley" environment="10">
+      <coord x="-17" y="27" z="0" />
+      <exit direction="southeast" target="1586" />
+      <exit direction="west" target="1584" />
+   </room>
+   <room id="1007" area="71" title="On the mighty Pachacacha" environment="10">
+      <coord x="-45" y="37" z="0" />
+      <exit direction="east" target="1008" />
+      <exit direction="west" target="1006" />
+   </room>
+   <room id="1006" area="71" title="Rock pool in the Pachacacha" environment="10">
+      <coord x="-47" y="37" z="0" />
+      <exit direction="east" target="1007" />
+      <exit direction="southwest" target="1005" />
+   </room>
+   <room id="1586" area="71" title="Pachacacha among the hills" environment="10">
+      <coord x="-15" y="25" z="0" />
+      <exit direction="south" target="1587" />
+      <exit direction="northwest" target="1585" />
+   </room>
+   <room id="1584" area="71" title="Pachacacha approaching the Pash Valley" environment="10">
+      <coord x="-19" y="27" z="0" />
+      <exit direction="east" target="1585" />
+      <exit direction="northwest" target="1583" />
+   </room>
+   <room id="1583" area="71" title="Pachacacha rounding a boulder" environment="10">
+      <coord x="-21" y="29" z="0" />
+      <exit direction="southeast" target="1584" />
+      <exit direction="northwest" target="1582" />
+      <exit direction="down" target="1759" hidden="1" />
+   </room>
+   <room id="1582" area="71" title="Passing the Savannah's edge on the river" environment="10">
+      <coord x="-22" y="30" z="0" />
+      <exit direction="southeast" target="1583" />
+      <exit direction="west" target="1580" />
+   </room>
+   <room id="1602" area="71" title="Pachacacha approaching a delta" environment="10">
+      <coord x="1" y="-5" z="0" />
+      <exit direction="southeast" target="1603" tgarea="273" />
+      <exit direction="northwest" target="1600" />
+   </room>
+   <room id="1759" area="71" title="Beneath the surface of the Pachacacha" environment="10">
+      <coord x="-15" y="21" z="-1" />
+      <exit direction="up" target="1583" />
+   </room>
+   <room id="1580" area="71" title="Pachacacha nearing end of Savannah" environment="10">
+      <coord x="-24" y="30" z="0" />
+      <exit direction="north" target="37067" tgarea="42" />
+      <exit direction="northeast" target="196" tgarea="42" />
+      <exit direction="east" target="1582" />
+      <exit direction="west" target="1579" />
+   </room>
+   <room id="1579" area="71" title="Broad stretch of the Pachacacha" environment="10">
+      <coord x="-26" y="30" z="0" />
+      <exit direction="northeast" target="37067" tgarea="42" />
+      <exit direction="east" target="1580" />
+      <exit direction="northwest" target="1578" />
+   </room>
+   <room id="1578" area="71" title="Widening Pachacacha" environment="10">
+      <coord x="-27" y="31" z="0" />
+      <exit direction="northeast" target="195" tgarea="42" />
+      <exit direction="southeast" target="1579" />
+      <exit direction="northwest" target="1581" />
+   </room>
+   <room id="1581" area="71" title="Pachacacha within the Savannah" environment="10">
+      <coord x="-29" y="33" z="0" />
+      <exit direction="north" target="181" tgarea="42" />
+      <exit direction="southeast" target="1578" />
+      <exit direction="west" target="1577" />
+   </room>
+   <room id="1577" area="71" title="Pachacacha winding through the Savannah" environment="10">
+      <coord x="-31" y="33" z="0" />
+      <exit direction="east" target="1581" />
+      <exit direction="west" target="1576" />
+   </room>
+   <room id="1576" area="71" title="Pachacacha on the edge of the Mannaseh" environment="10">
+      <coord x="-33" y="33" z="0" />
+      <exit direction="northeast" target="180" tgarea="42" />
+      <exit direction="east" target="1577" />
+      <exit direction="northwest" target="1575" />
+   </room>
+   <room id="1575" area="71" title="Slow-moving Pachacacha through the swamp" environment="10">
+      <coord x="-34" y="34" z="0" />
+      <exit direction="southeast" target="1576" />
+      <exit direction="west" target="1012" />
+   </room>
+   <room id="1012" area="71" title="Slow-moving Pachacacha through Mannaseh" environment="10">
+      <coord x="-36" y="34" z="0" />
+      <exit direction="east" target="1575" />
+      <exit direction="west" target="1011" />
+   </room>
+   <room id="1011" area="71" title="Pachacacha amid a swamp" environment="10">
+      <coord x="-38" y="34" z="0" />
+      <exit direction="north" target="1745" tgarea="72" />
+      <exit direction="east" target="1012" />
+      <exit direction="northwest" target="1010" />
+   </room>
+   <room id="1010" area="71" title="Pachacacha through a swamp" environment="10">
+      <coord x="-39" y="35" z="0" />
+      <exit direction="north" target="270" tgarea="42" />
+      <exit direction="southeast" target="1011" />
+      <exit direction="west" target="1009" />
+   </room>
+   <room id="1595" area="71" title="Pachacacha nearing jetties of Jaru" environment="10">
+      <coord x="-7" y="7" z="0" />
+      <exit direction="north" target="1594" />
+      <exit direction="southeast" target="1598" />
+   </room>
+   <room id="1594" area="71" title="Pachacacha through fertile plains" environment="10">
+      <coord x="-7" y="9" z="0" />
+      <exit direction="north" target="1593" />
+      <exit direction="east" target="1667" tgarea="148" />
+      <exit direction="south" target="1595" />
+   </room>
+   <room id="1593" area="71" title="Through the deep valley" environment="10">
+      <coord x="-7" y="11" z="0" />
+      <exit direction="south" target="1594" />
+      <exit direction="west" target="7068" tgarea="187" />
+      <exit direction="northwest" target="1592" />
+   </room>
+   <room id="1592" area="71" title="Pachacacha River valley" environment="10">
+      <coord x="-9" y="13" z="0" />
+      <exit direction="north" target="1591" />
+      <exit direction="southeast" target="1593" />
+   </room>
+   <room id="1591" area="71" title="Valley of the Pachacacha River" environment="10">
+      <coord x="-9" y="15" z="0" />
+      <exit direction="north" target="1590" />
+      <exit direction="northeast" target="1636" tgarea="148" />
+      <exit direction="south" target="1592" />
+      <exit direction="west" target="1696" tgarea="149" />
+   </room>
+   <room id="1590" area="71" title="Pachacacha amidst the Pash valley" environment="10">
+      <coord x="-9" y="17" z="0" />
+      <exit direction="east" target="1632" tgarea="148" />
+      <exit direction="south" target="1591" />
+      <exit direction="west" target="1689" tgarea="149" />
+      <exit direction="northwest" target="1589" />
+   </room>
+   <room id="1589" area="71" title="Pachacacha within the Pash valley" environment="10">
+      <coord x="-11" y="19" z="0" />
+      <exit direction="southeast" target="1590" />
+      <exit direction="northwest" target="1588" />
+   </room>
+   <room id="1588" area="71" title="Pachacacha through the Pash valley" environment="10">
+      <coord x="-13" y="21" z="0" />
+      <exit direction="north" target="1626" tgarea="148" />
+      <exit direction="southeast" target="1589" />
+      <exit direction="south" target="1683" tgarea="149" />
+      <exit direction="northwest" target="1587" />
+   </room>
+   <room id="1587" area="71" title="Pachacacha amid the hills" environment="10">
+      <coord x="-15" y="23" z="0" />
+      <exit direction="north" target="1586" />
+      <exit direction="southeast" target="1588" />
+      <exit direction="south" target="1436" tgarea="186" />
+   </room>
+   <room id="1009" area="71" title="Pachacacha through the marshland" environment="10">
+      <coord x="-41" y="35" z="0" />
+      <exit direction="north" target="267" tgarea="42" />
+      <exit direction="east" target="1010" />
+      <exit direction="northwest" target="1008" />
+   </room>
+   <room id="1044" area="71" title="Junction of the Urubamba and Pachacacha Rivers" environment="10">
+      <coord x="-51" y="35" z="0" />
+      <exit direction="east" target="1005" />
+      <exit direction="west" target="1004" />
+      <exit direction="northwest" target="1043" tgarea="36" />
+   </room>
+   <room id="1004" area="71" title="Pachacacha through swaying grasses" environment="10">
+      <coord x="-53" y="35" z="0" />
+      <exit direction="east" target="1044" />
+      <exit direction="west" target="1003" />
+   </room>
+   <room id="1002" area="71" title="Pachacacha through the Savannah" environment="10">
+      <coord x="-57" y="35" z="0" />
+      <exit direction="east" target="1003" />
+      <exit direction="southeast" target="230" tgarea="183" />
+      <exit direction="south" target="1166" tgarea="104" />
+      <exit direction="northwest" target="1001" />
+   </room>
+   <room id="1003" area="71" title="Pachacacha amid the Savannah" environment="10">
+      <coord x="-55" y="35" z="0" />
+      <exit direction="east" target="1004" />
+      <exit direction="west" target="1002" />
+   </room>
+   <room id="1000" area="71" title="Pachacacha passing the grasslands" environment="10">
+      <coord x="-60" y="36" z="0" />
+      <exit direction="east" target="1001" />
+      <exit direction="south" target="1156" tgarea="104" />
+      <exit direction="northwest" target="999" />
+   </room>
+   <room id="1001" area="71" title="Pachacacha on the Savannah fringes" environment="10">
+      <coord x="-58" y="36" z="0" />
+      <exit direction="southeast" target="1002" />
+      <exit direction="south" target="1165" tgarea="104" />
+      <exit direction="west" target="1000" />
+   </room>
+   <room id="999" area="71" title="Pachacacha River through the grasslands" environment="10">
+      <coord x="-62" y="38" z="0" />
+      <exit direction="north" target="186" tgarea="184" />
+      <exit direction="southeast" target="1000" />
+      <exit direction="south" target="272" tgarea="104" />
+      <exit direction="west" target="998" />
+   </room>
+   <room id="998" area="71" title="On the Pachacacha through the grasslands" environment="10">
+      <coord x="-65" y="38" z="0" />
+      <exit direction="north" target="253" tgarea="184" />
+      <exit direction="east" target="999" />
+      <exit direction="west" target="997" />
+      <exit direction="up" target="31166" tgarea="37" />
+   </room>
+   <room id="997" area="71" title="Winding section of the Pachacacha" environment="10">
+      <coord x="-68" y="38" z="0" />
+      <exit direction="east" target="998" />
+      <exit direction="south" target="274" tgarea="104" />
+      <exit direction="northwest" target="996" />
+   </room>
+   <room id="996" area="71" title="Tumbling waters of the Pachacacha" environment="10">
+      <coord x="-70" y="40" z="0" />
+      <exit direction="north" target="1051" tgarea="184" />
+      <exit direction="southeast" target="997" />
+      <exit direction="northwest" target="994" />
+   </room>
+   <room id="994" area="71" title="At the bottom of the waterfall" environment="10">
+      <coord x="-72" y="42" z="0" />
+      <exit direction="southeast" target="996" />
+      <exit direction="west" target="5026" hidden="1" />
+      <exit direction="up" target="993" />
+   </room>
+   <room id="993" area="71" title="Great waterfall over the Pachacacha" environment="10">
+      <coord x="-73" y="42" z="0" />
+      <exit direction="west" target="992" />
+      <exit direction="down" target="994" />
+   </room>
+   <room id="992" area="71" title="On the Pachacacha descending mountain" environment="10">
+      <coord x="-75" y="42" z="0" />
+      <exit direction="east" target="993" />
+      <exit direction="west" target="991" />
+   </room>
+   <room id="991" area="71" title="Pachacacha through a ravine" environment="10">
+      <coord x="-77" y="42" z="0" />
+      <exit direction="east" target="992" />
+      <exit direction="northwest" target="990" />
+   </room>
+   <room id="990" area="71" title="Mountain source of the Pachacacha" environment="10">
+      <coord x="-79" y="44" z="0" />
+      <exit direction="southeast" target="991" />
+      <exit direction="northwest" target="989" />
+   </room>
+   <room id="989" area="71" title="Source of the river Pachacacha" environment="10">
+      <coord x="-80" y="45" z="0" />
+      <exit direction="southeast" target="990" />
+   </room>
+</rooms>
+<environments>
+   <environment id="10" name="River" color="4" htmlcolor="#00ddff" />
+</environments>
+</map>

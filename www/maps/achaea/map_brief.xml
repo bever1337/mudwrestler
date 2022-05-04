@@ -1,0 +1,1049 @@
+<?xml version="1.0"?>
+<map>
+<areas>
+   <area id="2" name="Tasur'ke" x="0" y="0" />
+   <area id="3" name="New Thera, the Village of" x="0" y="0" />
+   <area id="4" name="Lake Narcisse" x="0" y="0" />
+   <area id="5" name="Ka'doloki, the Village of" x="0" y="0" />
+   <area id="6" name="Notic Ocean, somewhere in the" x="0" y="0" />
+   <area id="7" name="Maim's Mansion" x="0" y="0" />
+   <area id="9" name="Lodi, the Valley of" x="0" y="0" />
+   <area id="10" name="Gheladan, Mount" x="0" y="0" />
+   <area id="11" name="Minia, the Land of (Pixie Village)" x="0" y="0" />
+   <area id="14" name="Delos, the Isle of" x="0" y="0" />
+   <area id="15" name="Portals, the Ring of" x="0" y="0" />
+   <area id="16" name="Delos, the Isle of (Scarlattan Theatre)" x="0" y="0" />
+   <area id="17" name="Actar, the Valley of" x="0" y="0" />
+   <area id="18" name="Delos, the Isle of" x="0" y="0" />
+   <area id="20" name="Dungeon of the Beastlords, the" x="0" y="0" />
+   <area id="21" name="Great Rock, the" x="0" y="0" />
+   <area id="22" name="Prelatorian Highway, the" x="0" y="0" />
+   <area id="24" name="Jaru" x="0" y="0" />
+   <area id="25" name="Vashnar Mountains, the" x="0" y="0" />
+   <area id="26" name="Raphaelan Highway, the" x="0" y="0" />
+   <area id="27" name="Azdun Dungeon, the" x="0" y="0" />
+   <area id="28" name="Shastaan" x="0" y="0" />
+   <area id="29" name="Eastern Shore, the" x="0" y="0" />
+   <area id="30" name="Qurnok, the Village of" x="0" y="0" />
+   <area id="31" name="Green Lake" x="0" y="0" />
+   <area id="32" name="Aureliana Forest, the" x="0" y="0" />
+   <area id="33" name="Black Forest, the" x="0" y="0" />
+   <area id="34" name="Ceylon, the Golden Land" x="0" y="0" />
+   <area id="35" name="Erisian Pyramid, the Ruins of the" x="0" y="0" />
+   <area id="36" name="Urubamba River, the" x="0" y="0" />
+   <area id="37" name="Southern Old Road" x="0" y="0" />
+   <area id="38" name="Nilakantha, the Gulf of" x="0" y="0" />
+   <area id="39" name="Nicator's Crossing, the Keep at" x="0" y="0" />
+   <area id="41" name="Tomacula" x="0" y="0" />
+   <area id="42" name="Savannah, the (Central)" x="0" y="0" />
+   <area id="43" name="Lake Vundamere" x="0" y="0" />
+   <area id="44" name="Mhaldor, the City of" x="0" y="0" />
+   <area id="48" name="Mhaldor, the City of (Temple)" x="0" y="0" />
+   <area id="49" name="Ashtan, the City of" x="0" y="0" />
+   <area id="50" name="Mhaldor Isle" x="0" y="0" />
+   <area id="51" name="Eleusis" x="0" y="0" />
+   <area id="53" name="Ashtan, the City of (Conclave)" x="0" y="0" />
+   <area id="54" name="Ashtan, the City of (Palace)" x="0" y="0" />
+   <area id="55" name="Hashan, the City of" x="0" y="0" />
+   <area id="56" name="Hashan, the City of (Seneschal Complex)" x="0" y="0" />
+   <area id="57" name="Cyrene, the City of" x="0" y="0" />
+   <area id="58" name="Cyrene, the City of (Sewers)" x="0" y="0" />
+   <area id="60" name="Ashtan, the City of (Sewers)" x="0" y="0" />
+   <area id="61" name="Hashan, the City of (Sewers)" x="0" y="0" />
+   <area id="62" name="Cyrene, the City of (Garden of the Arts)" x="0" y="0" />
+   <area id="66" name="Phereklos, the Ruins of" x="0" y="0" />
+   <area id="67" name="Cyrene, the City of (Brewery)" x="0" y="0" />
+   <area id="69" name="Quartz Peak" x="0" y="0" />
+   <area id="71" name="Pachacacha River, the" x="0" y="0" />
+   <area id="72" name="Mannaseh swamp" x="0" y="0" />
+   <area id="73" name="Zaphar River, the" x="0" y="0" />
+   <area id="74" name="Tenwat Prison" x="0" y="0" />
+   <area id="75" name="Mhaldor, the City of (Sewers)" x="0" y="0" />
+   <area id="76" name="Eastern Ithmia, the" x="0" y="0" />
+   <area id="77" name="Western Ithmia, the" x="0" y="0" />
+   <area id="78" name="Vashnar Mountains, the (Southern)" x="0" y="0" />
+   <area id="79" name="Vashnar Mountains, the (North)" x="0" y="0" />
+   <area id="80" name="Northern Ithmia, the" x="0" y="0" />
+   <area id="81" name="Zaphar River, the" x="0" y="0" />
+   <area id="82" name="Forest Watch" x="0" y="0" />
+   <area id="83" name="North Road, the" x="0" y="0" />
+   <area id="84" name="Eastern Road, the" x="0" y="0" />
+   <area id="85" name="Granite Hills, the" x="0" y="0" />
+   <area id="86" name="Nilakantha River, the" x="0" y="0" />
+   <area id="87" name="Sea Lion Cove" x="0" y="0" />
+   <area id="88" name="El'Jazira" x="0" y="0" />
+   <area id="89" name="Bagwar's Copse" x="0" y="0" />
+   <area id="90" name="Creville Asylum" x="0" y="0" />
+   <area id="91" name="Polyargos, the Isle of" x="0" y="0" />
+   <area id="92" name="Ulangi" x="0" y="0" />
+   <area id="93" name="Ulangi (Cloud Forest)" x="0" y="0" />
+   <area id="94" name="Ulangi (Rapo'kir Hive)" x="0" y="0" />
+   <area id="95" name="Aalen Forest, the" x="0" y="0" />
+   <area id="96" name="Aalen Forest, the (Tsol'aa Kingdom)" x="0" y="0" />
+   <area id="97" name="Polyargos, the Isle of (Volcano)" x="0" y="0" />
+   <area id="98" name="Mysia, the Port of" x="0" y="0" />
+   <area id="99" name="Isaia" x="0" y="0" />
+   <area id="100" name="Mysia, the Port of (Tavern)" x="0" y="0" />
+   <area id="101" name="Hriddan Settlement" x="0" y="0" />
+   <area id="102" name="Harae, the Isle of" x="0" y="0" />
+   <area id="103" name="Manusha" x="0" y="0" />
+   <area id="104" name="Dakhota Hills, the" x="0" y="0" />
+   <area id="105" name="Dryad Garden" x="0" y="0" />
+   <area id="106" name="Lake Narcisse" x="0" y="0" />
+   <area id="107" name="Goblin Village, the" x="0" y="0" />
+   <area id="108" name="Kamleikan, the Village of" x="0" y="0" />
+   <area id="109" name="Kamleikan, the Village of (Ice Floes)" x="0" y="0" />
+   <area id="110" name="Muurn River Valley" x="0" y="0" />
+   <area id="111" name="Lake Muurn" x="0" y="0" />
+   <area id="112" name="Aalen Forest, the (Path)" x="0" y="0" />
+   <area id="113" name="Riparium" x="0" y="0" />
+   <area id="114" name="Riparium (Palace)" x="0" y="0" />
+   <area id="115" name="Moghedu" x="0" y="0" />
+   <area id="117" name="Enverren Marsh (Castle)" x="0" y="0" />
+   <area id="118" name="Enverren Marsh (Caverns of Chiada)" x="0" y="0" />
+   <area id="119" name="Enverren Marsh" x="0" y="0" />
+   <area id="120" name="Dardanic Plains, the" x="0" y="0" />
+   <area id="121" name="Bitterflow River" x="0" y="0" />
+   <area id="122" name="Bitterfork" x="0" y="0" />
+   <area id="123" name="Northreach, the" x="0" y="0" />
+   <area id="124" name="Darkenwood, the" x="0" y="0" />
+   <area id="125" name="Delmarin, the Caves of" x="0" y="0" />
+   <area id="126" name="Blackrock, the Mines of" x="0" y="0" />
+   <area id="127" name="Blackrock, the Underhalls of" x="0" y="0" />
+   <area id="128" name="Blackrock, the Halls of" x="0" y="0" />
+   <area id="129" name="Harae, the Isle of (Village)" x="0" y="0" />
+   <area id="130" name="Xhaiden Dale, the Valley of" x="0" y="0" />
+   <area id="131" name="Petra, the Village of" x="0" y="0" />
+   <area id="132" name="Petra, the Village of (Inn)" x="0" y="0" />
+   <area id="133" name="Belladona, the Keep of (Fens)" x="0" y="0" />
+   <area id="134" name="Belladona, the Keep of" x="0" y="0" />
+   <area id="135" name="Petra, the Village of (Sangre Keep)" x="0" y="0" />
+   <area id="136" name="Sangre Plains, the" x="0" y="0" />
+   <area id="137" name="Genji, the Village of" x="0" y="0" />
+   <area id="138" name="New Hope, the Isle of (Village)" x="0" y="0" />
+   <area id="139" name="Siroccian Mountains, the" x="0" y="0" />
+   <area id="140" name="New Hope, the Isle of (Mountains)" x="0" y="0" />
+   <area id="141" name="Orilla" x="0" y="0" />
+   <area id="142" name="Siroccian Mountains, the (Dwarven Camp)" x="0" y="0" />
+   <area id="143" name="New Hope, the Isle of (Hills)" x="0" y="0" />
+   <area id="144" name="Siroccian Mountains, the (Orc Outpost)" x="0" y="0" />
+   <area id="145" name="Tir Murann, the Village of" x="0" y="0" />
+   <area id="146" name="Tir Murann, the Fortress of" x="0" y="0" />
+   <area id="147" name="Inbhir Ness" x="0" y="0" />
+   <area id="148" name="Pash Valley (East)" x="0" y="0" />
+   <area id="149" name="Pash Valley (West)" x="0" y="0" />
+   <area id="150" name="Erymanthus, the Isle of" x="0" y="0" />
+   <area id="151" name="Shamtota Hills, the (East)" x="0" y="0" />
+   <area id="152" name="Nimick, the Village of" x="0" y="0" />
+   <area id="153" name="Arcadia, the City of (Palace)" x="0" y="0" />
+   <area id="154" name="Arcadia, the City of" x="0" y="0" />
+   <area id="155" name="Dun Valley" x="0" y="0" />
+   <area id="156" name="Dun Valley (Village)" x="0" y="0" />
+   <area id="157" name="Dun Valley (Path)" x="0" y="0" />
+   <area id="158" name="Dun Valley (Swamp)" x="0" y="0" />
+   <area id="159" name="Dun Valley (Fortress)" x="0" y="0" />
+   <area id="160" name="Aeraithian Falls, the" x="0" y="0" />
+   <area id="161" name="Shala-Khulia, the Rainforest of" x="0" y="0" />
+   <area id="162" name="Tapoa Island" x="0" y="0" />
+   <area id="163" name="Underworld, the" x="0" y="0" />
+   <area id="164" name="Shala-Khulia, the Rainforest of (Caves)" x="0" y="0" />
+   <area id="165" name="Shala-Khulia, the City of" x="0" y="0" />
+   <area id="166" name="Underworld, the (South)" x="0" y="0" />
+   <area id="167" name="Piraeus, Mount" x="0" y="0" />
+   <area id="168" name="Annwyn (Lake)" x="0" y="0" />
+   <area id="169" name="Annwyn (Forest)" x="0" y="0" />
+   <area id="170" name="Annwyn (Sidhe Court)" x="0" y="0" />
+   <area id="171" name="Annwyn (Unsidhe Court)" x="0" y="0" />
+   <area id="172" name="Lake Xulighae" x="0" y="0" />
+   <area id="173" name="Sparrow's Rest" x="0" y="0" />
+   <area id="174" name="Cyrene, the City of (Galleria)" x="0" y="0" />
+   <area id="175" name="Mhojave Desert, the (Southwest)" x="0" y="0" />
+   <area id="176" name="Bopalopia" x="0" y="0" />
+   <area id="177" name="Fluvadha River, the" x="0" y="0" />
+   <area id="178" name="Mhojave Desert, the (Central)" x="0" y="0" />
+   <area id="179" name="Tasur'ke (Port)" x="0" y="0" />
+   <area id="180" name="Colchis, the Island of" x="0" y="0" />
+   <area id="181" name="Umbrin, the Port of" x="0" y="0" />
+   <area id="182" name="Sangre Plains, the (Ivory Tower)" x="0" y="0" />
+   <area id="183" name="Savannah, the (South)" x="0" y="0" />
+   <area id="184" name="Savannah, the (West)" x="0" y="0" />
+   <area id="185" name="Mhojave Desert, the (Nomad Encampment)" x="0" y="0" />
+   <area id="186" name="Shamtota Hills, the (West)" x="0" y="0" />
+   <area id="187" name="Shala'jen, the Monastery of" x="0" y="0" />
+   <area id="188" name="Aureliana grist mill" x="0" y="0" />
+   <area id="189" name="Cyrene, the City of (Bathhouse)" x="0" y="0" />
+   <area id="190" name="Parthren Gare, the" x="0" y="0" />
+   <area id="191" name="Clockwork Isle" x="0" y="0" />
+   <area id="192" name="Zanzibaar" x="0" y="0" />
+   <area id="193" name="Zaphar Isle" x="0" y="0" />
+   <area id="194" name="Ilyrean" x="0" y="0" />
+   <area id="195" name="Eirenwaar Island" x="0" y="0" />
+   <area id="196" name="Kasmarkin, the City of" x="0" y="0" />
+   <area id="197" name="Aran'riod, the Village of" x="0" y="0" />
+   <area id="198" name="Aerinewild, the" x="0" y="0" />
+   <area id="199" name="Tundra, the" x="0" y="0" />
+   <area id="200" name="Saoghal Valley" x="0" y="0" />
+   <area id="201" name="Caer Witrin" x="0" y="0" />
+   <area id="202" name="Rheodad, the Forest of" x="0" y="0" />
+   <area id="203" name="Caverns of Nuskuwe, the" x="0" y="0" />
+   <area id="204" name="Morindar, the Ruins of" x="0" y="0" />
+   <area id="205" name="Adryn's Keep" x="0" y="0" />
+   <area id="206" name="Suliel Island" x="0" y="0" />
+   <area id="207" name="Tuar, the Island of" x="0" y="0" />
+   <area id="208" name="Chapel of All Gods" x="0" y="0" />
+   <area id="209" name="Ageiro, the Isle of" x="0" y="0" />
+   <area id="210" name="Vasnari Mountains, the (Northern)" x="0" y="0" />
+   <area id="212" name="Dreamspear, the" x="0" y="0" />
+   <area id="213" name="Wegava Valley" x="0" y="0" />
+   <area id="214" name="Valho Coast" x="0" y="0" />
+   <area id="215" name="Sarave Foothills, the" x="0" y="0" />
+   <area id="216" name="Daoric Plains, the" x="0" y="0" />
+   <area id="217" name="Iskadar, the Mines of" x="0" y="0" />
+   <area id="218" name="Chaghut Encampment" x="0" y="0" />
+   <area id="219" name="Thraasi Foothills, the" x="0" y="0" />
+   <area id="220" name="Mirror Caves, the" x="0" y="0" />
+   <area id="221" name="Karbaz" x="0" y="0" />
+   <area id="222" name="Prin, the Isle of" x="0" y="0" />
+   <area id="223" name="Prin, the Isle of (Temple)" x="0" y="0" />
+   <area id="224" name="Minos, the Isle of" x="0" y="0" />
+   <area id="225" name="Lothos" x="0" y="0" />
+   <area id="226" name="Lothos (Tomb)" x="0" y="0" />
+   <area id="228" name="Theatrum Mortalis, the" x="0" y="0" />
+   <area id="229" name="Coloseum Diabolus, the" x="0" y="0" />
+   <area id="230" name="Stadia Coronae, the" x="0" y="0" />
+   <area id="231" name="Collosea en Duir, the" x="0" y="0" />
+   <area id="232" name="Ainghaeal's Nest" x="0" y="0" />
+   <area id="233" name="Matsuhama Arena, the" x="0" y="0" />
+   <area id="234" name="Ishana Steppes" x="0" y="0" />
+   <area id="235" name="Saiha'balan Grotto" x="0" y="0" />
+   <area id="236" name="Martei Memorial Tradepost" x="0" y="0" />
+   <area id="237" name="Artist's Collective Trading Post" x="0" y="0" />
+   <area id="238" name="Tundra, the (Road)" x="0" y="0" />
+   <area id="239" name="Mesmerium, the" x="0" y="0" />
+   <area id="240" name="Coastal Highway, the" x="0" y="0" />
+   <area id="241" name="Aurulent Highway, the" x="0" y="0" />
+   <area id="242" name="Imperial Road, the" x="0" y="0" />
+   <area id="243" name="Southern Way, the" x="0" y="0" />
+   <area id="244" name="Scrublands, the" x="0" y="0" />
+   <area id="245" name="Atrousian Jungle, the (Northern)" x="0" y="0" />
+   <area id="246" name="Atrousian Jungle, the (Central)" x="0" y="0" />
+   <area id="247" name="Atrousian Jungle, the (Southern)" x="0" y="0" />
+   <area id="248" name="Vasnari Mountains, the (Central)" x="0" y="0" />
+   <area id="249" name="Mnemosyne River, the" x="0" y="0" />
+   <area id="250" name="Mourning Pass, the Battlesite of" x="0" y="0" />
+   <area id="251" name="Grukai Swamp" x="0" y="0" />
+   <area id="252" name="Sirocco Fortress" x="0" y="0" />
+   <area id="253" name="Ulsyndar, the Salt Mines of" x="0" y="0" />
+   <area id="254" name="Luman Village" x="0" y="0" />
+   <area id="255" name="Dralhu Hryre, the Remains of" x="0" y="0" />
+   <area id="256" name="Seat of Vastar, the" x="0" y="0" />
+   <area id="257" name="Judgement Mountain" x="0" y="0" />
+   <area id="258" name="Asterian Peninsula, the" x="0" y="0" />
+   <area id="259" name="Hthrak, the Vents of" x="0" y="0" />
+   <area id="260" name="Riagath, the Caverns of" x="0" y="0" />
+   <area id="261" name="Falaq'tor, the Tower of" x="0" y="0" />
+   <area id="262" name="Istar Jungle" x="0" y="0" />
+   <area id="263" name="Istarion, the City of" x="0" y="0" />
+   <area id="264" name="Shala'jen, the Monastery of" x="0" y="0" />
+   <area id="268" name="Halls of Combat, the" x="0" y="0" />
+   <area id="270" name="Azdun Catacombs, the" x="0" y="0" />
+   <area id="271" name="Targossas, the City of" x="0" y="0" />
+   <area id="272" name="Eastern Reaches, the" x="0" y="0" />
+   <area id="273" name="Peshwar Delta, the" x="0" y="0" />
+   <area id="274" name="Silverveil River, the" x="0" y="0" />
+   <area id="277" name="Targossas, the City of (The Gauntlet)" x="0" y="0" />
+   <area id="278" name="Den of the Quisalis" x="0" y="0" />
+   <area id="279" name="Pygmy Dungeon, a" x="0" y="0" />
+   <area id="280" name="Great Rock, the (Orgoraz's Lair)" x="0" y="0" />
+   <area id="281" name="Manara Burrow" x="0" y="0" />
+   <area id="282" name="Temple of Sleep and Dreams, the" x="0" y="0" />
+   <area id="284" name="Fissure of Echoes, the" x="0" y="0" />
+   <area id="287" name="Squall Cleft" x="0" y="0" />
+   <area id="288" name="Temple of the Sky, the" x="0" y="0" />
+   <area id="289" name="Citadel of Storms, the" x="0" y="0" />
+   <area id="290" name="Siorraidh, the" x="0" y="0" />
+   <area id="291" name="Temple of the River, the" x="0" y="0" />
+   <area id="292" name="Cyrene, the City of (Vashnarian Shield)" x="0" y="0" />
+   <area id="293" name="Cyrene, the City of (The Virtuosi)" x="0" y="0" />
+   <area id="294" name="Cyrene, the City of (Outriders)" x="0" y="0" />
+   <area id="295" name="Mhaldor, the City of (Hub)" x="0" y="0" />
+   <area id="296" name="Mhaldor, the City of (The Dread Legates)" x="0" y="0" />
+   <area id="297" name="Mhaldor, the City of (The Insidium)" x="0" y="0" />
+   <area id="298" name="Targossas, the City of (The Dawnblade)" x="0" y="0" />
+   <area id="299" name="Targossas, the City of (The Luminai)" x="0" y="0" />
+   <area id="300" name="Targossas, the City of (Harbingers)" x="0" y="0" />
+   <area id="302" name="Black Warren, the" x="0" y="0" />
+   <area id="303" name="Sunderlands, the" x="0" y="0" />
+   <area id="304" name="On the clouds" x="0" y="0" />
+   <area id="305" name="Hashan Hollow" x="0" y="0" />
+   <area id="306" name="Rhodestrian Settlement, the" x="0" y="0" />
+   <area id="308" name="Cormorant Rock" x="0" y="0" />
+   <area id="311" name="The Wheel" x="0" y="0" />
+   <area id="314" name="Bog of Ashtan, The" x="0" y="0" />
+   <area id="315" name="nondescript island, A" x="0" y="0" />
+   <area id="316" name="Somatikos" x="0" y="0" />
+   <area id="318" name="The Latite Tower" x="0" y="0" />
+   <area id="319" name="The Black Chapel" x="0" y="0" />
+   <area id="320" name="Moldova Fortress" x="0" y="0" />
+   <area id="321" name="Prylator Pit" x="0" y="0" />
+   <area id="322" name="Cor Triphyn" x="0" y="0" />
+   <area id="323" name="Nemuritoaure Fortress" x="0" y="0" />
+   <area id="324" name="Tsol'teth Outpost" x="0" y="0" />
+   <area id="325" name="Seleucar Outpost" x="0" y="0" />
+   <area id="326" name="Petran Outpost" x="0" y="0" />
+   <area id="328" name="Kkractle, The Fingers of" x="0" y="0" />
+   <area id="329" name="Loramere, the town of" x="0" y="0" />
+   <area id="330" name="Yggdrasil, Tier 5 of" x="0" y="0" />
+   <area id="331" name="Lhitsu Forest, the" x="0" y="0" />
+   <area id="332" name="Ioje Compound, the" x="0" y="0" />
+   <area id="333" name="Qerstead, town of" x="0" y="0" />
+   <area id="334" name="Pri'alysh Moor, the" x="0" y="0" />
+   <area id="335" name="Elemental Embassy, the" x="0" y="0" />
+   <area id="336" name="Yggdrasil, Tier 1 of" x="0" y="0" />
+   <area id="337" name="Yggdrasil, Tier 2 of" x="0" y="0" />
+   <area id="338" name="Yggdrasil, Tier 3 of" x="0" y="0" />
+   <area id="339" name="Yggdrasil, Tier 4 of" x="0" y="0" />
+   <area id="340" name="Kunapi, Islands of" x="0" y="0" />
+   <area id="341" name="Aegis, God of War, Temple of" x="0" y="0" />
+   <area id="342" name="Esoteric Consortium, the" x="0" y="0" />
+   <area id="343" name="Myrinia, village of" x="0" y="0" />
+   <area id="344" name="Brarra, the Mighty Volcano" x="0" y="0" />
+   <area id="345" name="Brurra, the volcano" x="0" y="0" />
+   <area id="346" name="Legion of Flame, Forward Command of" x="0" y="0" />
+   <area id="347" name="Ashen Blight, the" x="0" y="0" />
+   <area id="349" name="Nishnatoba, Central" x="0" y="0" />
+   <area id="350" name="Nishnatoba, South" x="0" y="0" />
+   <area id="351" name="Nishnatoba, East" x="0" y="0" />
+   <area id="352" name="Nishnatoba, West" x="0" y="0" />
+   <area id="353" name="Nishnatoba, North" x="0" y="0" />
+   <area id="354" name="Ruins of Castle Proteus, the" x="0" y="0" />
+   <area id="355" name="Monastery of the Ivory Rose, the" x="0" y="0" />
+   <area id="356" name="Nest of the Phoenix, the" x="0" y="0" />
+   <area id="357" name="Canyon of the Dawn, the" x="0" y="0" />
+   <area id="358" name="Carnival's Causeway, the" x="0" y="0" />
+   <area id="359" name="Chaos Tundra, the" x="0" y="0" />
+   <area id="360" name="Desolate Glebe, the" x="0" y="0" />
+   <area id="361" name="Ruins of Dragonkeep, the" x="0" y="0" />
+   <area id="362" name="Daybreak's Cathedral" x="0" y="0" />
+   <area id="363" name="Crystal Tower, the" x="0" y="0" />
+   <area id="364" name="Temple Ruins of Arn, the" x="0" y="0" />
+   <area id="365" name="Forgotten Library, the" x="0" y="0" />
+   <area id="366" name="Retreat of the Ancient Circle, the" x="0" y="0" />
+   <area id="367" name="Garden of Shadows, the" x="0" y="0" />
+   <area id="368" name="Ancient bone yard" x="0" y="0" />
+   <area id="369" name="Torrid Wastes, the" x="0" y="0" />
+   <area id="370" name="Infernal Temple Ruins" x="0" y="0" />
+   <area id="371" name="Ancient Garden of Darkness, the" x="0" y="0" />
+   <area id="372" name="Pyramid of Elemental Balance, the" x="0" y="0" />
+   <area id="373" name="Ruins of the Templar" x="0" y="0" />
+   <area id="374" name="Temple of Pandora, the" x="0" y="0" />
+   <area id="375" name="Itinerant Bazaar, the" x="0" y="0" />
+   <area id="376" name="Sllshya's Maw" x="0" y="0" />
+   <area id="377" name="Alcazar, The" x="0" y="0" />
+   <area id="378" name="Garash's Grief" x="0" y="0" />
+   <area id="379" name="Vault, the" x="0" y="0" />
+   <area id="380" name="Radak's Hold" x="0" y="0" />
+   <area id="381" name="Ratatosk's Lair" x="0" y="0" />
+   <area id="382" name="the Coterie" x="0" y="0" />
+   <area id="383" name="Bataoac, the Northern Giant" x="0" y="0" />
+   <area id="384" name="Kuthalebak, the Valley of" x="0" y="0" />
+   <area id="385" name="the Eastern Stratosphere" x="0" y="0" />
+   <area id="386" name="the Western Stratosphere" x="0" y="0" />
+   <area id="387" name="the Northern Stratosphere" x="0" y="0" />
+   <area id="388" name="Aster Keep" x="0" y="0" />
+   <area id="389" name="Aster Town" x="0" y="0" />
+   <area id="394" name="Adryn Keep Fairgrounds" x="0" y="0" />
+   <area id="396" name="Nur, Seventh Circle of" x="0" y="0" />
+   <area id="397" name="Nur, Sixth Circle of" x="0" y="0" />
+   <area id="398" name="Nur, Fifth Circle of" x="0" y="0" />
+   <area id="400" name="Nur, Third Circle of" x="0" y="0" />
+   <area id="401" name="Nur, First Circle of" x="0" y="0" />
+   <area id="402" name="Nur, Second Circle of" x="0" y="0" />
+   <area id="405" name="(unnamed)" x="0" y="0" />
+   <area id="406" name="(unnamed)" x="0" y="0" />
+   <area id="407" name="Ziggurat of Malignancy" x="0" y="0" />
+   <area id="408" name="Longclaw Isle" x="0" y="0" />
+   <area id="409" name="Descent, the" x="0" y="0" />
+   <area id="413" name="(unnamed)" x="0" y="0" />
+   <area id="415" name="Merrywick, the Village of" x="0" y="0" />
+   <area id="416" name="Mysterious caverns" x="0" y="0" />
+   <area id="417" name="The Lupine Hunting Grounds" x="0" y="0" />
+</areas>
+<rooms>
+   <room id="921" area="77" title="Dark cluster of towering trees" environment="4">
+      <coord x="2" y="15" z="0" />
+      <exit direction="northeast" target="904" />
+      <exit direction="southeast" target="932" />
+      <exit direction="south" target="931" />
+      <exit direction="southwest" target="930" />
+      <exit direction="west" target="922" />
+   </room>
+   <room id="6056" area="92" title="A hunter's hut" environment="8">
+      <coord x="14" y="2" z="-1" />
+      <exit direction="west" target="6054" />
+   </room>
+   <room id="20790" area="3" title="Hall of Bardic Poetry" environment="8">
+      <coord x="13" y="-1" z="0" />
+      <exit direction="northwest" target="13585" />
+   </room>
+   <room id="7802" area="3" title="A messy bookbinder's workshop" environment="8">
+      <coord x="8" y="2" z="0" />
+      <exit direction="southeast" target="20910" />
+   </room>
+   <room id="12695" area="190" title="Dragonspire Mount" environment="14">
+      <coord x="0" y="0" z="2" />
+      <exit direction="down" target="12632" />
+   </room>
+   <room id="161" area="115" title="Tunnel before junction" environment="2">
+      <coord x="-8" y="7" z="-3" />
+      <exit direction="north" target="140" />
+      <exit direction="south" target="162" />
+      <exit direction="southwest" target="163" />
+   </room>
+   <room id="1980" area="96" title="In Tremayn's home" environment="19">
+      <coord x="2" y="-6" z="1" />
+      <exit direction="up" target="1996" />
+      <exit direction="down" target="1921" />
+   </room>
+   <room id="12632" area="190" title="Upon a ledge on Dragonspire Mount" environment="14">
+      <coord x="0" y="0" z="1" />
+      <exit direction="up" target="12695" />
+      <exit direction="down" target="12643" />
+   </room>
+   <room id="1408" area="22" title="Along the southern Prelatorian Highway" environment="12">
+      <coord x="-12" y="6" z="0" />
+      <exit direction="north" target="1407" />
+      <exit direction="south" target="1409" />
+   </room>
+   <room id="12643" area="190" title="At the foot of Dragonspire Mount" environment="21">
+      <coord x="0" y="0" z="0" />
+      <exit direction="east" target="12656" />
+      <exit direction="south" target="12650" />
+      <exit direction="west" target="12657" />
+      <exit direction="up" target="12632" />
+      <exit direction="in" target="12649" />
+   </room>
+   <room id="155" area="115" title="Straight minetrack" environment="2">
+      <coord x="-4" y="11" z="-3" />
+      <exit direction="south" target="156" />
+      <exit direction="northwest" target="153" />
+   </room>
+   <room id="4058" area="2" title="Centre of the marketplace" environment="8">
+      <coord x="0" y="-2" z="0" />
+      <exit direction="north" target="4103" />
+      <exit direction="northeast" target="4104" />
+      <exit direction="east" target="4105" />
+      <exit direction="southeast" target="4106" />
+      <exit direction="south" target="4107" />
+      <exit direction="southwest" target="4108" />
+      <exit direction="west" target="4109" />
+      <exit direction="northwest" target="4102" />
+   </room>
+   <room id="4103" area="2" title="North end of Thalassa Market" environment="8">
+      <coord x="0" y="0" z="0" />
+      <exit direction="north" target="4170" />
+      <exit direction="northeast" target="27872" />
+      <exit direction="east" target="4104" />
+      <exit direction="south" target="4058" />
+      <exit direction="west" target="4102" />
+   </room>
+   <room id="4104" area="2" title="Northeastern Thalassa Market" environment="8">
+      <coord x="2" y="0" z="0" />
+      <exit direction="northeast" target="4806" />
+      <exit direction="south" target="4105" />
+      <exit direction="southwest" target="4058" />
+      <exit direction="west" target="4103" />
+   </room>
+   <room id="4105" area="2" title="East end of the Thalassa Market" environment="8">
+      <coord x="2" y="-2" z="0" />
+      <exit direction="north" target="4104" />
+      <exit direction="east" target="4171" />
+      <exit direction="south" target="4106" />
+      <exit direction="west" target="4058" />
+   </room>
+   <room id="4106" area="2" title="The southeastern Thalassa Market" environment="8">
+      <coord x="2" y="-4" z="0" />
+      <exit direction="north" target="4105" />
+      <exit direction="west" target="4107" />
+      <exit direction="northwest" target="4058" />
+   </room>
+   <room id="4107" area="2" title="Meeting of Tasur Road and Thalassa Market" environment="8">
+      <coord x="0" y="-4" z="0" />
+      <exit direction="north" target="4058" />
+      <exit direction="east" target="4106" />
+      <exit direction="south" target="4172" />
+      <exit direction="west" target="4108" />
+   </room>
+   <room id="4108" area="2" title="The southwestern Thalassa Market" environment="8">
+      <coord x="-2" y="-4" z="0" />
+      <exit direction="north" target="4109" />
+      <exit direction="northeast" target="4058" />
+      <exit direction="east" target="4107" />
+   </room>
+   <room id="4109" area="2" title="Western Thalassa Market" environment="8">
+      <coord x="-2" y="-2" z="0" />
+      <exit direction="north" target="4102" />
+      <exit direction="east" target="4058" />
+      <exit direction="south" target="4108" />
+      <exit direction="west" target="4173" />
+   </room>
+   <room id="4102" area="2" title="Northwestern Thalassa Market" environment="8">
+      <coord x="-2" y="0" z="0" />
+      <exit direction="east" target="4103" />
+      <exit direction="southeast" target="4058" />
+      <exit direction="south" target="4109" />
+      <exit direction="west" target="30689" />
+      <exit direction="northwest" target="15788" />
+   </room>
+   <room id="4806" area="2" title="The Praetoria Pelagium" environment="8">
+      <coord x="3" y="1" z="0" />
+      <exit direction="southwest" target="4104" />
+   </room>
+   <room id="4170" area="2" title="Caldinarius Street nearing the Thalassa Market" environment="8">
+      <coord x="0" y="2" z="0" />
+      <exit direction="north" target="4174" />
+      <exit direction="south" target="4103" />
+   </room>
+   <room id="27872" area="2" title="Bustling corner of the Thalassa Market" environment="8">
+      <coord x="1" y="1" z="0" />
+      <exit direction="southwest" target="4103" />
+   </room>
+   <room id="4174" area="2" title="Caldinarius Street" environment="8">
+      <coord x="0" y="4" z="0" />
+      <exit direction="north" target="4272" />
+      <exit direction="south" target="4170" />
+   </room>
+   <room id="4272" area="2" title="Caldinarius Street outside the baths" environment="8">
+      <coord x="0" y="6" z="0" />
+      <exit direction="north" target="4273" />
+      <exit direction="south" target="4174" />
+      <exit direction="west" target="4110" door="1" />
+   </room>
+   <room id="4273" area="2" title="Caldinarius Street passing the Flowering Sands" environment="8">
+      <coord x="0" y="7" z="0" />
+      <exit direction="north" target="4300" />
+      <exit direction="east" target="4112" door="1" />
+      <exit direction="south" target="4272" />
+   </room>
+   <room id="4110" area="2" title="Atrium of the Citizens' Baths" environment="8">
+      <coord x="-1" y="6" z="0" />
+      <exit direction="east" target="4272" door="1" />
+      <exit direction="southwest" target="4111" />
+   </room>
+   <room id="4111" area="2" title="Steaming pools of the Baths" environment="30">
+      <coord x="-2" y="5" z="0" />
+      <exit direction="northeast" target="4110" />
+      <exit direction="south" target="4216" />
+   </room>
+   <room id="4300" area="2" title="Along Caldinarius Street" environment="8">
+      <coord x="0" y="8" z="0" />
+      <exit direction="east" target="24555" door="1" />
+      <exit direction="south" target="4273" />
+      <exit direction="west" target="4301" />
+   </room>
+   <room id="4112" area="2" title="Foyer of the Flowering Sands Inn" environment="8">
+      <coord x="1" y="7" z="0" />
+      <exit direction="west" target="4273" door="1" />
+      <exit direction="up" target="4211" />
+   </room>
+   <room id="4211" area="2" title="Hallway above the stairs" environment="8">
+      <coord x="1" y="5" z="2" />
+      <exit direction="north" target="4304" door="1" />
+      <exit direction="east" target="4153" />
+      <exit direction="west" target="4152" door="1" />
+      <exit direction="down" target="4112" />
+   </room>
+   <room id="4304" area="2" title="An upstairs bedroom" environment="8">
+      <coord x="1" y="6" z="2" />
+      <exit direction="south" target="4211" door="1" />
+      <exit direction="out" target="33785" />
+   </room>
+   <room id="4153" area="2" title="Lounge with a view of the sea" environment="8">
+      <coord x="2" y="5" z="2" />
+      <exit direction="west" target="4211" />
+   </room>
+   <room id="4152" area="2" title="Cerulean suite" environment="8">
+      <coord x="0" y="5" z="2" />
+      <exit direction="east" target="4211" door="1" />
+   </room>
+   <room id="4173" area="2" title="Maelstrom Boulevard nearing the marketplace" environment="8">
+      <coord x="-3" y="-2" z="0" />
+      <exit direction="east" target="4109" />
+      <exit direction="west" target="4177" />
+   </room>
+   <room id="4301" area="2" title="Caldinarius Street" environment="8">
+      <coord x="-1" y="8" z="0" />
+      <exit direction="north" target="4967" door="1" />
+      <exit direction="east" target="4300" />
+      <exit direction="west" target="4302" />
+   </room>
+   <room id="4967" area="2" title="A humble Tasur dwelling" environment="8">
+      <coord x="-1" y="9" z="0" />
+      <exit direction="south" target="4301" door="1" />
+   </room>
+   <room id="4302" area="2" title="Cul de sac on Caldinarius Street" environment="8">
+      <coord x="-2" y="8" z="0" />
+      <exit direction="east" target="4301" />
+   </room>
+   <room id="4177" area="2" title="Maelstrom Boulevard" environment="8">
+      <coord x="-4" y="-2" z="0" />
+      <exit direction="east" target="4173" />
+      <exit direction="south" target="4299" door="1" />
+      <exit direction="southwest" target="4303" />
+      <exit direction="northwest" target="34721" />
+   </room>
+   <room id="4299" area="2" title="The Seabreeze Tavern" environment="8">
+      <coord x="-4" y="-3" z="0" />
+      <exit direction="north" target="4177" door="1" />
+   </room>
+   <room id="4303" area="2" title="Alleyway off Maelstrom Boulevard" environment="8">
+      <coord x="-5" y="-3" z="0" />
+      <exit direction="northeast" target="4177" />
+      <exit direction="south" target="4670" />
+   </room>
+   <room id="4670" area="2" title="Cluttered alley" environment="8">
+      <coord x="-5" y="-4" z="0" />
+      <exit direction="north" target="4303" />
+      <exit direction="east" target="4807" />
+   </room>
+   <room id="4807" area="2" title="Dead end alley behind the tavern" environment="8">
+      <coord x="-4" y="-4" z="0" />
+      <exit direction="west" target="4670" />
+   </room>
+   <room id="4172" area="2" title="Tasur Road nearing the Thalassa Market" environment="8">
+      <coord x="0" y="-5" z="0" />
+      <exit direction="north" target="4107" />
+      <exit direction="south" target="4176" />
+   </room>
+   <room id="4176" area="2" title="Along the Tasur Road" environment="8">
+      <coord x="0" y="-6" z="0" />
+      <exit direction="north" target="4172" />
+      <exit direction="south" target="4269" />
+   </room>
+   <room id="4269" area="2" title="The Tasur Road" environment="12">
+      <coord x="0" y="-7" z="0" />
+      <exit direction="north" target="4176" />
+      <exit direction="southwest" target="4270" />
+   </room>
+   <room id="4270" area="2" title="The Tasur Road nearing the gates" environment="12">
+      <coord x="-1" y="-8" z="0" />
+      <exit direction="northeast" target="4269" />
+      <exit direction="southwest" target="4271" />
+   </room>
+   <room id="4271" area="2" title="Gates of Tasur'ke" environment="8">
+      <coord x="-2" y="-9" z="0" />
+      <exit direction="northeast" target="4270" />
+      <exit direction="southwest" target="4100" tgarea="83" />
+   </room>
+   <room id="4100" area="83" title="Nearing an ocean" environment="12">
+      <coord x="10" y="1" z="0" />
+      <exit direction="northeast" target="4271" tgarea="2" />
+      <exit direction="east" target="4101" />
+      <exit direction="southwest" target="4091" />
+   </room>
+   <room id="4171" area="2" title="Anemone Way near the Market" environment="8">
+      <coord x="3" y="-2" z="0" />
+      <exit direction="east" target="4175" />
+      <exit direction="west" target="4105" />
+   </room>
+   <room id="4175" area="2" title="Anemone Way" environment="8">
+      <coord x="4" y="-2" z="0" />
+      <exit direction="southeast" target="4378" />
+      <exit direction="south" target="29768" door="1" />
+      <exit direction="west" target="4171" />
+      <exit direction="up" target="4266" />
+   </room>
+   <room id="22887" area="2" title="A dimly lit study" environment="8">
+      <coord x="4" y="12" z="3" />
+      <exit direction="west" target="22881" />
+   </room>
+   <room id="4378" area="2" title="Cobblestone path" environment="11">
+      <coord x="5" y="-3" z="0" />
+      <exit direction="southeast" target="4379" />
+      <exit direction="northwest" target="4175" />
+   </room>
+   <room id="29768" area="2" title="A cheery living room" environment="8">
+      <coord x="4" y="-3" z="0" />
+      <exit direction="north" target="4175" door="1" />
+   </room>
+   <room id="4266" area="2" title="Marble steps above Anemone Way" environment="8">
+      <coord x="3" y="-1" z="1" />
+      <exit direction="up" target="4267" />
+      <exit direction="down" target="4175" />
+   </room>
+   <room id="4379" area="2" title="Cobblestone path through the grass" environment="11">
+      <coord x="6" y="-4" z="0" />
+      <exit direction="east" target="18007" />
+      <exit direction="northwest" target="4378" />
+      <exit direction="down" target="4380" />
+   </room>
+   <room id="4381" area="2" title="Path through the high grass" environment="11">
+      <coord x="3" y="1" z="-4" />
+      <exit direction="west" target="4380" />
+      <exit direction="down" target="4666" />
+   </room>
+   <room id="4380" area="2" title="Descending cobblestone path" environment="11">
+      <coord x="2" y="1" z="-4" />
+      <exit direction="east" target="4381" />
+      <exit direction="up" target="4379" />
+   </room>
+   <room id="4666" area="2" title="Path down the cliff" environment="11">
+      <coord x="3" y="0" z="-4" />
+      <exit direction="up" target="4381" />
+      <exit direction="down" target="4665" />
+   </room>
+   <room id="4665" area="2" title="Cliffside path" environment="11">
+      <coord x="3" y="-1" z="-4" />
+      <exit direction="west" target="4667" />
+      <exit direction="up" target="4666" />
+      <exit direction="down" target="4664" />
+   </room>
+   <room id="4667" area="2" title="Crystal caverns" environment="3">
+      <coord x="5" y="-2" z="-3" />
+      <exit direction="north" target="4668" />
+      <exit direction="east" target="4665" />
+      <exit direction="southwest" target="18454" />
+   </room>
+   <room id="4664" area="2" title="Base of switchbacks" environment="11">
+      <coord x="3" y="-2" z="-4" />
+      <exit direction="east" target="4382" />
+      <exit direction="up" target="4665" />
+   </room>
+   <room id="4382" area="2" title="Sandy path nearing the beach" environment="11">
+      <coord x="5" y="-2" z="-4" />
+      <exit direction="north" target="4383" />
+      <exit direction="west" target="4664" />
+   </room>
+   <room id="4383" area="2" title="Sandy path nearing the beach" environment="11">
+      <coord x="5" y="-1" z="-4" />
+      <exit direction="east" target="4384" />
+      <exit direction="south" target="4382" />
+   </room>
+   <room id="4384" area="2" title="Nearing the beach" environment="11">
+      <coord x="7" y="-1" z="-4" />
+      <exit direction="east" target="4435" />
+      <exit direction="west" target="4383" />
+   </room>
+   <room id="4435" area="2" title="Sandy beach" environment="5">
+      <coord x="9" y="-1" z="-4" />
+      <exit direction="north" target="4434" />
+      <exit direction="east" target="4450" />
+      <exit direction="south" target="4436" />
+      <exit direction="west" target="4384" />
+   </room>
+   <room id="4434" area="2" title="At the water's edge" environment="5">
+      <coord x="9" y="0" z="-4" />
+      <exit direction="north" target="4446" />
+      <exit direction="northeast" target="4447" />
+      <exit direction="east" target="4448" />
+      <exit direction="south" target="4435" />
+      <exit direction="west" target="4433" />
+   </room>
+   <room id="4450" area="2" title="In the shallows" environment="20">
+      <coord x="10" y="-1" z="-4" />
+      <exit direction="north" target="4448" />
+      <exit direction="northeast" target="4449" />
+      <exit direction="south" target="4451" />
+      <exit direction="west" target="4435" />
+   </room>
+   <room id="4436" area="2" title="At the seaside" environment="5">
+      <coord x="9" y="-2" z="-4" />
+      <exit direction="north" target="4435" />
+      <exit direction="east" target="4451" />
+      <exit direction="south" target="4452" />
+      <exit direction="west" target="4437" />
+   </room>
+   <room id="4446" area="2" title="In the shallows" environment="20">
+      <coord x="9" y="1" z="-4" />
+      <exit direction="east" target="4447" />
+      <exit direction="southeast" target="4448" />
+      <exit direction="south" target="4434" />
+      <exit direction="southwest" target="4433" />
+      <exit direction="west" target="4445" />
+   </room>
+   <room id="4447" area="2" title="Boundless sea" environment="20">
+      <coord x="10" y="1" z="-4" />
+      <exit direction="southeast" target="4449" />
+      <exit direction="south" target="4448" />
+      <exit direction="southwest" target="4434" />
+      <exit direction="west" target="4446" />
+   </room>
+   <room id="4448" area="2" title="In the shallows" environment="20">
+      <coord x="10" y="0" z="-4" />
+      <exit direction="north" target="4447" />
+      <exit direction="east" target="4449" />
+      <exit direction="south" target="4450" />
+      <exit direction="west" target="4434" />
+      <exit direction="northwest" target="4446" />
+   </room>
+   <room id="4433" area="2" title="Approaching the path" environment="5">
+      <coord x="8" y="0" z="-4" />
+      <exit direction="north" target="4445" />
+      <exit direction="northeast" target="4446" />
+      <exit direction="east" target="4434" />
+   </room>
+   <room id="4445" area="2" title="In the shallows" environment="20">
+      <coord x="8" y="1" z="-4" />
+      <exit direction="north" target="29871" />
+      <exit direction="east" target="4446" />
+      <exit direction="south" target="4433" />
+   </room>
+   <room id="4449" area="2" title="Wide expanse of ocean" environment="20">
+      <coord x="11" y="0" z="-4" />
+      <exit direction="southwest" target="4450" />
+      <exit direction="west" target="4448" />
+      <exit direction="northwest" target="4447" />
+   </room>
+   <room id="6097" area="2" title="Far out to sea" environment="20">
+      <coord x="11" y="2" z="-4" />
+      <exit direction="east" target="6098" />
+   </room>
+   <room id="4451" area="2" title="In the shallows" environment="20">
+      <coord x="10" y="-2" z="-4" />
+      <exit direction="north" target="4450" />
+      <exit direction="southeast" target="4454" />
+      <exit direction="south" target="4453" />
+      <exit direction="southwest" target="4452" />
+      <exit direction="west" target="4436" />
+   </room>
+   <room id="4454" area="2" title="Wide expanse of ocean" environment="20">
+      <coord x="11" y="-3" z="-4" />
+      <exit direction="southwest" target="4455" />
+      <exit direction="west" target="4453" />
+      <exit direction="northwest" target="4451" />
+   </room>
+   <room id="4453" area="2" title="Among the waves" environment="20">
+      <coord x="10" y="-3" z="-4" />
+      <exit direction="north" target="4451" />
+      <exit direction="east" target="4454" />
+      <exit direction="south" target="4455" />
+      <exit direction="west" target="4452" />
+   </room>
+   <room id="4452" area="2" title="In the shallows" environment="20">
+      <coord x="9" y="-3" z="-4" />
+      <exit direction="north" target="4436" />
+      <exit direction="northeast" target="4451" />
+      <exit direction="east" target="4453" />
+      <exit direction="southeast" target="4455" />
+      <exit direction="south" target="4439" />
+      <exit direction="west" target="4438" />
+      <exit direction="northwest" target="4437" />
+   </room>
+   <room id="4455" area="2" title="In the shallows" environment="20">
+      <coord x="10" y="-4" z="-4" />
+      <exit direction="north" target="4453" />
+      <exit direction="northeast" target="4454" />
+      <exit direction="south" target="4456" />
+      <exit direction="west" target="4439" />
+      <exit direction="northwest" target="4452" />
+   </room>
+   <room id="4456" area="2" title="In the shallows" environment="20">
+      <coord x="10" y="-5" z="-4" />
+      <exit direction="north" target="4455" />
+      <exit direction="southeast" target="4459" />
+      <exit direction="south" target="4458" />
+      <exit direction="southwest" target="4457" />
+      <exit direction="west" target="4440" />
+   </room>
+   <room id="4439" area="2" title="Nearing the waves" environment="5">
+      <coord x="9" y="-4" z="-4" />
+      <exit direction="north" target="4452" />
+      <exit direction="east" target="4455" />
+      <exit direction="south" target="4440" />
+      <exit direction="west" target="4441" />
+      <exit direction="northwest" target="4438" />
+   </room>
+   <room id="4459" area="2" title="Deep blue sea" environment="20">
+      <coord x="11" y="-6" z="-4" />
+      <exit direction="southeast" target="30719" />
+      <exit direction="southwest" target="4461" />
+      <exit direction="west" target="4458" />
+      <exit direction="northwest" target="4456" />
+   </room>
+   <room id="4458" area="2" title="Boundless sea" environment="20">
+      <coord x="10" y="-6" z="-4" />
+      <exit direction="north" target="4456" />
+      <exit direction="east" target="4459" />
+      <exit direction="south" target="4461" />
+      <exit direction="southwest" target="4460" />
+      <exit direction="west" target="4457" />
+   </room>
+   <room id="4457" area="2" title="In the shallows" environment="20">
+      <coord x="9" y="-6" z="-4" />
+      <exit direction="north" target="4440" />
+      <exit direction="northeast" target="4456" />
+      <exit direction="east" target="4458" />
+      <exit direction="southeast" target="4461" />
+      <exit direction="south" target="4460" />
+      <exit direction="west" target="4443" />
+   </room>
+   <room id="4440" area="2" title="A tidepool" environment="5">
+      <coord x="9" y="-5" z="-4" />
+      <exit direction="north" target="4439" />
+      <exit direction="east" target="4456" />
+      <exit direction="south" target="4457" />
+      <exit direction="southwest" target="4443" />
+      <exit direction="west" target="4442" />
+      <exit direction="in" target="14603" />
+   </room>
+   <room id="4461" area="2" title="Among the waves" environment="20">
+      <coord x="10" y="-7" z="-4" />
+      <exit direction="north" target="4458" />
+      <exit direction="northeast" target="4459" />
+      <exit direction="west" target="4460" />
+      <exit direction="northwest" target="4457" />
+   </room>
+   <room id="4460" area="2" title="In the shallows" environment="20">
+      <coord x="9" y="-7" z="-4" />
+      <exit direction="north" target="4457" />
+      <exit direction="northeast" target="4458" />
+      <exit direction="east" target="4461" />
+      <exit direction="west" target="4444" />
+   </room>
+   <room id="4444" area="2" title="Sandy beach" environment="5">
+      <coord x="8" y="-7" z="-4" />
+      <exit direction="north" target="4443" />
+      <exit direction="east" target="4460" />
+      <exit direction="in" target="14564" />
+   </room>
+   <room id="4443" area="2" title="At the seaside" environment="5">
+      <coord x="8" y="-6" z="-4" />
+      <exit direction="north" target="4442" />
+      <exit direction="northeast" target="4440" />
+      <exit direction="east" target="4457" />
+      <exit direction="south" target="4444" />
+   </room>
+   <room id="4442" area="2" title="Sand dunes" environment="5">
+      <coord x="8" y="-5" z="-4" />
+      <exit direction="north" target="4441" />
+      <exit direction="east" target="4440" />
+      <exit direction="south" target="4443" />
+      <exit direction="up" target="20843" hidden="1" />
+   </room>
+   <room id="4441" area="2" title="Rippling dunes" environment="5">
+      <coord x="8" y="-4" z="-4" />
+      <exit direction="north" target="4438" />
+      <exit direction="east" target="4439" />
+      <exit direction="south" target="4442" />
+   </room>
+   <room id="20843" area="2" title="Upon the side of a cliff" environment="12">
+      <coord x="8" y="-5" z="-3" />
+      <exit direction="up" target="20880" />
+      <exit direction="down" target="4442" />
+   </room>
+   <room id="4438" area="2" title="On the shore" environment="5">
+      <coord x="8" y="-3" z="-4" />
+      <exit direction="north" target="4437" />
+      <exit direction="east" target="4452" />
+      <exit direction="southeast" target="4439" />
+      <exit direction="south" target="4441" />
+      <exit direction="in" target="19235" door="1" />
+   </room>
+   <room id="4437" area="2" title="Upon the white sand" environment="5">
+      <coord x="8" y="-2" z="-4" />
+      <exit direction="east" target="4436" />
+      <exit direction="southeast" target="4452" />
+      <exit direction="south" target="4438" />
+   </room>
+   <room id="4668" area="2" title="Iridescent cave" environment="3">
+      <coord x="5" y="0" z="-3" />
+      <exit direction="north" target="22444" />
+      <exit direction="south" target="4667" />
+      <exit direction="west" target="4669" />
+   </room>
+   <room id="4669" area="2" title="Hidden pool" environment="3">
+      <coord x="4" y="0" z="-3" />
+      <exit direction="east" target="4668" />
+   </room>
+   <room id="24555" area="2" title="A shaded path" environment="11">
+      <coord x="3" y="8" z="0" />
+      <exit direction="north" target="23659" />
+      <exit direction="west" target="4300" door="1" />
+   </room>
+   <room id="23659" area="2" title="A sweeping porch" environment="8">
+      <coord x="3" y="9" z="0" />
+      <exit direction="north" target="22955" door="1" />
+      <exit direction="south" target="24555" />
+   </room>
+   <room id="22955" area="2" title="A lavish entry hall" environment="8">
+      <coord x="3" y="10" z="0" />
+      <exit direction="north" target="23767" />
+      <exit direction="east" target="23058" />
+      <exit direction="south" target="23659" door="1" />
+      <exit direction="west" target="23068" />
+      <exit direction="northwest" target="23889" door="1" />
+   </room>
+   <room id="23767" area="2" title="To the kitchen" environment="8">
+      <coord x="3" y="11" z="0" />
+      <exit direction="north" target="23865" />
+      <exit direction="east" target="23845" />
+      <exit direction="south" target="22955" />
+   </room>
+   <room id="23058" area="2" title="Eastern vestibule" environment="8">
+      <coord x="4" y="10" z="0" />
+      <exit direction="east" target="23059" />
+      <exit direction="west" target="22955" />
+   </room>
+   <room id="23068" area="2" title="Western vestibule" environment="8">
+      <coord x="2" y="10" z="0" />
+      <exit direction="east" target="22955" />
+      <exit direction="west" target="23069" />
+   </room>
+   <room id="23889" area="2" title="Dusty stairwell" environment="8">
+      <coord x="2" y="11" z="0" />
+      <exit direction="southeast" target="22955" door="1" />
+      <exit direction="up" target="23571" />
+   </room>
+   <room id="23069" area="2" title="Overlooking Tasur'ke" environment="8">
+      <coord x="1" y="10" z="0" />
+      <exit direction="east" target="23068" />
+   </room>
+</rooms>
+<environments>
+   <environment id="2" name="Constructed underground" color="8" htmlcolor="#80735f" />
+   <environment id="3" name="Natural underground" color="8" htmlcolor="#765116" />
+   <environment id="4" name="Forest" color="2" htmlcolor="#36662e" />
+   <environment id="5" name="Beach" color="11" htmlcolor="#ffffcc" />
+   <environment id="6" name="Desert" color="11" htmlcolor="#f9fd00" />
+   <environment id="7" name="Grasslands" color="10" htmlcolor="#1dc713" />
+   <environment id="8" name="Urban" color="13" htmlcolor="#bda0cb" />
+   <environment id="9" name="Hills" color="3" htmlcolor="#2d7720" />
+   <environment id="10" name="River" color="4" htmlcolor="#00ddff" />
+   <environment id="11" name="Path" color="6" htmlcolor="#837766" />
+   <environment id="12" name="Road" color="6" htmlcolor="#7c7c7c" />
+   <environment id="13" name="Valley" color="5" htmlcolor="#41ab2f" />
+   <environment id="14" name="Mountains" color="1" htmlcolor="#584a34" />
+   <environment id="15" name="Swamp" color="10" htmlcolor="#76843c" />
+   <environment id="16" name="Tundra" color="7" htmlcolor="#c5fcff" />
+   <environment id="17" name="Jungle" color="10" htmlcolor="#89e14b" />
+   <environment id="18" name="Dwarven city" color="13" htmlcolor="#ab9e6d" />
+   <environment id="19" name="Tsol'aa city" color="13" htmlcolor="#56a574" />
+   <environment id="20" name="Ocean" color="4" htmlcolor="#0000ff" />
+   <environment id="21" name="Garden" color="11" htmlcolor="#94e45d" />
+   <environment id="22" name="Freshwater" color="4" htmlcolor="#5ff0f0" />
+   <environment id="23" name="Sewer" color="8" htmlcolor="#918010" />
+   <environment id="24" name="Deep Ocean" color="4" htmlcolor="#003366" />
+   <environment id="25" name="Reef" color="12" htmlcolor="#f98167" />
+   <environment id="27" name="Polar" color="15" htmlcolor="#ffffff" />
+   <environment id="28" name="Trees" color="2" htmlcolor="#00e342" />
+   <environment id="29" name="Blighted" color="7" htmlcolor="#990000" />
+   <environment id="30" name="Water" color="4" htmlcolor="#4d42d4" />
+   <environment id="31" name="Magma Caves" color="9" htmlcolor="#dd4400" />
+   <environment id="32" name="Ruins" color="7" htmlcolor="#ddba82" />
+   <environment id="33" name="Catacombs" color="8" htmlcolor="#837766" />
+   <environment id="34" name="Ocean floor" color="4" htmlcolor="#0000ff" />
+   <environment id="35" name="Skies" color="14" htmlcolor="#ffffff" />
+   <environment id="36" name="Vessel" color="3" htmlcolor="#918010" />
+   <environment id="37" name="Deep Ocean Floor" color="7" htmlcolor="#0000ff" />
+   <environment id="39" name="Agrarian" color="7" htmlcolor="#918010" />
+   <environment id="40" name="Abstract" color="7" htmlcolor="#C0C0C0" />
+   <environment id="41" name="Wastelands" color="7" htmlcolor="#C0C0C0" />
+   <environment id="42" name="Lava Fields" color="1" htmlcolor="#cf1020" />
+   <environment id="43" name="Planar Highway" color="2" htmlcolor="#00701f" />
+   <environment id="44" name="Storm" color="15" htmlcolor="#f2f2f2" />
+   <environment id="45" name="Flames" color="9" htmlcolor="#ef3304" />
+   <environment id="46" name="Earthen" color="3" htmlcolor="#8e7400" />
+   <environment id="47" name="Stars" color="5" htmlcolor="#8e008a" />
+   <environment id="48" name="Ausafoss" color="12" htmlcolor="#f98167" />
+</environments>
+</map>
