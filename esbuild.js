@@ -8,10 +8,13 @@ const pluginCopyStaticFiles = require("esbuild-copy-static-files");
 build({
   bundle: true,
   define: {
-    "process.env.NODE_ENV": "development",
+    "process.env.NODE_ENV": '"development"',
   },
-  entryPoints: ["app/index.js"],
-  outdir: "public",
+  entryPoints: [
+    "app/profiles/achaea/index.js",
+    "app/profiles/achaea/service-worker.js",
+  ],
+  outdir: "public/profiles/achaea",
   plugins: [
     pluginCopyStaticFiles({
       src: "./www",

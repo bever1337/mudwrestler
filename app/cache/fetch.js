@@ -31,13 +31,12 @@ export function fetchAround(request) {
 export function fetchThrough(request) {
   return caches.open(CACHE_NAME).then((cache) => {
     return cache.match(request).then((cacheMatch) => {
-      if (cacheMatch) {
-        return Promise.resolve(cacheMatch);
+      if (typeof cacheMatch !== "undefined") {
+        return cacheMatch;
       }
-      return fetch(request).then((response) => {
-        cache.put(request, response.clone());
-        return response;
-      });
+      return fetch(request).then((response) =>
+        cache.put(request, response.clone()).then(() => response)
+      );
     });
   });
 }
