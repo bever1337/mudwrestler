@@ -3,12 +3,13 @@
 import { scaleLinear } from "d3";
 import { createElement, Fragment, useCallback, useRef, useState } from "react";
 
+import { NGon } from "./NGon";
 import { throttleRaf } from "../../../utils/throttle";
 
 // Create the scale
 const scale = scaleLinear()
   .domain([-100, 100]) // This is what is written on the Axis: from 0 to 100
-  .range([-500, 500]); // This is where the axis is placed: from 100px to 800px
+  .range([-2000, 2000]); // This is where the axis is placed: from 100px to 800px
 
 const defaultViewBox = () => ({
   xMin: -25,
@@ -154,7 +155,6 @@ export function Svg(props) {
     },
     []
   );
-
   const onWheel = useCallback(
     /**
      * Applies viewbox scaling for zoom effect
@@ -211,12 +211,14 @@ export function Svg(props) {
             (roomKey) => props.rooms?.[roomKey]?.area === props.currentArea
           )
           .map((roomKey) =>
-            createElement("circle", {
+            createElement(NGon, {
               key: props.rooms?.[roomKey]?.id,
-              // title: `(${props.rooms?.[roomKey]?.x}, ${props.rooms?.[roomKey]?.y}), ${props.rooms?.[roomKey]?.title}`,
-              r: 2,
               cx: scale(parseInt(props.rooms?.[roomKey]?.x ?? "0", 10)),
               cy: -1 * scale(parseInt(props.rooms?.[roomKey]?.y ?? "0", 10)), // in layout world, y increases going 'down' the axis
+              diameter: 8,
+              strokeWidth: 1,
+              // title: `(${props.rooms?.[roomKey]?.x}, ${props.rooms?.[roomKey]?.y}), ${props.rooms?.[roomKey]?.title}`,
+              vertices: 8,
             })
           ),
         links.map(({ source, target }, index) =>
