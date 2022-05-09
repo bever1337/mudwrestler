@@ -129,11 +129,15 @@ Internal API used to compare two `Request`s given `RouterOptions`. See `RouterOp
 
 ## (Request, Response) Router interface
 
+### HandlerTuple
+
 A `HandlerTuple` represents a possible `Request` match and its associated `Response` resolver. A `Router` instance maintains an array of `HandlerTuple` on its `handlers` property.
 
 ```typescript
 type HandlerTuple = [RequestOrHandler, ResponseHandler];
 ```
+
+### RequestOrHandler
 
 `RequestOrHandler` optionally provides `Request` instances for `Router` matching. It may be three possible values:
 
@@ -145,17 +149,23 @@ type HandlerTuple = [RequestOrHandler, ResponseHandler];
 type RequestOrHandler = RequestHandler | Request | undefined;
 ```
 
+### RequestHandler
+
 The `RequestHandler` optionally returns a `Request` for router matching. Returning `undefined` instructs the router to skip the current (`Request`, `Response`) tuple. Its single parameter, request, is the `Request` object being routed.
 
 ```typescript
 type RequestHandler = (request: Request) => Request | undefined;
 ```
 
+### ResponseHandler
+
 `ResponseHandler` is invoked when the `RequestOrHandler` portion of the (Request, Response) tuple was matched. Its single parameter, request, is the `Request` object being routed. `ResponseHandler` MUST return a `Response` or `Promise<Response>`.
 
 ```typescript
 type ResponseHandler = (request: Request) => Response | Promise<Response>;
 ```
+
+### RouterOptions
 
 Based on `CacheQueryOptions`. `RouterOptions` also exposes an implicit option from the Cache API, `excludeFragment`. Each flag is used to ignore a specific portion of a `Request` during matching.
 
@@ -179,4 +189,47 @@ type RouterOptions = {
   /** This flag is currently unused and must always be `true` to earmark for future use. */
   ignoreVary: true;
 };
+```
+
+## Extras
+
+### handleExpression
+
+`handleExpression` supports using `itty-router` style expressions for the path portion of a URL. The origin and all other request properties (in other words, every portion of a Request and URL _except_ pathname) will be constructed from the `RequestOrHandler` passed in after the `pathExpression`.
+
+Interface:
+
+```typescript
+type HandleExpression = (
+  pathExpression: string,
+
+  requestOrHandler:
+    | ((
+        request: Request,
+        options: { params: { [key: string]: string } | undefined }
+      ) => Request | undefined)
+    | Request,
+
+  responseOrHandler: (
+    request: Request,
+    options: { params: { [key: string]: string } | undefined }
+  ) => Response | Promise<Response>
+) => HandlerTuple;
+```
+
+Example:
+
+```javascript
+import { Router } from "request-router/router";
+import { handleExpression } from "request-router/extras";
+
+const router = new Router();
+router.handlers.push(
+  handleExpression(
+    "/foo/:barId",
+    new Request("https://example.com"),
+    (request, { params } = {}) =>
+      new Response(`Hello, ${params?.barId ?? "friend"}`)
+  )
+);
 ```
