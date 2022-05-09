@@ -1,89 +1,71 @@
 /// @ts-check
 /* eslint-env browser */
 
-export class Router {
-  constructor() {
-    /**
-     * @type {import(".").HandlerTuple[]}
-     */
-    this.handlers = [];
-  }
-
-  /**
-   * @param {import(".").RequestOrHandler} request
-   * @param {import(".").ResponseOrHandler} response
-   */
-  handle(request, response) {
-    this.handlers.push([request, response]);
-  }
-
-  /**
-   * @param {string | Request} [request]
-   * @param {CacheQueryOptions} [options]
-   */
-  match(request, options) {
-    return matchAll(this.handlers, request, options);
-  }
-}
+/**
+ * @typedef {(request: Request) => Request | undefined} RequestHandler
+ * @typedef {RequestHandler | Request | undefined} RequestOrHandler
+ * @typedef {(request: Request | undefined) => Response | Promise<Response>} ResponseHandler
+ * @typedef {ResponseHandler | Response | Promise<Response>} ResponseOrHandler
+ * @typedef {[RequestOrHandler, ResponseOrHandler]} HandlerTuple
+ * 
+ * @typedef {CacheQueryOptions & { excludeFragment?: boolean }} RouterOptions
+ */
 
 /**
  * Applies default CacheQueryOptions over input of undefined or CacheQueryOptions
- * @param {CacheQueryOptions} [options]
- * @returns {import(".").RouterQueryOptions} CacheQueryOptions
+ * @param {RouterOptions} [options]
+ * @returns {{ [key in keyof CacheQueryOptions]-?: CacheQueryOptions[key]; } & { excludeFragment: boolean }}
  */
-function getOptions({
+export function getOptions({
+  excludeFragment = true,
   ignoreSearch = false,
   ignoreMethod = false,
   ignoreVary = false,
 } = {}) {
-  return { ignoreMethod, ignoreSearch, ignoreVary };
+  return { excludeFragment, ignoreMethod, ignoreSearch, ignoreVary };
 }
 
 /**
  * @documentation https://www.w3.org/TR/service-workers/#dom-cache-matchall
- * @param {import(".").HandlerTuple[]} handlers
- * @param {string | Request | undefined} [queryRequest]
- * @param {CacheQueryOptions} [options]
- * @returns {import(".").HandledResponse[]}
+ * @param {HandlerTuple[]} handlers
+ * @param {string | Request} queryRequest
+ * @param {RouterOptions} [options]
+ * @returns {(Response | Promise<Response>)[]}
+ * Based on the implementation of DOM Cache matchAll API. Matches requests and returns an array of Responses or pending Responses.
+ * The primary difference from the Cache API is that `matchAll` does not accept undefined `queryRequest`. This is useful when dealing
+ * with opaque caches, but is not relevant for a Router controlled by the developer.
+ * If `requestOrHandler` is undefined, the corresponding Response handler is treated as a wildcard and is invoked for every request.
+ * If `requestOrHandler` is a function, returning undefined is a short-cut and no Request matching will be performed.
+ * Else, see `requestsMatch` for documentation on request matching
  */
 export function matchAll(handlers, queryRequest, options) {
-  // 1. Let r be undefined (spec change, r is undefined instead of null)
+  /** @type {Request} - Internal usage of queryRequest */
   let r;
-  // 2. If the optional argument request is not omitted, then:
   if (queryRequest instanceof Request) {
-    // TODO there is probably a better check than instanceof
-    // Change from spec: router has no opinion on which methods can be affected by `ignoreMethod`
-    // 2. 1. If request is a Request object, then:
-    // set r to input queryRequest
+    // Spec change: router has no opinion on which methods can be affected by `ignoreMethod`
     r = queryRequest;
-  } else if (typeof queryRequest === "string") {
-    // 2. 2. Else if queryRequest is a string, then:
-    // set r to the associated request of the result of invoking the initial value of Request as constructor with request as its argument.
-    // Spec change: Allow exceptions to throw
+  } else {
+    // Else assume queryRequest is a string. Request construction is allowed to throw.
     r = new Request(queryRequest);
-  } // else { r = undefined }
-  // 3. Let responses be an empty list.
-  /** @type {import(".").HandledResponse[]} */
+  }
+  /** @type {(Response | Promise<Response>)[]} */
   const responses = [];
-  /** @type {import(".").HandledRequest} */
+  /** @type {undefined | Request} */
   let handledRequest;
   for (let [requestOrHandler, responseOrHandler] of handlers) {
-    // 4. For each requestResponse of storage:
-    if (typeof r === "undefined" || typeof requestOrHandler === "undefined") {
-      // 4. 1. If the optional queryRequest `Request` argument is omitted then:
-      // all response handlers are invoked
-      // OR if r was provided and handledRequest was not provided then:
-      // treat responseOrHandler as wildcard and invoke for every request
+    if (typeof requestOrHandler === "undefined") {
+      // `requestOrHandler` was not provided, then treat `responseOrHandler` as wildcard and invoke for every request
       responses.push(unwrapResponse(responseOrHandler, undefined));
-      continue;
-    }
-    // 4. 2. let handledRequest be itself or the result of invoking requestHandler with r
-    handledRequest = unwrapRequest(requestOrHandler, r);
-    if (handledRequest && requestsMatch(r, handledRequest, options)) {
-      // 4. 3. Else if r was provided and `handledRequest` was provided, then:
-      // 4. 3. 1. If `requestsMatch` with requestQuery, handledRequest, and options returns true, then:
-      // push response for matching request
-      responses.push(unwrapResponse(responseOrHandler, r));
+    } else {
+      // Else, let `handledRequest` be the the Request of requestOrHandler or the returned Request from requestOrHandler
+      handledRequest = unwrapRequest(requestOrHandler, r);
+      if (
+        typeof handledRequest !== "undefined" &&
+        requestsMatch(r, handledRequest, options)
+      ) {
+        // If `handledRequest` was provided and requests match:
+        responses.push(unwrapResponse(responseOrHandler, r));
+      }
     }
   }
   return responses;
@@ -93,41 +75,44 @@ export function matchAll(handlers, queryRequest, options) {
  * @documentation https://www.w3.org/TR/service-workers/#request-matches-cached-item-algorithm
  * @param {Request} queryRequest
  * @param {Request} handlerRequest
- * @param {CacheQueryOptions} [options]
+ * @param {RouterOptions} [options]
  * @returns {boolean}
  */
 export function requestsMatch(queryRequest, handlerRequest, options) {
+  const o = getOptions(options);
   if (
-    getOptions(options).ignoreMethod === false &&
+    o.ignoreMethod === false &&
     queryRequest.method !== handlerRequest.method
   ) {
-    // 1. If options.ignoreMethod is false and request’s method does not match requestQuery's method
+    // 1. If options.ignoreMethod is false and request’s method does not match requestQuery's method, then return false
     return false;
   }
-  const queryURL = new URL(queryRequest.url); // 2. Let queryURL be requestQuery’s url.
-  queryURL.hash = ""; // ignore URL fragments
-  const handlerURL = new URL(handlerRequest.url); // 3. Let handledURL be request handler’s returned url.
-  handlerURL.hash = ""; // ignore URL fragments
-  if (getOptions(options).ignoreSearch === true) {
-    // 4. If options.ignoreSearch is true, then set search URL property to empty string
+  // 2. Let queryURL be requestQuery’s url.
+  const queryURL = new URL(queryRequest.url);
+  // 3. Let handledURL be request handler’s returned url.
+  const handlerURL = new URL(handlerRequest.url);
+  if (o.excludeFragment === true) {
+    // 4. If options.excludeFragment is true, then set URL fragments to empty string
+    queryURL.hash = "";
+    handlerURL.hash = "";
+  }
+  if (o.ignoreSearch === true) {
+    // 5. If options.ignoreSearch is true, then set search URL property to empty string
     queryURL.search = "";
     handlerURL.search = "";
   }
-  if (queryURL.toString() !== handlerURL.toString()) {
-    // 5. If queryURL does not equal handledURL with the exclude fragment flag set, then return false.
-    return false;
-  }
-  // 6. Return true.
-  return true;
+  // 6. If queryURL does not equal handledURL, then return false.
+  // 7. Return true.
+  return queryURL.toString() === handlerURL.toString();
 }
 
 /**
  * TODO somehow figure out typescript overload typings and only export one unwrapper
- * @param {import(".").RequestOrHandler} [requestOrHandler]
- * @param {Request | undefined} [queryRequest]
- * @returns {import(".").HandledRequest}
+ * @param {RequestOrHandler} requestOrHandler
+ * @param {Request} queryRequest
+ * @returns {Request | undefined}
  */
-function unwrapRequest(requestOrHandler, queryRequest) {
+export function unwrapRequest(requestOrHandler, queryRequest) {
   if (typeof requestOrHandler === "function") {
     return requestOrHandler(queryRequest);
   }
@@ -136,11 +121,11 @@ function unwrapRequest(requestOrHandler, queryRequest) {
 
 /**
  * TODO somehow figure out typescript overload typings and only export one unwrapper
- * @param {import(".").ResponseOrHandler} responseOrHandler
- * @param {Request} [queryRequest]
- * @returns {import(".").HandledResponse}
+ * @param {ResponseOrHandler} responseOrHandler
+ * @param {Request | undefined} [queryRequest]
+ * @returns {Response | Promise<Response>}
  */
-function unwrapResponse(responseOrHandler, queryRequest) {
+export function unwrapResponse(responseOrHandler, queryRequest) {
   if (typeof responseOrHandler === "function") {
     return responseOrHandler(queryRequest);
   }

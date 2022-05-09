@@ -22,6 +22,4 @@ router.handlers.push(
 router.handle(undefined, new Request("Not found", { status: 404 }));
 
 const handlersInProgress = router.match(new Request("http://example.com/foo"));
-// wildcard match
-const handlersInProgress = router.match();
 ```
