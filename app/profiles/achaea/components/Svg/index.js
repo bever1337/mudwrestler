@@ -3,28 +3,25 @@
 import { scaleLinear } from "d3";
 import { createElement, Fragment, useCallback, useRef, useState } from "react";
 
-import { NGon } from "./NGon";
-import { throttleRaf } from "../../../utils/throttle";
+// import { NGon } from "../NGon";
+import { throttleRaf } from "../../../../utils/throttle";
 
-// Create the scale
-const scale = scaleLinear()
-  .domain([-100, 100]) // This is what is written on the Axis: from 0 to 100
-  .range([-2000, 2000]); // This is where the axis is placed: from 100px to 800px
+// // Create the scale
+// const scale = scaleLinear()
+//   .domain([-100, 100]) // This is what is written on the Axis: from 0 to 100
+//   .range([-2000, 2000]); // This is where the axis is placed: from 100px to 800px
+
+const clamp = scaleLinear().domain([20, 2000]).range([20, 2000]).clamp(true);
 
 const defaultViewBox = () => ({
-  xMin: -25,
-  yMin: -25,
-  width: 50,
-  height: 50,
+  xMin: -50,
+  yMin: -50,
+  width: 100,
+  height: 100,
 });
 
 /**
- * @typedef {Object} SvgProps
- * @property {string} props.currentArea
- * @property {(next: string) => void} props.setCurrentArea
- *
- * @param {SvgProps & Map} props
- * @returns
+ * @param {import("react").PropsWithChildren<any>} props
  */
 export function Svg(props) {
   /** @type {React.MutableRefObject<HTMLElement | undefined>} */
@@ -32,29 +29,6 @@ export function Svg(props) {
   const [viewBox, setViewbox] = useState(defaultViewBox());
   const clientCoordinates = useRef({ x: 0, y: 0 });
   const dragging = useRef(false);
-
-  const links = (props?.exit_keys ?? [])
-    .filter((exitKey) => {
-      return (
-        props.rooms?.[props.exits?.[exitKey]?.targetRoom ?? ""]?.area ===
-        props.currentArea
-      );
-    })
-    .reduce(
-      /**
-       * @param {{ source: string, target: string }[]} acc
-       * @param {*} exitKey
-       * @returns {{ source: string, target: string }[]}
-       */
-      (acc, exitKey) =>
-        acc.concat([
-          {
-            source: props.exits?.[exitKey]?.room ?? "",
-            target: props.exits?.[exitKey]?.targetRoom ?? "",
-          },
-        ]),
-      []
-    );
 
   const dragSvg = useCallback(
     /** @param {import('react').MouseEvent | import('react').PointerEvent | import('react').TouchEvent} event */
@@ -108,8 +82,8 @@ export function Svg(props) {
           return {
             xMin: vMinX - deltaXMin,
             yMin: vMinY - deltaYMin,
-            width: vWidth + deltaVWidth,
-            height: vHeight + deltaVHeight,
+            width: clamp(vWidth + deltaVWidth),
+            height: clamp(vHeight + deltaVHeight),
           };
         });
       }
@@ -206,48 +180,11 @@ export function Svg(props) {
           ref: svgRef,
           viewBox: `${viewBox.xMin} ${viewBox.yMin} ${viewBox.width} ${viewBox.height}`,
         },
-        props?.room_keys
-          ?.filter(
-            (roomKey) => props.rooms?.[roomKey]?.area === props.currentArea
-          )
-          .map((roomKey) =>
-            createElement(NGon, {
-              key: props.rooms?.[roomKey]?.id,
-              cx: scale(parseInt(props.rooms?.[roomKey]?.x ?? "0", 10)),
-              cy: -1 * scale(parseInt(props.rooms?.[roomKey]?.y ?? "0", 10)), // in layout world, y increases going 'down' the axis
-              diameter: 8,
-              strokeWidth: 1,
-              // title: `(${props.rooms?.[roomKey]?.x}, ${props.rooms?.[roomKey]?.y}), ${props.rooms?.[roomKey]?.title}`,
-              vertices: 8,
-            })
-          ),
-        links.map(({ source, target }, index) =>
-          createElement("line", {
-            stroke: "#aaa",
-            strokeWidth: "1",
-            key: `${source}_${target}`,
-            x1: scale(parseInt(props.rooms?.[source]?.x ?? "0", 10)),
-            y1: -1 * scale(parseInt(props.rooms?.[source]?.y ?? "0", 10)),
-            x2: scale(parseInt(props.rooms?.[target]?.x ?? "0", 10)),
-            y2: -1 * scale(parseInt(props.rooms?.[target]?.y ?? "0", 10)),
-          })
-        )
+        props.children
       )
     )
   );
 }
-
-/**
- * @typedef {Object} Map
- * @property {Record<string, { id: string, name: string, x: string, y: string }>} Map.areas
- * @property {(keyof Map['areas'])[]} Map.area_keys
- * @property {Record<string, { color: string, htmlcolor: string, id: string, name: string }>} Map.environments
- * @property {(keyof Map['environments'])[]} Map.environment_keys
- * @property {Record<string, { direction: string, id: string, room: string, targetRoom: string, targetArea: string }>} Map.exits
- * @property {(keyof Map['exits'])[]} Map.exit_keys
- * @property {Record<string, { area: string, environment: string, id: string, title: string, x: string, y: string, z: string }>} Map.rooms
- * @property {(keyof Map['rooms'])[]} Map.room_keys
- */
 
 /**
  *

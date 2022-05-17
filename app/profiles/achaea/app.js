@@ -2,34 +2,37 @@
 /* eslint-env browser */
 import { createElement, Fragment, useEffect, useState } from "react";
 
-import { resolveData } from "./database";
-import { Svg } from "./components/svg";
+// import { resolveData } from "./database";
+import { Client } from "./components/Client";
+// import { Mapper } from "./components/mapper";
 
 export function App() {
-  const [map, setMap] = useState(undefined);
-  useEffect(() => {
-    resolveData().then(
-      /** @param {[any, Map]} param0  */
-      ([idb, jsonArea]) => {
-        setMap(jsonArea);
-      }
-    );
-  }, []);
-  const [currentArea, setCurrentArea] = useState("");
-  console.log("ok", map);
+  useEffect;
+  // const [map, setMap] = useState(undefined);
+  // useEffect(() => {
+  //   resolveData().then(
+  //     /** @param {[any, Map]} param0  */
+  //     ([idb, jsonArea]) => {
+  //       setMap(jsonArea);
+  //     }
+  //   );
+  // }, []);
+  // const [currentArea, setCurrentArea] = useState("");
+  // console.log("ok", map);
   return createElement(
     "section",
     undefined,
-    createElement(Nav, {
-      ...(map ?? {}),
-      currentArea,
-      setCurrentArea,
-    }),
-    createElement(Svg, {
-      ...(map ?? {}),
-      currentArea,
-      setCurrentArea,
-    })
+    // createElement(Nav, {
+    //   ...(map ?? {}),
+    //   currentArea,
+    //   setCurrentArea,
+    // }),
+    createElement(Client)
+    // createElement(Mapper, {
+    //   ...(map ?? {}),
+    //   currentArea,
+    //   setCurrentArea,
+    // })
   );
 }
 

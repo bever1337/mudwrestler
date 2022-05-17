@@ -13,7 +13,7 @@ export class Router {
 
   /**
    * @param {import(".").RequestOrHandler} request
-   * @param {import(".").ResponseOrHandler} response
+   * @param {import(".").ResponseHandler} response
    */
   handle(request, response) {
     this.handlers.push([request, response]);

@@ -1,6 +1,8 @@
 /// @ts-check
 /* eslint-env worker */
-import { Router } from "../../itty-router";
+// import { Router } from "../../itty-router";
+import { matchAll } from "../../request-router";
+import { handleExpression } from "../../request-router/extras";
 import { xmlParse, xsltProcess } from "xslt-processor";
 
 import { CACHE_ID, CACHE_NAME } from "../../cache/constants";
@@ -8,35 +10,44 @@ import { fetchThrough } from "../../cache/fetch";
 
 export const INTERNAL_VERSION = 2;
 
-const sameOriginRouter = Router();
-sameOriginRouter.get("/maps/achaea/:mapId.json", (request) => {
-  return caches.open(CACHE_NAME).then((cache) => {
-    return cache.match(request).then((cacheMatch) => {
-      if (typeof cacheMatch !== "undefined") {
-        return cacheMatch;
-      }
-      return Promise.all([
-        fetchThrough(new Request("https://achaea.com/maps/map.xml", request)),
-        fetchThrough(new Request("/maps/achaea/map.xsl")),
-      ])
-        .then(([xmlResponse, xslResponse]) =>
-          Promise.all([xmlResponse.text(), xslResponse.text()])
-        )
-        .then(([xmlText, xslText]) => {
-          const jsonMapResponse = new Response(
-            xsltProcess(xmlParse(xmlText), xmlParse(xslText)),
-            { status: 200 }
-          );
-          return cache
-            .put(request, jsonMapResponse.clone())
-            .then(() => jsonMapResponse);
+const router = [
+  handleExpression(
+    "/maps/achaea/:mapId.json",
+    new Request(self.location.origin), // check pathname for same origin requests
+    (request) => {
+      return caches.open(CACHE_NAME).then((cache) => {
+        return cache.match(request).then((cacheMatch) => {
+          if (typeof cacheMatch !== "undefined") {
+            return cacheMatch;
+          }
+          return Promise.all([
+            fetchThrough(
+              new Request("https://achaea.com/maps/map.xml", request)
+            ),
+            fetchThrough(new Request("/maps/achaea/map.xsl")),
+          ])
+            .then(([xmlResponse, xslResponse]) =>
+              Promise.all([xmlResponse.text(), xslResponse.text()])
+            )
+            .then(([xmlText, xslText]) => {
+              const jsonMapResponse = new Response(
+                xsltProcess(xmlParse(xmlText), xmlParse(xslText)),
+                { status: 200 }
+              );
+              return cache
+                .put(request, jsonMapResponse.clone())
+                .then(() => jsonMapResponse);
+            });
         });
-    });
-  });
-});
-
-const achaeaRouter = Router();
-achaeaRouter.get("/maps/:mapId.xml", fetchThrough);
+      });
+    }
+  ),
+  handleExpression(
+    "/maps/:mapId.xml",
+    new Request("https://achaea.com"),
+    fetchThrough
+  ),
+];
 
 /**
  * @type {Record<string, (arg0: any) => void>}
@@ -79,26 +90,13 @@ const serviceEvents = {
    */
   fetch: function onFetch(fetchEvent) {
     console.log("> fetch request", fetchEvent.request);
-    /** @type {undefined | Response | Promise<Response>} */
-    let response;
-    switch (new URL(fetchEvent.request.url).hostname) {
-      case self.location.hostname: {
-        response = sameOriginRouter.handle(fetchEvent.request);
-        break;
-      }
-      case "achaea.com": {
-        response = achaeaRouter.handle(fetchEvent.request);
-        break;
-      }
-      default:
-        return;
-    }
-    if (response) {
-      console.log(`router handled ${fetchEvent.request.url}?`, response);
+    const responses = matchAll(router, fetchEvent.request);
+    if (responses[0]) {
+      console.log(`router handled ${fetchEvent.request.url}:`, responses);
       try {
-        fetchEvent.respondWith(response);
+        fetchEvent.respondWith(responses[0]);
       } catch (err) {
-        console.error("sameOriginRouter respondwith err?", err);
+        console.error("Router respondwith err:", err);
       }
     }
   },
